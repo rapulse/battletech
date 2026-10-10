@@ -1,0 +1,8 @@
+# pnpm 11 читает настройки отсюда, а не из package.json.
+# esbuild ставит нативный бинарник; без разрешения на build-скрипт vite и vitest не работают.
+onlyBuiltDependencies:
+  - esbuild
+  - '@playwright/test'
+allowBuilds:
+  esbuild: true
+  '@playwright/test': true

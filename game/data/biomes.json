@@ -1,0 +1,96 @@
+{
+  "$comment": "Биомы карты (шаг 9a, часть B). ГЛАВНОЕ ПРАВИЛО: биом не добавляет ни одного нового типа рельефа и ни одного нового правила. Он только перераспределяет девять существующих типов, гнёт поле высот и выбирает набор цветов. Всё, что выглядит как «лавовая река» или «+1 к нагреву на пустынной планете», — это правила, и здесь их нет. Городской биом сознательно не заведён: кварталы требуют планировки зданий, стен и ворот, а разрушаемости зданий в правилах пока нет (решение пользователя, 2026-08-27).",
+  "$comment2": "terrain: таблица весов «полоса высоты × полоса влажности → тип рельефа». Полосы: low/mid/high по высоте, dry/normal/wet по влажности. Веса относительные, нормируются при загрузке. Пустая запись означает «только plain».",
+  "biomes": [
+    {
+      "id": "temperate",
+      "key": "biome.temperate",
+      "palette": "temperate",
+      "elevation": { "amplitude": 2, "ridged": 0.0, "lowlandShare": 0.28, "macroForms": 3 },
+      "moisture": { "mean": 0.5, "spread": 0.24 },
+      "hydrology": { "lakeShare": 0.05, "rivers": 1, "frozen": false },
+      "settlement": { "roads": 1 },
+      "ruins": { "chance": 0.4, "maxPatches": 2, "patchSize": 3 },
+      "terrain": {
+        "low":  { "dry": [["plain", 6], ["rough", 1]], "normal": [["plain", 5], ["lightWoods", 3]], "wet": [["lightWoods", 4], ["heavyWoods", 3], ["swamp", 2]] },
+        "mid":  { "dry": [["plain", 5], ["rough", 2]], "normal": [["plain", 4], ["lightWoods", 4], ["heavyWoods", 1]], "wet": [["heavyWoods", 5], ["lightWoods", 3]] },
+        "high": { "dry": [["rough", 5], ["plain", 2]], "normal": [["plain", 3], ["rough", 3], ["lightWoods", 2]], "wet": [["lightWoods", 4], ["rough", 2]] }
+      }
+    },
+    {
+      "id": "desert",
+      "key": "biome.desert",
+      "palette": "desert",
+      "elevation": { "amplitude": 3, "ridged": 0.35, "lowlandShare": 0.2, "macroForms": 2 },
+      "moisture": { "mean": 0.2, "spread": 0.16 },
+      "hydrology": { "lakeShare": 0.02, "rivers": 0, "frozen": false },
+      "settlement": { "roads": 1 },
+      "ruins": { "chance": 0.4, "maxPatches": 2, "patchSize": 3 },
+      "terrain": {
+        "low":  { "dry": [["plain", 5], ["rough", 3]], "normal": [["plain", 6], ["rough", 2]], "wet": [["plain", 4], ["lightWoods", 2], ["swamp", 1]] },
+        "mid":  { "dry": [["rough", 6], ["plain", 3]], "normal": [["rough", 4], ["plain", 4]], "wet": [["plain", 4], ["lightWoods", 2]] },
+        "high": { "dry": [["rough", 7], ["rubble", 2]], "normal": [["rough", 6], ["plain", 2]], "wet": [["rough", 5], ["plain", 2]] }
+      }
+    },
+    {
+      "id": "tundra",
+      "key": "biome.tundra",
+      "palette": "tundra",
+      "elevation": { "amplitude": 2, "ridged": 0.1, "lowlandShare": 0.3, "macroForms": 2 },
+      "moisture": { "mean": 0.42, "spread": 0.2 },
+      "hydrology": { "lakeShare": 0.08, "rivers": 1, "frozen": true },
+      "settlement": { "roads": 1 },
+      "ruins": { "chance": 0.35, "maxPatches": 2, "patchSize": 3 },
+      "terrain": {
+        "low":  { "dry": [["plain", 8], ["rough", 1]], "normal": [["plain", 7], ["lightWoods", 2]], "wet": [["plain", 4], ["swamp", 3], ["lightWoods", 2]] },
+        "mid":  { "dry": [["plain", 7], ["rough", 2]], "normal": [["plain", 6], ["lightWoods", 3]], "wet": [["lightWoods", 5], ["plain", 3]] },
+        "high": { "dry": [["rough", 5], ["plain", 4]], "normal": [["plain", 5], ["rough", 3]], "wet": [["lightWoods", 3], ["plain", 4]] }
+      }
+    },
+    {
+      "id": "jungle",
+      "key": "biome.jungle",
+      "palette": "jungle",
+      "elevation": { "amplitude": 2, "ridged": 0.15, "lowlandShare": 0.34, "macroForms": 3 },
+      "moisture": { "mean": 0.72, "spread": 0.18 },
+      "hydrology": { "lakeShare": 0.06, "rivers": 2, "frozen": false },
+      "settlement": { "roads": 1 },
+      "ruins": { "chance": 0.35, "maxPatches": 1, "patchSize": 3 },
+      "terrain": {
+        "low":  { "dry": [["lightWoods", 4], ["plain", 3]], "normal": [["heavyWoods", 4], ["swamp", 3], ["lightWoods", 2]], "wet": [["swamp", 5], ["heavyWoods", 4]] },
+        "mid":  { "dry": [["lightWoods", 5], ["plain", 2]], "normal": [["heavyWoods", 6], ["lightWoods", 3]], "wet": [["heavyWoods", 8], ["swamp", 2]] },
+        "high": { "dry": [["lightWoods", 4], ["rough", 3]], "normal": [["heavyWoods", 5], ["rough", 2]], "wet": [["heavyWoods", 6], ["rough", 1]] }
+      }
+    },
+    {
+      "id": "volcanic",
+      "key": "biome.volcanic",
+      "palette": "volcanic",
+      "elevation": { "amplitude": 3, "ridged": 0.6, "lowlandShare": 0.22, "macroForms": 4 },
+      "moisture": { "mean": 0.24, "spread": 0.14 },
+      "hydrology": { "lakeShare": 0.03, "rivers": 0, "frozen": false },
+      "settlement": { "roads": 1 },
+      "ruins": { "chance": 0, "maxPatches": 1, "patchSize": 3 },
+      "terrain": {
+        "low":  { "dry": [["rubble", 4], ["plain", 3], ["rough", 3]], "normal": [["rubble", 4], ["rough", 4]], "wet": [["swamp", 3], ["rubble", 4]] },
+        "mid":  { "dry": [["rough", 5], ["rubble", 4]], "normal": [["rubble", 5], ["rough", 4]], "wet": [["rubble", 5], ["rough", 3]] },
+        "high": { "dry": [["rough", 6], ["rubble", 4]], "normal": [["rough", 6], ["rubble", 3]], "wet": [["rough", 5], ["rubble", 4]] }
+      }
+    },
+    {
+      "id": "lunar",
+      "key": "biome.lunar",
+      "palette": "lunar",
+      "elevation": { "amplitude": 3, "ridged": 0.25, "lowlandShare": 0.26, "macroForms": 3 },
+      "moisture": { "mean": 0.05, "spread": 0.08 },
+      "hydrology": { "lakeShare": 0, "rivers": 0, "frozen": false },
+      "settlement": { "roads": 0 },
+      "ruins": { "chance": 0, "maxPatches": 1, "patchSize": 3 },
+      "terrain": {
+        "low":  { "dry": [["plain", 8], ["rough", 2]], "normal": [["plain", 7], ["rough", 2]], "wet": [["plain", 7], ["rough", 2]] },
+        "mid":  { "dry": [["plain", 5], ["rough", 4]], "normal": [["plain", 5], ["rough", 4]], "wet": [["plain", 5], ["rough", 4]] },
+        "high": { "dry": [["rough", 6], ["rubble", 3]], "normal": [["rough", 6], ["rubble", 3]], "wet": [["rough", 6], ["rubble", 3]] }
+      }
+    }
+  ]
+}

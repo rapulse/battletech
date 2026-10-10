@@ -1,0 +1,26 @@
+{
+  "$comment": "Рельеф. Игровая модель — wiki/design/combat/terrain.md. Порядок массива обязан совпадать с enum TerrainType; проверяется схемой при загрузке.",
+  "terrain": [
+    { "id": "plain",      "enterCost": 1, "objHeight": 0, "toHitMod": 0, "heatPerTurn": 0, "pilotingOnRun": false, "hardCover": false, "walkable": true, "partialCover": false },
+    { "id": "road",       "enterCost": 1, "objHeight": 0, "toHitMod": 0, "heatPerTurn": 0, "pilotingOnRun": false, "hardCover": false, "walkable": true, "partialCover": false },
+    { "id": "rough",      "enterCost": 2, "objHeight": 0, "toHitMod": 0, "heatPerTurn": 0, "pilotingOnRun": true,  "hardCover": false, "walkable": true, "partialCover": false },
+    { "id": "lightWoods", "enterCost": 2, "objHeight": 2, "toHitMod": 1, "heatPerTurn": 0, "pilotingOnRun": false, "hardCover": false, "walkable": true, "partialCover": false },
+    { "id": "heavyWoods", "enterCost": 3, "objHeight": 2, "toHitMod": 2, "heatPerTurn": 0, "pilotingOnRun": false, "hardCover": false, "walkable": true, "partialCover": false },
+    { "id": "rubble",     "enterCost": 2, "objHeight": 1, "toHitMod": 1, "heatPerTurn": 0, "pilotingOnRun": true,  "hardCover": false, "walkable": true, "partialCover": true },
+    { "id": "swamp",      "enterCost": 2, "objHeight": 0, "toHitMod": 0, "heatPerTurn": 0, "pilotingOnRun": true,  "hardCover": false, "walkable": true, "partialCover": false },
+    { "id": "water",      "enterCost": 1, "objHeight": 0, "toHitMod": 0, "heatPerTurn": -2, "pilotingOnRun": true,  "hardCover": false, "walkable": true, "partialCover": false },
+    { "id": "building",   "enterCost": 0, "objHeight": 2, "toHitMod": 1, "heatPerTurn": 0, "pilotingOnRun": false, "hardCover": true,  "walkable": false, "partialCover": true }
+  ],
+
+  "$comment2": "Оверлеи — динамический слой поверх рельефа (дым, пожар, лёд). Хранятся битовой маской в HexMap.overlay, поэтому здесь они названы по ключу, а не порядком массива: порядок бит менять нельзя, а порядок записей в файле — можно. blockPoints — вклад в перекрытие линии видимости в тех же очках, что и лес (редкий 1, густой 2, линия закрывается с трёх).",
+  "overlays": {
+    "smoke": { "objHeight": 2, "toHitMod": 2, "blockPoints": 2 },
+    "fire":  { "objHeight": 2, "toHitMod": 1, "blockPoints": 1 },
+    "ice":   { "objHeight": 0, "toHitMod": 0, "blockPoints": 0 }
+  },
+
+  "$comment3": "Высота стены и ворот. Своей высоты у ребра не хранится — она одна на все стены, иначе на каждое ребро пришлось бы завести байт высоты ради редкого случая. Линия, идущая ниже верха стены, перекрывается жёстко.",
+  "edges": {
+    "wallHeight": 2
+  }
+}

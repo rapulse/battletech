@@ -1,0 +1,89 @@
+{
+  "$comment": "События мира (шаг 84): канонические вехи 3057–3067. Событие — политика, отдающая те же команды, что ядро уже знает: отношение пары, договор, замысел наступления, снятие перемирия Тукайида для пары, приглашение державы роты в коалицию. Своих правил событие не заводит. Окно — месяцы from..until включительно; день срабатывания внутри окна выбирается броском из сида мира и id события (кратно декаде), дальше событие ждёт, пока выполнятся условия, и срабатывает один раз за кампанию. Не выполнились до конца окна — отменено молча (решение пользователя 2026-10-01). Числа — ручки, коридор и замер: wiki/overview/corridors.md.",
+  "$commentSelectors": "Стороны действия: id фракции, '@house' — Великие Дома, '@clan' — кланы, '@realm' — держава роты (если у роты есть миры). Действие идёт по всем парам a × b разных живых сторон; border: true — только пары с общей границей.",
+  "events": [
+    {
+      "id": "refusal-war",
+      "$note": "Война Отказа: Кречеты отказались признать решение Ханов о кланском Вторжении, Волки их остановили. Канон — декабрь 3057 – 3058.",
+      "image": "/ui/events/refusal-war.webp",
+      "from": { "year": 3057, "month": 12 },
+      "until": { "year": 3058, "month": 12 },
+      "when": [
+        { "kind": "worlds", "faction": "jade_falcon", "min": 1 },
+        { "kind": "worlds", "faction": "wolf", "min": 1 },
+        { "kind": "border", "a": "jade_falcon", "b": "wolf" }
+      ],
+      "do": [
+        { "kind": "relation", "a": ["jade_falcon"], "b": ["wolf"], "atMost": -0.6, "border": true },
+        { "kind": "plan", "by": ["jade_falcon"], "against": ["wolf"], "decades": 36 }
+      ]
+    },
+    {
+      "id": "whitting-conference",
+      "$note": "Уиттингская конференция, Вторая Звёздная Лига: Великие Дома мирятся на срок договора (war.json → diplomacy.pactDecades).",
+      "image": "/ui/events/whitting-conference.webp",
+      "from": { "year": 3058, "month": 6 },
+      "until": { "year": 3058, "month": 12 },
+      "when": [],
+      "do": [
+        { "kind": "truce", "a": ["@house"], "b": ["@house"], "border": true }
+      ]
+    },
+    {
+      "id": "operation-bulldog",
+      "$note": "Операция «Бульдог»: первый удар Сферы по кланам. Перемирие Тукайида для пар «Дом у границы Ягуаров — Ягуары» снято, у этих Домов — замыслы против Ягуаров; держава роты у границы Ягуаров получает приглашение в коалицию. Не срабатывает, если Ягуаров уже съели (сид 2 пробы 2026-09-28: 35 → 14 миров).",
+      "image": "/ui/events/operation-bulldog.webp",
+      "from": { "year": 3059, "month": 1 },
+      "until": { "year": 3059, "month": 12 },
+      "when": [
+        { "kind": "worlds", "faction": "smoke_jaguar", "min": 20 }
+      ],
+      "do": [
+        { "kind": "liftTukayyid", "a": ["@house"], "b": ["smoke_jaguar"], "border": true },
+        { "kind": "relation", "a": ["@house"], "b": ["smoke_jaguar"], "atMost": -0.2, "border": true },
+        { "kind": "plan", "by": ["@house"], "against": ["smoke_jaguar"], "decades": 36 },
+        { "kind": "invite", "against": "smoke_jaguar", "allies": ["@house"], "acceptStanding": 10, "declineStanding": -5 }
+      ]
+    },
+    {
+      "id": "nova-cat-league",
+      "$note": "Новые Коты входят во Вторую Звёздную Лигу: вражда с Куритой гаснет, договор.",
+      "image": "/ui/events/nova-cat-league.webp",
+      "from": { "year": 3060, "month": 1 },
+      "until": { "year": 3060, "month": 12 },
+      "when": [
+        { "kind": "worlds", "faction": "nova_cat", "min": 1 },
+        { "kind": "border", "a": "nova_cat", "b": "kurita" }
+      ],
+      "do": [
+        { "kind": "relation", "a": ["nova_cat"], "b": ["kurita"], "atLeast": 0.3, "border": true },
+        { "kind": "truce", "a": ["nova_cat"], "b": ["kurita"], "border": true }
+      ]
+    },
+    {
+      "id": "fedcom-civil-war",
+      "$note": "Гражданская война ФедКома: Штайнер и Дэвион снова враги. Не срабатывает, если кто-то из них пал. Общей границы в каталоге у них нет (зонд шага 84: ни одного соседнего мира на старте), поэтому условия границы нет (решение пользователя 2026-10-01): вражда ложится в сеть отношений, а фронт откроется сам, если захваты их столкнут.",
+      "image": "/ui/events/fedcom-civil-war.webp",
+      "from": { "year": 3062, "month": 1 },
+      "until": { "year": 3062, "month": 12 },
+      "when": [
+        { "kind": "worlds", "faction": "steiner", "min": 1 },
+        { "kind": "worlds", "faction": "davion", "min": 1 }
+      ],
+      "do": [
+        { "kind": "relation", "a": ["steiner"], "b": ["davion"], "atMost": -0.2, "border": false }
+      ]
+    },
+    {
+      "id": "tukayyid-truce-end",
+      "$note": "Конец перемирия Тукайида. Сам выключатель — war.json → front.truceUntilYear 3067 (кланы с этого года берут миры Сферы, а не только набегают); событие о нём сообщает и даёт кланам у границы державы роты замыслы против неё. Окно с января 3067 совпадает с truceUntilYear намеренно.",
+      "image": "/ui/events/tukayyid-truce-end.webp",
+      "from": { "year": 3067, "month": 1 },
+      "until": { "year": 3067, "month": 3 },
+      "when": [],
+      "do": [
+        { "kind": "plan", "by": ["@clan"], "against": ["@realm"], "decades": 36 }
+      ]
+    }
+  ]
+}

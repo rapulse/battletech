@@ -1,0 +1,143 @@
+{
+  "$comment": "Навыки пилота, развитие, травмы. Игровая модель — wiki/design/pilots/skills.md. Все таблицы индексируются уровнем навыка 1..10 (элемент 0 — уровень 1).",
+
+  "skills": [
+    { "id": "gunnery",     "key": "skill.gunnery",     "group": "cockpit" },
+    { "id": "piloting",    "key": "skill.piloting",    "group": "cockpit" },
+    { "id": "tactics",     "key": "skill.tactics",     "group": "cockpit" },
+    { "id": "composure",   "key": "skill.composure",   "group": "cockpit" },
+    { "id": "tech",        "key": "skill.tech",        "group": "cockpit" },
+    { "id": "strength",    "key": "skill.strength",    "group": "personal" },
+    { "id": "melee",       "key": "skill.melee",       "group": "personal" },
+    { "id": "endurance",   "key": "skill.endurance",   "group": "personal" },
+    { "id": "will",        "key": "skill.will",        "group": "personal" },
+    { "id": "presence",    "key": "skill.presence",    "group": "personal" }
+  ],
+
+  "$comment3": "pilotingTarget пересмотрен шагом 30. Было [9,8,8,7,7,6,6,5,5,4]: новобранец падал в 72 % бросков, средний пилот — в 42-58 %, и даже элита в 8 %. При броске на каждый гекс воды это давало гарантированное падение на переправе. Стало [5,4,4,3,3,3,2,2,2,2]: новобранец не удерживается в 17 % случаев, пилот навыка 4-6 — в 2.8 % (выпало 2 на 2d6), элита не падает вовсе. Падение вернулось в разряд критического провала, каким и задумывалось. 2026-09-15 навык 1 смягчён с 5 до 4 (решение пользователя): с бросками от попадания новичок падал от урона и привода ноги в 28 %, от гироскопа в 58 %; стало 17 % / 17 % / 42 %, на местности 8 %. Числа держат СМЫСЛ и после надбавок за повреждения (гироскоп, приводы, потерянная нога): подбитая машина снова начинает падать, и это единственный способ её уронить.",
+  "tables": {
+    "gunneryBase":       [6, 6, 5, 5, 4, 4, 4, 3, 3, 2],
+    "pilotingTarget":    [4, 4, 4, 3, 3, 3, 2, 2, 2, 2],
+    "composureBotch":    [0.25, 0.20, 0.16, 0.13, 0.10, 0.08, 0.06, 0.04, 0.03, 0.02],
+    "tacticsInitiative": [-1, -1, 0, 0, 1, 1, 2, 2, 3, 3],
+    "tacticsNoise":      [0.35, 0.35, 0.25, 0.25, 0.15, 0.15, 0.08, 0.08, 0.03, 0.03],
+    "enduranceInjuryMul":[1.30, 1.20, 1.10, 1.00, 0.92, 0.85, 0.78, 0.72, 0.66, 0.60]
+  },
+
+  "execution": {
+    "$comment": "Проверка исполнения — wiki/design/pilots/skills.md. База от Хладнокровия, обстановка добавляет, итог ограничен сверху.",
+    "maxBotch": 0.60,
+    "situational": {
+      "heatHigh": 0.10,
+      "heavyDamageThisTurn": 0.08,
+      "structureBreached": 0.05,
+      "fellThisTurn": 0.10,
+      "perInjury": 0.05,
+      "firstBattle": 0.05
+    },
+    "poise": {
+      "$comment": "Собранность: при Хладнокровии >= minLevel промах ровно на 1 может стать попаданием.",
+      "minLevel": 8,
+      "chancePerLevelAbove": 0.03
+    }
+  },
+
+  "injury": {
+    "$comment": "Ранения пилота. База по причине, умножается на enduranceInjuryMul. Числа подобраны под подтверждённую долю попаданий в голову ~1/18 (combat.json → hitLocation.headConfirm); при смене таблицы зон их придётся пересчитать.",
+    "causes": {
+      "headArmor":       0.15,
+      "headStructure":   0.50,
+      "massiveDamage":   0.08,
+      "fall":            0.10,
+      "heat":            0.15,
+      "ammoExplosion":   0.40,
+      "ejectVoluntary":  0.10,
+      "ejectTorso":      0.45,
+      "ejectHead":       0.60
+    },
+    "outAt": 6,
+    "skillPenaltyPerInjuries": 2,
+    "$comment2": "Причины eject* — жёсткость приземления после катапультирования. Пилот уже спасён; ранение решает, сколько времени он потеряет в кампании. Прежняя причина mechDestroyed убрана: гибель робота теперь всегда ведёт к катапультированию, а не к отдельному броску на ранение."
+  },
+
+  "ejection": {
+    "$comment": "Катапультирование — основная механика выживания (wiki/design/combat/rules.md). Риск живёт не в самом спасении, а в том, каким пилот приземлится: разрушенный торс отпускает всегда, но бьёт жёстко.",
+
+    "triggers": {
+      "voluntary": { "base": 0.98, "situational": true,  "minChance": 0.90, "injury": "ejectVoluntary" },
+      "torso":     { "base": 1.00, "situational": false, "minChance": 1.00, "injury": "ejectTorso" },
+      "head":      { "base": 0.55, "situational": true,  "minChance": 0.25, "injury": "ejectHead" }
+    },
+
+    "$comment2": "situational=false — катапульта отрабатывает сама, состояние пилота не при чём: торс разрушен, заряд сработал. situational=true — момент выбирает человек, и обстановка мешает ему решиться, поэтому модификаторы кусают только добровольный уход и разрушенный кокпит. minChance у повода — свой: добровольный уход не должен превращаться в лотерею (иначе игрок перестанет им пользоваться, и механика пропадёт), обстановка лишь съедает часть запаса. Вся драма живёт в разрушенном кокпите, где катапульту разбило вместе с головой.",
+
+    "situational": {
+      "prone": -0.10,
+      "submerged": -0.25,
+      "heatHigh": -0.10,
+      "perInjury": -0.05,
+      "pilotingBonusPerLevel": 0.02
+    },
+
+    "maxChance": 0.99
+  },
+
+  "cockpitBreach": {
+    "$comment": "Пробитие кокпита. Броня головы пробита — снаряд дошёл до кабины, и дальше решает, куда именно: в приборы или в остекление. Бросок 1d6, при lostFrom и выше выстрел прошёл сквозь стекло, и пилот не успевает даже потянуться к катапульте. Это второй и последний повод потерять человека наглухо, помимо разрушенного кокпита.",
+    "$comment2": "Один бросок на залп, а не на ствол: ранение от пробитой головы считается так же (headStructure), и два счёта одного события разошлись бы. Числа: die=6, lostFrom=5 даёт 2/6. Порог подобран замером — при 0.05 пробития за бой он возвращает потерю пилота в коридор 0.02–0.05, из которого шаг 6 её выбил (см. decisions.md, 2026-08-25).",
+    "die": 6,
+    "lostFrom": 5
+  },
+
+  "progression": {
+    "levelCostBase": 8,
+    "minLevel": 1,
+    "maxLevel": 10,
+    "talentCapMin": 4,
+    "talentCapMax": 10,
+    "pressureFrom": 0.2,
+    "xp": {
+      "hit": { "skills": ["gunnery"], "amount": 1 },
+      "kill": { "skills": ["gunnery"], "amount": 6 },
+      "pilotingPassed": { "skills": ["piloting"], "amount": 3 },
+      "initiativeWon": { "skills": ["tactics"], "amount": 1 },
+      "heldUnderPressure": { "skills": ["composure"], "amount": 4 },
+      "repairDone": { "skills": ["tech"], "amount": 3 },
+      "battleSurvived": { "skills": ["endurance"], "amount": 4 },
+      "contractDone": {
+        "skills": ["gunnery", "piloting", "tactics", "composure", "tech", "endurance"],
+        "amount": 10
+      }
+    }
+  },
+
+  "recruits": {
+    "$comment": "Кто приходит на объявление о найме (шаг найма 2026-09-10). Чем выше выучка, тем реже: веса убывают. Сфера и кланы не соревнуются за одну полосу — они её ДЕЛЯТ: сферный наёмник не поднимается выше maxTier, клановый воин не опускается ниже minTier. Отсюда правило «выше семи бывают только клановые», и клановый пилот сразу лучше любого сферного, какой бы удачный ни выпал.",
+    "$comment2": "clanChance — постоянная и малая (решение пользователя 2026-09-10): клановец не должен быть наградой за карьеру, он должен быть редкой удачей, одинаково возможной и на первом дне, и на сотом контракте.",
+    "clanChance": 0.05,
+    "$comment3": "capMin/capMax — потолок таланта СВОЙ У ПОЛОСЫ (правка 2026-09-10). У Сферы он широкий (4-10): наёмник может оказаться и бесперспективным, и самородком, и это половина смысла найма. У клана — узкий и высокий: клановому воину полагается расти, а не приходить упёршимся в себя. Пришедший с восьмёркой при потолке 9-10 берёт ещё одну-две ступени за кампанию, и это те самые 37-46 боёв на ступень.",
+    "sphere": { "minTier": 2, "maxTier": 7, "weights": [30, 26, 20, 13, 8, 3], "capMin": 4, "capMax": 10 },
+    "clan": { "minTier": 8, "maxTier": 10, "weights": [60, 30, 10], "capMin": 9, "capMax": 10 }
+  },
+
+  "faces": {
+    "$comment": "Какие лица есть у каждой принадлежности и какого они пола. Ячейки — номера в атласе портретов (ui/components/atlases.json): «sphere» это pilots.jpg, кланы — pilots_clans.jpg, где ряд атласа и есть клан. Ядро читает отсюда ТОЛЬКО пол и номер: имя подбирается под пол, номер ложится в запись пилота, а рисовать по нему — дело показа.",
+    "$comment2": "Пол разведён по лицам, а не брошен отдельно: у Клана Волка на портретах нет женских лиц, и бросок «женщина-волчица» оставил бы пилота без портрета либо подсунул чужой герб. Что нарисовано, то и бывает.",
+    "sphere": {
+      "male": [0, 1, 2, 3, 4, 5, 6, 8, 9, 10, 12, 15],
+      "female": [7, 11, 13, 14]
+    },
+    "wolf": { "male": [0, 1, 2, 3], "female": [] },
+    "jade_falcon": { "male": [4, 5, 6], "female": [7] },
+    "ghost_bear": { "male": [8, 9, 10], "female": [11] },
+    "smoke_jaguar": { "male": [12, 15], "female": [13, 14] }
+  },
+
+  "origins": [
+    { "id": "clanFreeborn",  "side": "clan", "key": "origin.clanFreeborn",  "strong": ["will", "endurance"],                  "weak": ["presence"] },
+    { "id": "clanTrueborn",  "side": "clan", "key": "origin.clanTrueborn",  "strong": ["gunnery", "piloting", "strength"],    "weak": ["will"] },
+    { "id": "sphereRegular", "side": "sphere", "key": "origin.sphereRegular", "strong": ["tactics", "tech"],                    "weak": ["melee"] },
+    { "id": "rimMercenary",  "side": "sphere", "key": "origin.rimMercenary",  "strong": ["composure", "presence"],              "weak": ["tech"] },
+    { "id": "sphereNoble",   "side": "sphere", "key": "origin.sphereNoble",   "strong": ["presence", "tactics"],                "weak": ["endurance"] }
+  ]
+}

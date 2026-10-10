@@ -1,0 +1,35 @@
+{
+  "$comment": "Единый реестр акторов (шаг 14). Владелец системы — ССЫЛКА сюда, а не строка: клан, наёмный отряд и пиратская вольница здесь такие же акторы, как Великий Дом (wiki/design/campaign/planets.md §9). Репутация отряда и сеть «враг моего врага» — шаг 20; статичная вражда фракций между собой — data/galaxy/relations.json (шаг 16).",
+  "$comment5": "income (шаг 21a) — ВНЕТЕРРИТОРИАЛЬНЫЙ доход фракции за такт (декаду), в C-Bills. Необязательное поле: у кого его нет, тот живёт только со своих миров. Заведено потому, что территориальный доход делает беднейшими фракциями Сферы КомСтар (один мир, Терра) и Волчьих Драгун (один мир, Аутрич — стартовая система роты): гвардия КомСтара выходила бы на восстановленном хламе, а лучший наёмный полк Внутренней Сферы оказался бы беднее пиратов. КомСтар живёт с монополии на ГПГ, Драгуны — с контрактов, пираты — с набегов. Доводы — wiki/decisions.md, решение 4 записи «Шесть решений по экономике фракций».",
+  "$comment4": "Поле doctrine (шаг 16) — предпочтения фракции по вооружению весами ролей — снято шагом 71 (решение пользователя 2026-09-25): доктрина Дома не зависела от поля боя. Роли противника теперь взвешивает биом (data/construction.json → roles.weightByBiome).",
+  "$comment2": "Эпоха каталога — 1 января 3053 года: вторжение кланов остановлено на Тукайиде (май 3052), перемирие заморозило зоны оккупации до 3067. Четыре зоны вторжения: Нефритовый Кречет, Волк, Призрачный Медведь, Дымчатый Ягуар; Стальная Гадюка делит зону с Кречетом, Новая Кошка — с Ягуаром.",
+  "$comment3": "Конфедерация Оберона в реестре не значится намеренно: периферийные государства на пути вторжения были сметены в 3049–3050. Их миры теперь клановые.",
+
+  "factions": [
+    { "id": "comstar",     "kind": "comstar",     "name": "КомСтар",                     "short": "КомСтар",  "color": "#e3d5a1", "capital": "terra", "income": 12000000 },
+
+    { "id": "steiner",     "kind": "house",       "name": "Лиранское Содружество",       "short": "Штайнер",  "color": "#39c5bb", "capital": "tharkad" },
+    { "id": "kurita",      "kind": "house",       "name": "Синдикат Дракона",            "short": "Курита",   "color": "#f0883e", "capital": "luthien" },
+    { "id": "davion",      "kind": "house",       "name": "Федеративные Солнца",         "short": "Дэвион",   "color": "#f85149", "capital": "new-avalon" },
+    { "id": "liao",        "kind": "house",       "name": "Капелланская Конфедерация",   "short": "Ляо",      "color": "#56d364", "capital": "sian" },
+    { "id": "marik",       "kind": "house",       "name": "Лига Свободных Миров",        "short": "Марик",    "color": "#a371f7", "capital": "atreus" },
+
+    { "id": "jade_falcon", "kind": "clan",        "name": "Клан Кречета",    "short": "Кречеты",  "color": "#3fb950", "capital": "sudeten" },
+    { "id": "steel_viper", "kind": "clan",        "name": "Клан Стальной Гадюки",        "short": "Гадюки",   "color": "#2ea043", "capital": "roche" },
+    { "id": "wolf",        "kind": "clan",        "name": "Клан Волка",                  "short": "Волки",    "color": "#d29922", "capital": "tamar" },
+    { "id": "ghost_bear",  "kind": "clan",        "name": "Клан Призрачного Медведя",    "short": "Медведи",  "color": "#79c0ff", "capital": "alshain" },
+    { "id": "smoke_jaguar","kind": "clan",        "name": "Клан Дымчатого Ягуара",       "short": "Ягуары",   "color": "#f78166", "capital": "pesht" },
+    { "id": "nova_cat",    "kind": "clan",        "name": "Клан Новой Кошки",            "short": "Кошки",    "color": "#db6d28", "capital": "irece" },
+
+    { "id": "dragoons",    "kind": "mercenary",   "name": "Волчьи Драгуны",              "short": "Драгуны",  "color": "#bc8cff", "capital": "outreach", "income": 8000000 },
+
+    { "id": "taurian",     "kind": "periphery",   "name": "Таурианский Конкордат",       "short": "Таурус",   "color": "#8b949e", "capital": "taurus" },
+    { "id": "canopus",     "kind": "periphery",   "name": "Магистрат Канопуса",          "short": "Канопус",  "color": "#d2a8ff", "capital": "canopus-iv" },
+    { "id": "outworlds",   "kind": "periphery",   "name": "Альянс Внешних Миров",        "short": "Альянс",   "color": "#7ee787", "capital": "alpheratz" },
+    { "id": "marian",      "kind": "periphery",   "name": "Марианская Гегемония",        "short": "Мариане",  "color": "#ffa657", "capital": "alphard" },
+    { "id": "circinus",    "kind": "periphery",   "name": "Федерация Циркиния",          "short": "Циркиний", "color": "#a5a5a5", "capital": "circinus" },
+
+    { "id": "independent", "kind": "independent", "name": "Независимые миры",            "short": "Ничьи",    "color": "#6e7681" },
+    { "id": "pirates",     "kind": "pirates",     "name": "Пиратские вольницы",          "short": "Пираты",   "color": "#da3633", "income": 4000000 }
+  ]
+}

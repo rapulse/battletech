@@ -1,0 +1,32 @@
+{
+  "$comment": "Достижения роты (шаг 69). Только статус: ни одно ничего не даёт в числах, поэтому замер баланса не нужен. Порядок записей — порядок показа на странице роты. icon — ячейка атласа ui/achievements.jpg (сетка 5×5, слева направо, сверху вниз); атлас собирает tools/pack_ui_atlases.py из _tmp/achievements_grid.jpeg. Названия и подсказки — в словарях интерфейса по id (achievement.<id>.name / .hint), здесь только условия.",
+  "$comment2": "condition.type — вид проверки, параметры рядом (core/campaign/achievements/index.ts). Боевые виды (trophy, clanTrophy, enemyDown, headshot, soloWin, outnumbered, wipeout, flawless, beyond, lightWin, giantKill, limpHome) проверяются только в бою, отыгранном игроком: бой, рассчитанный штабом, их не даёт (решение пользователя 2026-09-23). Остальные выводятся из состояния роты после любой команды и открываются и задним числом — на старом сохранении при первой же команде.",
+  "$comment3": "hidden — на странице роты до открытия не показывается подсказка, только знак вопроса.",
+  "achievements": [
+    { "id": "firstContract", "icon": 0, "hidden": false, "condition": { "type": "contractsWon", "min": 1 } },
+    { "id": "firstTrophy", "icon": 1, "hidden": false, "condition": { "type": "trophy" } },
+    { "id": "titanSlayer", "icon": 2, "hidden": false, "condition": { "type": "enemyDown", "minTons": 100 } },
+    { "id": "headshot", "icon": 3, "hidden": false, "condition": { "type": "headshot" } },
+    { "id": "loneWolf", "icon": 4, "hidden": false, "condition": { "type": "soloWin" } },
+    { "id": "outnumbered", "icon": 5, "hidden": false, "condition": { "type": "outnumbered", "ratio": 2 } },
+    { "id": "lanceWipe", "icon": 6, "hidden": false, "condition": { "type": "wipeout", "minEnemies": 4 } },
+    { "id": "flawless", "icon": 7, "hidden": false, "condition": { "type": "flawless" } },
+    { "id": "beyond", "icon": 8, "hidden": false, "condition": { "type": "beyond" } },
+    { "id": "lightLance", "icon": 9, "hidden": false, "condition": { "type": "lightWin", "maxTons": 35, "minMechs": 4 } },
+    { "id": "millionaire", "icon": 10, "hidden": false, "condition": { "type": "cbills", "min": 1000000 } },
+    { "id": "union", "icon": 11, "hidden": false, "condition": { "type": "dropship", "ships": ["union", "overlord"] } },
+    { "id": "overlord", "icon": 12, "hidden": false, "condition": { "type": "dropship", "ships": ["overlord"] } },
+    { "id": "fullCompany", "icon": 13, "hidden": false, "condition": { "type": "fleetSize", "min": 12 } },
+    { "id": "veteranMech", "icon": 14, "hidden": false, "condition": { "type": "mechBattles", "min": 25 } },
+    { "id": "famous", "icon": 15, "hidden": false, "condition": { "type": "fame", "min": 50 } },
+    { "id": "davidGoliath", "icon": 16, "hidden": true, "condition": { "type": "giantKill", "maxOwnTons": 35, "minVictimTons": 80 } },
+    { "id": "serviceRecord", "icon": 17, "hidden": false, "condition": { "type": "contractsWon", "min": 10 } },
+    { "id": "fiftyKills", "icon": 18, "hidden": false, "condition": { "type": "totalKills", "min": 50 } },
+    { "id": "farRoads", "icon": 19, "hidden": false, "condition": { "type": "worldsFought", "min": 10 } },
+    { "id": "legendPilot", "icon": 20, "hidden": false, "condition": { "type": "pilotSkill", "min": 9 } },
+    { "id": "goldenHands", "icon": 21, "hidden": false, "condition": { "type": "masterQuality" } },
+    { "id": "limpHome", "icon": 22, "hidden": true, "condition": { "type": "limpHome" } },
+    { "id": "debtFree", "icon": 23, "hidden": false, "condition": { "type": "loanRepaid" } },
+    { "id": "clanTrophy", "icon": 24, "hidden": false, "condition": { "type": "clanTrophy" } }
+  ]
+}

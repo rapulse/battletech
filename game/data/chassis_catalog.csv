@@ -1,0 +1,851 @@
+code,canonName,techBase,locomotion,weightClass,tonnage,reactorTier,frameTier,role,walkMP,runMP,baseHeatDiss,reactorMass,frameMass,systemsMass,maxArmorPts,defArmorMass,payloadMass,frameSlotPenalty,freeSlotsTotal,freeSlotsTorso,freeSlotsArm
+IS-H20-R1F1,"Wasp A",is,H,light,20,1,1,"Siege / Defense",5,7,10,2,2.5,4,52,2.5,9,0,37,18,6
+IS-H20-R1F2,"Stinger A",is,H,light,20,1,2,"Siege / Defense",5,7,10,2,1.5,4,52,2.5,10,5,32,15,5
+IS-H20-R1F3,"Thorn A",is,H,light,20,1,3,"Siege / Defense",5,7,10,2,1,4,52,2.5,10.5,14,24,11,3
+IS-H20-R2F1,"Wasp B",is,H,light,20,2,1,"Brawler / Line",6,9,10,3.5,2.5,4,52,2.5,7.5,0,37,18,6
+IS-H20-R2F2,"Stinger B",is,H,light,20,2,2,"Brawler / Line",6,9,10,3.5,1.5,4,52,2.5,8.5,5,32,15,5
+IS-H20-R2F3,"Thorn B",is,H,light,20,2,3,"Brawler / Line",6,9,10,3.5,1,4,52,2.5,9,14,24,11,3
+IS-H20-R3F1,"Wasp C",is,H,light,20,3,1,"Trooper / Generalist",7,10,10,5.5,2.5,4,52,2.5,5.5,0,37,18,6
+IS-H20-R3F2,"Stinger C",is,H,light,20,3,2,"Trooper / Generalist",7,10,10,5.5,1.5,4,52,2.5,6.5,5,32,15,5
+IS-H20-R3F3,"Thorn C",is,H,light,20,3,3,"Trooper / Generalist",7,10,10,5.5,1,4,52,2.5,7,14,24,11,3
+IS-H20-R4F1,"Wasp D",is,H,light,20,4,1,"Skirmisher / Cavalry",8,12,10,8,2.5,4,52,2.5,3,0,37,18,6
+IS-H20-R4F2,"Stinger D",is,H,light,20,4,2,"Skirmisher / Cavalry",8,12,10,8,1.5,4,52,2.5,4,5,32,15,5
+IS-H20-R4F3,"Thorn D",is,H,light,20,4,3,"Skirmisher / Cavalry",8,12,10,8,1,4,52,2.5,4.5,14,24,11,3
+IS-H20-R5F1,"Wasp E",is,H,light,20,5,1,"Interceptor / Scout",9,13,10,11,2.5,4,52,2,0.5,0,37,18,6
+IS-H20-R5F2,"Stinger E",is,H,light,20,5,2,"Interceptor / Scout",9,13,10,11,1.5,4,52,2.5,1,5,32,15,5
+IS-H20-R5F3,"Thorn E",is,H,light,20,5,3,"Interceptor / Scout",9,13,10,11,1,4,52,2.5,1.5,14,24,11,3
+IS-H25-R1F1,"Commando A",is,H,light,25,1,1,"Siege / Defense",5,7,10,2.5,3,4.25,66,3.5,11.75,0,37,18,6
+IS-H25-R1F2,"Javelin A",is,H,light,25,1,2,"Siege / Defense",5,7,10,2.5,2,4.25,66,3.5,12.75,5,32,15,5
+IS-H25-R1F3,"Mongoose A",is,H,light,25,1,3,"Siege / Defense",5,7,10,2.5,1.25,4.25,66,3.5,13.5,14,24,11,3
+IS-H25-R2F1,"Commando B",is,H,light,25,2,1,"Brawler / Line",6,9,10,4.5,3,4.25,66,3.5,9.75,0,37,18,6
+IS-H25-R2F2,"Javelin B",is,H,light,25,2,2,"Brawler / Line",6,9,10,4.5,2,4.25,66,3.5,10.75,5,32,15,5
+IS-H25-R2F3,"Mongoose B",is,H,light,25,2,3,"Brawler / Line",6,9,10,4.5,1.25,4.25,66,3.5,11.5,14,24,11,3
+IS-H25-R3F1,"Commando C",is,H,light,25,3,1,"Trooper / Generalist",7,10,10,7,3,4.25,66,3.5,7.25,0,37,18,6
+IS-H25-R3F2,"Javelin C",is,H,light,25,3,2,"Trooper / Generalist",7,10,10,7,2,4.25,66,3.5,8.25,5,32,15,5
+IS-H25-R3F3,"Mongoose C",is,H,light,25,3,3,"Trooper / Generalist",7,10,10,7,1.25,4.25,66,3.5,9,14,24,11,3
+IS-H25-R4F1,"Commando D",is,H,light,25,4,1,"Skirmisher / Cavalry",8,12,10,10,3,4.25,66,3.5,4.25,0,37,18,6
+IS-H25-R4F2,"Javelin D",is,H,light,25,4,2,"Skirmisher / Cavalry",8,12,10,10,2,4.25,66,3.5,5.25,5,32,15,5
+IS-H25-R4F3,"Mongoose D",is,H,light,25,4,3,"Skirmisher / Cavalry",8,12,10,10,1.25,4.25,66,3.5,6,14,24,11,3
+IS-H25-R5F1,"Commando E",is,H,light,25,5,1,"Interceptor / Scout",9,13,10,13.75,3,4.25,66,3.5,0.5,0,37,18,6
+IS-H25-R5F2,"Javelin E",is,H,light,25,5,2,"Interceptor / Scout",9,13,10,13.75,2,4.25,66,3.5,1.5,5,32,15,5
+IS-H25-R5F3,"Mongoose E",is,H,light,25,5,3,"Interceptor / Scout",9,13,10,13.75,1.25,4.25,66,3.5,2.25,14,24,11,3
+IS-H30-R1F1,"UrbanMech A",is,H,light,30,1,1,"Siege / Defense",5,7,10,3,3.5,4.5,78,4,15,0,37,18,6
+IS-H30-R1F2,"Valkyrie A",is,H,light,30,1,2,"Siege / Defense",5,7,10,3,2.5,4.5,78,4,16,5,32,15,5
+IS-H30-R1F3,"Spider A",is,H,light,30,1,3,"Siege / Defense",5,7,10,3,1.5,4.5,78,4,17,14,24,11,3
+IS-H30-R2F1,"UrbanMech B",is,H,light,30,2,1,"Brawler / Line",6,9,10,5.5,3.5,4.5,78,4,12.5,0,37,18,6
+IS-H30-R2F2,"Valkyrie B",is,H,light,30,2,2,"Brawler / Line",6,9,10,5.5,2.5,4.5,78,4,13.5,5,32,15,5
+IS-H30-R2F3,"Spider B",is,H,light,30,2,3,"Brawler / Line",6,9,10,5.5,1.5,4.5,78,4,14.5,14,24,11,3
+IS-H30-R3F1,"UrbanMech C",is,H,light,30,3,1,"Trooper / Generalist",7,10,10,8.5,3.5,4.5,78,4,9.5,0,37,18,6
+IS-H30-R3F2,"Valkyrie C",is,H,light,30,3,2,"Trooper / Generalist",7,10,10,8.5,2.5,4.5,78,4,10.5,5,32,15,5
+IS-H30-R3F3,"Spider C",is,H,light,30,3,3,"Trooper / Generalist",7,10,10,8.5,1.5,4.5,78,4,11.5,14,24,11,3
+IS-H30-R4F1,"UrbanMech D",is,H,light,30,4,1,"Skirmisher / Cavalry",8,12,10,12,3.5,4.5,78,4,6,0,37,18,6
+IS-H30-R4F2,"Valkyrie D",is,H,light,30,4,2,"Skirmisher / Cavalry",8,12,10,12,2.5,4.5,78,4,7,5,32,15,5
+IS-H30-R4F3,"Spider D",is,H,light,30,4,3,"Skirmisher / Cavalry",8,12,10,12,1.5,4.5,78,4,8,14,24,11,3
+IS-H30-R5F1,"UrbanMech E",is,H,light,30,5,1,"Interceptor / Scout",9,13,10,16.5,3.5,4.5,78,4,1.5,0,37,18,6
+IS-H30-R5F2,"Valkyrie E",is,H,light,30,5,2,"Interceptor / Scout",9,13,10,16.5,2.5,4.5,78,4,2.5,5,32,15,5
+IS-H30-R5F3,"Spider E",is,H,light,30,5,3,"Interceptor / Scout",9,13,10,16.5,1.5,4.5,78,4,3.5,14,24,11,3
+IS-H35-R1F1,"Firestarter A",is,H,light,35,1,1,"Siege / Defense",5,7,10,3.5,4.25,4.75,92,4.5,18,0,37,18,6
+IS-H35-R1F2,"Panther A",is,H,light,35,1,2,"Siege / Defense",5,7,10,3.5,2.75,4.75,92,4.5,19.5,5,32,15,5
+IS-H35-R1F3,"Wolfhound A",is,H,light,35,1,3,"Siege / Defense",5,7,10,3.5,1.75,4.75,92,4.5,20.5,14,24,11,3
+IS-H35-R2F1,"Firestarter B",is,H,light,35,2,1,"Brawler / Line",6,9,10,6.25,4.25,4.75,92,4.5,15.25,0,37,18,6
+IS-H35-R2F2,"Panther B",is,H,light,35,2,2,"Brawler / Line",6,9,10,6.25,2.75,4.75,92,4.5,16.75,5,32,15,5
+IS-H35-R2F3,"Wolfhound B",is,H,light,35,2,3,"Brawler / Line",6,9,10,6.25,1.75,4.75,92,4.5,17.75,14,24,11,3
+IS-H35-R3F1,"Firestarter C",is,H,light,35,3,1,"Trooper / Generalist",7,10,10,9.75,4.25,4.75,92,4.5,11.75,0,37,18,6
+IS-H35-R3F2,"Panther C",is,H,light,35,3,2,"Trooper / Generalist",7,10,10,9.75,2.75,4.75,92,4.5,13.25,5,32,15,5
+IS-H35-R3F3,"Wolfhound C",is,H,light,35,3,3,"Trooper / Generalist",7,10,10,9.75,1.75,4.75,92,4.5,14.25,14,24,11,3
+IS-H35-R4F1,"Firestarter D",is,H,light,35,4,1,"Skirmisher / Cavalry",8,12,10,14,4.25,4.75,92,4.5,7.5,0,37,18,6
+IS-H35-R4F2,"Panther D",is,H,light,35,4,2,"Skirmisher / Cavalry",8,12,10,14,2.75,4.75,92,4.5,9,5,32,15,5
+IS-H35-R4F3,"Wolfhound D",is,H,light,35,4,3,"Skirmisher / Cavalry",8,12,10,14,1.75,4.75,92,4.5,10,14,24,11,3
+IS-H35-R5F1,"Firestarter E",is,H,light,35,5,1,"Interceptor / Scout",9,13,10,19.25,4.25,4.75,92,4.5,2.25,0,37,18,6
+IS-H35-R5F2,"Panther E",is,H,light,35,5,2,"Interceptor / Scout",9,13,10,19.25,2.75,4.75,92,4.5,3.75,5,32,15,5
+IS-H35-R5F3,"Wolfhound E",is,H,light,35,5,3,"Interceptor / Scout",9,13,10,19.25,1.75,4.75,92,4.5,4.75,14,24,11,3
+IS-H40-R1F1,"Clint A",is,H,medium,40,1,1,"Siege / Defense",4,6,10,4,4.75,5,104,5,21.25,0,37,18,6
+IS-H40-R1F2,"Whitworth A",is,H,medium,40,1,2,"Siege / Defense",4,6,10,4,3.25,5,104,5,22.75,5,32,15,5
+IS-H40-R1F3,"Assassin A",is,H,medium,40,1,3,"Siege / Defense",4,6,10,4,2,5,104,5,24,14,24,11,3
+IS-H40-R2F1,"Clint B",is,H,medium,40,2,1,"Brawler / Line",5,7,10,7.25,4.75,5,104,5,18,0,37,18,6
+IS-H40-R2F2,"Whitworth B",is,H,medium,40,2,2,"Brawler / Line",5,7,10,7.25,3.25,5,104,5,19.5,5,32,15,5
+IS-H40-R2F3,"Assassin B",is,H,medium,40,2,3,"Brawler / Line",5,7,10,7.25,2,5,104,5,20.75,14,24,11,3
+IS-H40-R3F1,"Clint C",is,H,medium,40,3,1,"Trooper / Generalist",6,9,10,11.25,4.75,5,104,5,14,0,37,18,6
+IS-H40-R3F2,"Whitworth C",is,H,medium,40,3,2,"Trooper / Generalist",6,9,10,11.25,3.25,5,104,5,15.5,5,32,15,5
+IS-H40-R3F3,"Assassin C",is,H,medium,40,3,3,"Trooper / Generalist",6,9,10,11.25,2,5,104,5,16.75,14,24,11,3
+IS-H40-R4F1,"Clint D",is,H,medium,40,4,1,"Skirmisher / Cavalry",7,10,10,16,4.75,5,104,5,9.25,0,37,18,6
+IS-H40-R4F2,"Whitworth D",is,H,medium,40,4,2,"Skirmisher / Cavalry",7,10,10,16,3.25,5,104,5,10.75,5,32,15,5
+IS-H40-R4F3,"Assassin D",is,H,medium,40,4,3,"Skirmisher / Cavalry",7,10,10,16,2,5,104,5,12,14,24,11,3
+IS-H40-R5F1,"Clint E",is,H,medium,40,5,1,"Interceptor / Scout",8,12,10,22,4.75,5,104,5,3.25,0,37,18,6
+IS-H40-R5F2,"Whitworth E",is,H,medium,40,5,2,"Interceptor / Scout",8,12,10,22,3.25,5,104,5,4.75,5,32,15,5
+IS-H40-R5F3,"Assassin E",is,H,medium,40,5,3,"Interceptor / Scout",8,12,10,22,2,5,104,5,6,14,24,11,3
+IS-H45-R1F1,"Phoenix Hawk A",is,H,medium,45,1,1,"Siege / Defense",4,6,10,4.5,5.5,5.25,118,6,23.75,0,37,18,6
+IS-H45-R1F2,"Vindicator A",is,H,medium,45,1,2,"Siege / Defense",4,6,10,4.5,3.5,5.25,118,6,25.75,5,32,15,5
+IS-H45-R1F3,"Hatchetman A",is,H,medium,45,1,3,"Siege / Defense",4,6,10,4.5,2.25,5.25,118,6,27,14,24,11,3
+IS-H45-R2F1,"Phoenix Hawk B",is,H,medium,45,2,1,"Brawler / Line",5,7,10,8,5.5,5.25,118,6,20.25,0,37,18,6
+IS-H45-R2F2,"Vindicator B",is,H,medium,45,2,2,"Brawler / Line",5,7,10,8,3.5,5.25,118,6,22.25,5,32,15,5
+IS-H45-R2F3,"Hatchetman B",is,H,medium,45,2,3,"Brawler / Line",5,7,10,8,2.25,5.25,118,6,23.5,14,24,11,3
+IS-H45-R3F1,"Phoenix Hawk C",is,H,medium,45,3,1,"Trooper / Generalist",6,9,10,12.5,5.5,5.25,118,6,15.75,0,37,18,6
+IS-H45-R3F2,"Vindicator C",is,H,medium,45,3,2,"Trooper / Generalist",6,9,10,12.5,3.5,5.25,118,6,17.75,5,32,15,5
+IS-H45-R3F3,"Hatchetman C",is,H,medium,45,3,3,"Trooper / Generalist",6,9,10,12.5,2.25,5.25,118,6,19,14,24,11,3
+IS-H45-R4F1,"Phoenix Hawk D",is,H,medium,45,4,1,"Skirmisher / Cavalry",7,10,10,18,5.5,5.25,118,6,10.25,0,37,18,6
+IS-H45-R4F2,"Vindicator D",is,H,medium,45,4,2,"Skirmisher / Cavalry",7,10,10,18,3.5,5.25,118,6,12.25,5,32,15,5
+IS-H45-R4F3,"Hatchetman D",is,H,medium,45,4,3,"Skirmisher / Cavalry",7,10,10,18,2.25,5.25,118,6,13.5,14,24,11,3
+IS-H45-R5F1,"Phoenix Hawk E",is,H,medium,45,5,1,"Interceptor / Scout",8,12,10,24.75,5.5,5.25,118,6,3.5,0,37,18,6
+IS-H45-R5F2,"Vindicator E",is,H,medium,45,5,2,"Interceptor / Scout",8,12,10,24.75,3.5,5.25,118,6,5.5,5,32,15,5
+IS-H45-R5F3,"Hatchetman E",is,H,medium,45,5,3,"Interceptor / Scout",8,12,10,24.75,2.25,5.25,118,6,6.75,14,24,11,3
+IS-H50-R1F1,"Hunchback A",is,H,medium,50,1,1,"Siege / Defense",4,6,10,5,6,5.5,130,6.5,27,0,37,18,6
+IS-H50-R1F2,"Centurion A",is,H,medium,50,1,2,"Siege / Defense",4,6,10,5,4,5.5,130,6.5,29,5,32,15,5
+IS-H50-R1F3,"Trebuchet A",is,H,medium,50,1,3,"Siege / Defense",4,6,10,5,2.5,5.5,130,6.5,30.5,14,24,11,3
+IS-H50-R2F1,"Hunchback B",is,H,medium,50,2,1,"Brawler / Line",5,7,10,9,6,5.5,130,6.5,23,0,37,18,6
+IS-H50-R2F2,"Centurion B",is,H,medium,50,2,2,"Brawler / Line",5,7,10,9,4,5.5,130,6.5,25,5,32,15,5
+IS-H50-R2F3,"Trebuchet B",is,H,medium,50,2,3,"Brawler / Line",5,7,10,9,2.5,5.5,130,6.5,26.5,14,24,11,3
+IS-H50-R3F1,"Hunchback C",is,H,medium,50,3,1,"Trooper / Generalist",6,9,10,14,6,5.5,130,6.5,18,0,37,18,6
+IS-H50-R3F2,"Centurion C",is,H,medium,50,3,2,"Trooper / Generalist",6,9,10,14,4,5.5,130,6.5,20,5,32,15,5
+IS-H50-R3F3,"Trebuchet C",is,H,medium,50,3,3,"Trooper / Generalist",6,9,10,14,2.5,5.5,130,6.5,21.5,14,24,11,3
+IS-H50-R4F1,"Hunchback D",is,H,medium,50,4,1,"Skirmisher / Cavalry",7,10,10,20,6,5.5,130,6.5,12,0,37,18,6
+IS-H50-R4F2,"Centurion D",is,H,medium,50,4,2,"Skirmisher / Cavalry",7,10,10,20,4,5.5,130,6.5,14,5,32,15,5
+IS-H50-R4F3,"Trebuchet D",is,H,medium,50,4,3,"Skirmisher / Cavalry",7,10,10,20,2.5,5.5,130,6.5,15.5,14,24,11,3
+IS-H50-R5F1,"Hunchback E",is,H,medium,50,5,1,"Interceptor / Scout",8,12,10,27.5,6,5.5,130,6.5,4.5,0,37,18,6
+IS-H50-R5F2,"Centurion E",is,H,medium,50,5,2,"Interceptor / Scout",8,12,10,27.5,4,5.5,130,6.5,6.5,5,32,15,5
+IS-H50-R5F3,"Trebuchet E",is,H,medium,50,5,3,"Interceptor / Scout",8,12,10,27.5,2.5,5.5,130,6.5,8,14,24,11,3
+IS-H55-R1F1,"Shadow Hawk A",is,H,medium,55,1,1,"Siege / Defense",4,6,10,5.5,6.5,5.75,144,7,30.25,0,37,18,6
+IS-H55-R1F2,"Wolverine A",is,H,medium,55,1,2,"Siege / Defense",4,6,10,5.5,4.5,5.75,144,7,32.25,5,32,15,5
+IS-H55-R1F3,"Griffin A",is,H,medium,55,1,3,"Siege / Defense",4,6,10,5.5,2.75,5.75,144,7,34,14,24,11,3
+IS-H55-R2F1,"Shadow Hawk B",is,H,medium,55,2,1,"Brawler / Line",5,7,10,10,6.5,5.75,144,7,25.75,0,37,18,6
+IS-H55-R2F2,"Wolverine B",is,H,medium,55,2,2,"Brawler / Line",5,7,10,10,4.5,5.75,144,7,27.75,5,32,15,5
+IS-H55-R2F3,"Griffin B",is,H,medium,55,2,3,"Brawler / Line",5,7,10,10,2.75,5.75,144,7,29.5,14,24,11,3
+IS-H55-R3F1,"Shadow Hawk C",is,H,medium,55,3,1,"Trooper / Generalist",6,9,10,15.5,6.5,5.75,144,7,20.25,0,37,18,6
+IS-H55-R3F2,"Wolverine C",is,H,medium,55,3,2,"Trooper / Generalist",6,9,10,15.5,4.5,5.75,144,7,22.25,5,32,15,5
+IS-H55-R3F3,"Griffin C",is,H,medium,55,3,3,"Trooper / Generalist",6,9,10,15.5,2.75,5.75,144,7,24,14,24,11,3
+IS-H55-R4F1,"Shadow Hawk D",is,H,medium,55,4,1,"Skirmisher / Cavalry",7,10,10,22,6.5,5.75,144,7,13.75,0,37,18,6
+IS-H55-R4F2,"Wolverine D",is,H,medium,55,4,2,"Skirmisher / Cavalry",7,10,10,22,4.5,5.75,144,7,15.75,5,32,15,5
+IS-H55-R4F3,"Griffin D",is,H,medium,55,4,3,"Skirmisher / Cavalry",7,10,10,22,2.75,5.75,144,7,17.5,14,24,11,3
+IS-H55-R5F1,"Shadow Hawk E",is,H,medium,55,5,1,"Interceptor / Scout",8,12,10,30.25,6.5,5.75,144,7,5.5,0,37,18,6
+IS-H55-R5F2,"Wolverine E",is,H,medium,55,5,2,"Interceptor / Scout",8,12,10,30.25,4.5,5.75,144,7,7.5,5,32,15,5
+IS-H55-R5F3,"Griffin E",is,H,medium,55,5,3,"Interceptor / Scout",8,12,10,30.25,2.75,5.75,144,7,9.25,14,24,11,3
+IS-H60-R1F1,"Rifleman A",is,H,heavy,60,1,1,"Siege / Defense",3,4,10,6,7.25,6,156,8,32.75,0,37,18,6
+IS-H60-R1F2,"Quickdraw A",is,H,heavy,60,1,2,"Siege / Defense",3,4,10,6,4.75,6,156,8,35.25,5,32,15,5
+IS-H60-R1F3,"Ostroc A",is,H,heavy,60,1,3,"Siege / Defense",3,4,10,6,3,6,156,8,37,14,24,11,3
+IS-H60-R2F1,"Rifleman B",is,H,heavy,60,2,1,"Brawler / Line",4,6,10,10.75,7.25,6,156,8,28,0,37,18,6
+IS-H60-R2F2,"Quickdraw B",is,H,heavy,60,2,2,"Brawler / Line",4,6,10,10.75,4.75,6,156,8,30.5,5,32,15,5
+IS-H60-R2F3,"Ostroc B",is,H,heavy,60,2,3,"Brawler / Line",4,6,10,10.75,3,6,156,8,32.25,14,24,11,3
+IS-H60-R3F1,"Rifleman C",is,H,heavy,60,3,1,"Trooper / Generalist",5,7,10,16.75,7.25,6,156,8,22,0,37,18,6
+IS-H60-R3F2,"Quickdraw C",is,H,heavy,60,3,2,"Trooper / Generalist",5,7,10,16.75,4.75,6,156,8,24.5,5,32,15,5
+IS-H60-R3F3,"Ostroc C",is,H,heavy,60,3,3,"Trooper / Generalist",5,7,10,16.75,3,6,156,8,26.25,14,24,11,3
+IS-H60-R4F1,"Rifleman D",is,H,heavy,60,4,1,"Skirmisher / Cavalry",6,9,10,24,7.25,6,156,8,14.75,0,37,18,6
+IS-H60-R4F2,"Quickdraw D",is,H,heavy,60,4,2,"Skirmisher / Cavalry",6,9,10,24,4.75,6,156,8,17.25,5,32,15,5
+IS-H60-R4F3,"Ostroc D",is,H,heavy,60,4,3,"Skirmisher / Cavalry",6,9,10,24,3,6,156,8,19,14,24,11,3
+IS-H60-R5F1,"Rifleman E",is,H,heavy,60,5,1,"Interceptor / Scout",7,10,10,33,7.25,6,156,8,5.75,0,37,18,6
+IS-H60-R5F2,"Quickdraw E",is,H,heavy,60,5,2,"Interceptor / Scout",7,10,10,33,4.75,6,156,8,8.25,5,32,15,5
+IS-H60-R5F3,"Ostroc E",is,H,heavy,60,5,3,"Interceptor / Scout",7,10,10,33,3,6,156,8,10,14,24,11,3
+IS-H65-R1F1,"Thunderbolt A",is,H,heavy,65,1,1,"Siege / Defense",3,4,10,6.5,7.75,6.25,170,8.5,36,0,37,18,6
+IS-H65-R1F2,"JagerMech A",is,H,heavy,65,1,2,"Siege / Defense",3,4,10,6.5,5.25,6.25,170,8.5,38.5,5,32,15,5
+IS-H65-R1F3,"Crusader A",is,H,heavy,65,1,3,"Siege / Defense",3,4,10,6.5,3.25,6.25,170,8.5,40.5,14,24,11,3
+IS-H65-R2F1,"Thunderbolt B",is,H,heavy,65,2,1,"Brawler / Line",4,6,10,11.75,7.75,6.25,170,8.5,30.75,0,37,18,6
+IS-H65-R2F2,"JagerMech B",is,H,heavy,65,2,2,"Brawler / Line",4,6,10,11.75,5.25,6.25,170,8.5,33.25,5,32,15,5
+IS-H65-R2F3,"Crusader B",is,H,heavy,65,2,3,"Brawler / Line",4,6,10,11.75,3.25,6.25,170,8.5,35.25,14,24,11,3
+IS-H65-R3F1,"Thunderbolt C",is,H,heavy,65,3,1,"Trooper / Generalist",5,7,10,18.25,7.75,6.25,170,8.5,24.25,0,37,18,6
+IS-H65-R3F2,"JagerMech C",is,H,heavy,65,3,2,"Trooper / Generalist",5,7,10,18.25,5.25,6.25,170,8.5,26.75,5,32,15,5
+IS-H65-R3F3,"Crusader C",is,H,heavy,65,3,3,"Trooper / Generalist",5,7,10,18.25,3.25,6.25,170,8.5,28.75,14,24,11,3
+IS-H65-R4F1,"Thunderbolt D",is,H,heavy,65,4,1,"Skirmisher / Cavalry",6,9,10,26,7.75,6.25,170,8.5,16.5,0,37,18,6
+IS-H65-R4F2,"JagerMech D",is,H,heavy,65,4,2,"Skirmisher / Cavalry",6,9,10,26,5.25,6.25,170,8.5,19,5,32,15,5
+IS-H65-R4F3,"Crusader D",is,H,heavy,65,4,3,"Skirmisher / Cavalry",6,9,10,26,3.25,6.25,170,8.5,21,14,24,11,3
+IS-H65-R5F1,"Thunderbolt E",is,H,heavy,65,5,1,"Interceptor / Scout",7,10,10,35.75,7.75,6.25,170,8.5,6.75,0,37,18,6
+IS-H65-R5F2,"JagerMech E",is,H,heavy,65,5,2,"Interceptor / Scout",7,10,10,35.75,5.25,6.25,170,8.5,9.25,5,32,15,5
+IS-H65-R5F3,"Crusader E",is,H,heavy,65,5,3,"Interceptor / Scout",7,10,10,35.75,3.25,6.25,170,8.5,11.25,14,24,11,3
+IS-H70-R1F1,"Warhammer A",is,H,heavy,70,1,1,"Siege / Defense",3,4,10,7,8.5,6.5,182,9,39,0,37,18,6
+IS-H70-R1F2,"Archer A",is,H,heavy,70,1,2,"Siege / Defense",3,4,10,7,5.5,6.5,182,9,42,5,32,15,5
+IS-H70-R1F3,"Grasshopper A",is,H,heavy,70,1,3,"Siege / Defense",3,4,10,7,3.5,6.5,182,9,44,14,24,11,3
+IS-H70-R2F1,"Warhammer B",is,H,heavy,70,2,1,"Brawler / Line",4,6,10,12.5,8.5,6.5,182,9,33.5,0,37,18,6
+IS-H70-R2F2,"Archer B",is,H,heavy,70,2,2,"Brawler / Line",4,6,10,12.5,5.5,6.5,182,9,36.5,5,32,15,5
+IS-H70-R2F3,"Grasshopper B",is,H,heavy,70,2,3,"Brawler / Line",4,6,10,12.5,3.5,6.5,182,9,38.5,14,24,11,3
+IS-H70-R3F1,"Warhammer C",is,H,heavy,70,3,1,"Trooper / Generalist",5,7,10,19.5,8.5,6.5,182,9,26.5,0,37,18,6
+IS-H70-R3F2,"Archer C",is,H,heavy,70,3,2,"Trooper / Generalist",5,7,10,19.5,5.5,6.5,182,9,29.5,5,32,15,5
+IS-H70-R3F3,"Grasshopper C",is,H,heavy,70,3,3,"Trooper / Generalist",5,7,10,19.5,3.5,6.5,182,9,31.5,14,24,11,3
+IS-H70-R4F1,"Warhammer D",is,H,heavy,70,4,1,"Skirmisher / Cavalry",6,9,10,28,8.5,6.5,182,9,18,0,37,18,6
+IS-H70-R4F2,"Archer D",is,H,heavy,70,4,2,"Skirmisher / Cavalry",6,9,10,28,5.5,6.5,182,9,21,5,32,15,5
+IS-H70-R4F3,"Grasshopper D",is,H,heavy,70,4,3,"Skirmisher / Cavalry",6,9,10,28,3.5,6.5,182,9,23,14,24,11,3
+IS-H70-R5F1,"Warhammer E",is,H,heavy,70,5,1,"Interceptor / Scout",7,10,10,38.5,8.5,6.5,182,9,7.5,0,37,18,6
+IS-H70-R5F2,"Archer E",is,H,heavy,70,5,2,"Interceptor / Scout",7,10,10,38.5,5.5,6.5,182,9,10.5,5,32,15,5
+IS-H70-R5F3,"Grasshopper E",is,H,heavy,70,5,3,"Interceptor / Scout",7,10,10,38.5,3.5,6.5,182,9,12.5,14,24,11,3
+IS-H75-R1F1,"Flashman A",is,H,heavy,75,1,1,"Siege / Defense",3,4,10,7.5,9,6.75,196,10,41.75,0,37,18,6
+IS-H75-R1F2,"Orion A",is,H,heavy,75,1,2,"Siege / Defense",3,4,10,7.5,6,6.75,196,10,44.75,5,32,15,5
+IS-H75-R1F3,"Black Knight A",is,H,heavy,75,1,3,"Siege / Defense",3,4,10,7.5,3.75,6.75,196,10,47,14,24,11,3
+IS-H75-R2F1,"Flashman B",is,H,heavy,75,2,1,"Brawler / Line",4,6,10,13.5,9,6.75,196,10,35.75,0,37,18,6
+IS-H75-R2F2,"Orion B",is,H,heavy,75,2,2,"Brawler / Line",4,6,10,13.5,6,6.75,196,10,38.75,5,32,15,5
+IS-H75-R2F3,"Black Knight B",is,H,heavy,75,2,3,"Brawler / Line",4,6,10,13.5,3.75,6.75,196,10,41,14,24,11,3
+IS-H75-R3F1,"Flashman C",is,H,heavy,75,3,1,"Trooper / Generalist",5,7,10,21,9,6.75,196,10,28.25,0,37,18,6
+IS-H75-R3F2,"Orion C",is,H,heavy,75,3,2,"Trooper / Generalist",5,7,10,21,6,6.75,196,10,31.25,5,32,15,5
+IS-H75-R3F3,"Black Knight C",is,H,heavy,75,3,3,"Trooper / Generalist",5,7,10,21,3.75,6.75,196,10,33.5,14,24,11,3
+IS-H75-R4F1,"Flashman D",is,H,heavy,75,4,1,"Skirmisher / Cavalry",6,9,10,30,9,6.75,196,10,19.25,0,37,18,6
+IS-H75-R4F2,"Orion D",is,H,heavy,75,4,2,"Skirmisher / Cavalry",6,9,10,30,6,6.75,196,10,22.25,5,32,15,5
+IS-H75-R4F3,"Black Knight D",is,H,heavy,75,4,3,"Skirmisher / Cavalry",6,9,10,30,3.75,6.75,196,10,24.5,14,24,11,3
+IS-H75-R5F1,"Flashman E",is,H,heavy,75,5,1,"Interceptor / Scout",7,10,10,41.25,9,6.75,196,10,8,0,37,18,6
+IS-H75-R5F2,"Orion E",is,H,heavy,75,5,2,"Interceptor / Scout",7,10,10,41.25,6,6.75,196,10,11,5,32,15,5
+IS-H75-R5F3,"Black Knight E",is,H,heavy,75,5,3,"Interceptor / Scout",7,10,10,41.25,3.75,6.75,196,10,13.25,14,24,11,3
+IS-H80-R1F1,"Awesome A",is,H,assault,80,1,1,"Siege / Defense",2,3,10,8,9.5,7,208,10.5,45,0,37,18,6
+IS-H80-R1F2,"Victor A",is,H,assault,80,1,2,"Siege / Defense",2,3,10,8,6.5,7,208,10.5,48,5,32,15,5
+IS-H80-R1F3,"Zeus A",is,H,assault,80,1,3,"Siege / Defense",2,3,10,8,4,7,208,10.5,50.5,14,24,11,3
+IS-H80-R2F1,"Awesome B",is,H,assault,80,2,1,"Brawler / Line",3,4,10,14.5,9.5,7,208,10.5,38.5,0,37,18,6
+IS-H80-R2F2,"Victor B",is,H,assault,80,2,2,"Brawler / Line",3,4,10,14.5,6.5,7,208,10.5,41.5,5,32,15,5
+IS-H80-R2F3,"Zeus B",is,H,assault,80,2,3,"Brawler / Line",3,4,10,14.5,4,7,208,10.5,44,14,24,11,3
+IS-H80-R3F1,"Awesome C",is,H,assault,80,3,1,"Trooper / Generalist",4,6,10,22.5,9.5,7,208,10.5,30.5,0,37,18,6
+IS-H80-R3F2,"Victor C",is,H,assault,80,3,2,"Trooper / Generalist",4,6,10,22.5,6.5,7,208,10.5,33.5,5,32,15,5
+IS-H80-R3F3,"Zeus C",is,H,assault,80,3,3,"Trooper / Generalist",4,6,10,22.5,4,7,208,10.5,36,14,24,11,3
+IS-H80-R4F1,"Awesome D",is,H,assault,80,4,1,"Skirmisher / Cavalry",5,7,10,32,9.5,7,208,10.5,21,0,37,18,6
+IS-H80-R4F2,"Victor D",is,H,assault,80,4,2,"Skirmisher / Cavalry",5,7,10,32,6.5,7,208,10.5,24,5,32,15,5
+IS-H80-R4F3,"Zeus D",is,H,assault,80,4,3,"Skirmisher / Cavalry",5,7,10,32,4,7,208,10.5,26.5,14,24,11,3
+IS-H80-R5F1,"Awesome E",is,H,assault,80,5,1,"Interceptor / Scout",6,9,10,44,9.5,7,208,10.5,9,0,37,18,6
+IS-H80-R5F2,"Victor E",is,H,assault,80,5,2,"Interceptor / Scout",6,9,10,44,6.5,7,208,10.5,12,5,32,15,5
+IS-H80-R5F3,"Zeus E",is,H,assault,80,5,3,"Interceptor / Scout",6,9,10,44,4,7,208,10.5,14.5,14,24,11,3
+IS-H85-R1F1,"BattleMaster A",is,H,assault,85,1,1,"Siege / Defense",2,3,10,8.5,10.25,7.25,222,11,48,0,37,18,6
+IS-H85-R1F2,"Crockett A",is,H,assault,85,1,2,"Siege / Defense",2,3,10,8.5,6.75,7.25,222,11,51.5,5,32,15,5
+IS-H85-R1F3,"Shogun A",is,H,assault,85,1,3,"Siege / Defense",2,3,10,8.5,4.25,7.25,222,11,54,14,24,11,3
+IS-H85-R2F1,"BattleMaster B",is,H,assault,85,2,1,"Brawler / Line",3,4,10,15.25,10.25,7.25,222,11,41.25,0,37,18,6
+IS-H85-R2F2,"Crockett B",is,H,assault,85,2,2,"Brawler / Line",3,4,10,15.25,6.75,7.25,222,11,44.75,5,32,15,5
+IS-H85-R2F3,"Shogun B",is,H,assault,85,2,3,"Brawler / Line",3,4,10,15.25,4.25,7.25,222,11,47.25,14,24,11,3
+IS-H85-R3F1,"BattleMaster C",is,H,assault,85,3,1,"Trooper / Generalist",4,6,10,23.75,10.25,7.25,222,11,32.75,0,37,18,6
+IS-H85-R3F2,"Crockett C",is,H,assault,85,3,2,"Trooper / Generalist",4,6,10,23.75,6.75,7.25,222,11,36.25,5,32,15,5
+IS-H85-R3F3,"Shogun C",is,H,assault,85,3,3,"Trooper / Generalist",4,6,10,23.75,4.25,7.25,222,11,38.75,14,24,11,3
+IS-H85-R4F1,"BattleMaster D",is,H,assault,85,4,1,"Skirmisher / Cavalry",5,7,10,34,10.25,7.25,222,11,22.5,0,37,18,6
+IS-H85-R4F2,"Crockett D",is,H,assault,85,4,2,"Skirmisher / Cavalry",5,7,10,34,6.75,7.25,222,11,26,5,32,15,5
+IS-H85-R4F3,"Shogun D",is,H,assault,85,4,3,"Skirmisher / Cavalry",5,7,10,34,4.25,7.25,222,11,28.5,14,24,11,3
+IS-H85-R5F1,"BattleMaster E",is,H,assault,85,5,1,"Interceptor / Scout",6,9,10,46.75,10.25,7.25,222,11,9.75,0,37,18,6
+IS-H85-R5F2,"Crockett E",is,H,assault,85,5,2,"Interceptor / Scout",6,9,10,46.75,6.75,7.25,222,11,13.25,5,32,15,5
+IS-H85-R5F3,"Shogun E",is,H,assault,85,5,3,"Interceptor / Scout",6,9,10,46.75,4.25,7.25,222,11,15.75,14,24,11,3
+IS-H90-R1F1,"Highlander A",is,H,assault,90,1,1,"Siege / Defense",2,3,10,9,10.75,7.5,234,11.5,51.25,0,37,18,6
+IS-H90-R1F2,"Cyclops A",is,H,assault,90,1,2,"Siege / Defense",2,3,10,9,7.25,7.5,234,11.5,54.75,5,32,15,5
+IS-H90-R1F3,"Mauler A",is,H,assault,90,1,3,"Siege / Defense",2,3,10,9,4.5,7.5,234,11.5,57.5,14,24,11,3
+IS-H90-R2F1,"Highlander B",is,H,assault,90,2,1,"Brawler / Line",3,4,10,16.25,10.75,7.5,234,11.5,44,0,37,18,6
+IS-H90-R2F2,"Cyclops B",is,H,assault,90,2,2,"Brawler / Line",3,4,10,16.25,7.25,7.5,234,11.5,47.5,5,32,15,5
+IS-H90-R2F3,"Mauler B",is,H,assault,90,2,3,"Brawler / Line",3,4,10,16.25,4.5,7.5,234,11.5,50.25,14,24,11,3
+IS-H90-R3F1,"Highlander C",is,H,assault,90,3,1,"Trooper / Generalist",4,6,10,25.25,10.75,7.5,234,11.5,35,0,37,18,6
+IS-H90-R3F2,"Cyclops C",is,H,assault,90,3,2,"Trooper / Generalist",4,6,10,25.25,7.25,7.5,234,11.5,38.5,5,32,15,5
+IS-H90-R3F3,"Mauler C",is,H,assault,90,3,3,"Trooper / Generalist",4,6,10,25.25,4.5,7.5,234,11.5,41.25,14,24,11,3
+IS-H90-R4F1,"Highlander D",is,H,assault,90,4,1,"Skirmisher / Cavalry",5,7,10,36,10.75,7.5,234,11.5,24.25,0,37,18,6
+IS-H90-R4F2,"Cyclops D",is,H,assault,90,4,2,"Skirmisher / Cavalry",5,7,10,36,7.25,7.5,234,11.5,27.75,5,32,15,5
+IS-H90-R4F3,"Mauler D",is,H,assault,90,4,3,"Skirmisher / Cavalry",5,7,10,36,4.5,7.5,234,11.5,30.5,14,24,11,3
+IS-H90-R5F1,"Highlander E",is,H,assault,90,5,1,"Interceptor / Scout",6,9,10,49.5,10.75,7.5,234,11.5,10.75,0,37,18,6
+IS-H90-R5F2,"Cyclops E",is,H,assault,90,5,2,"Interceptor / Scout",6,9,10,49.5,7.25,7.5,234,11.5,14.25,5,32,15,5
+IS-H90-R5F3,"Mauler E",is,H,assault,90,5,3,"Interceptor / Scout",6,9,10,49.5,4.5,7.5,234,11.5,17,14,24,11,3
+IS-H95-R1F1,"Banshee A",is,H,assault,95,1,1,"Siege / Defense",2,3,10,9.5,11.5,7.75,248,12.5,53.75,0,37,18,6
+IS-H95-R1F2,"Sagittaire A",is,H,assault,95,1,2,"Siege / Defense",2,3,10,9.5,7.5,7.75,248,12.5,57.75,5,32,15,5
+IS-H95-R1F3,"Albatross A",is,H,assault,95,1,3,"Siege / Defense",2,3,10,9.5,4.75,7.75,248,12.5,60.5,14,24,11,3
+IS-H95-R2F1,"Banshee B",is,H,assault,95,2,1,"Brawler / Line",3,4,10,17,11.5,7.75,248,12.5,46.25,0,37,18,6
+IS-H95-R2F2,"Sagittaire B",is,H,assault,95,2,2,"Brawler / Line",3,4,10,17,7.5,7.75,248,12.5,50.25,5,32,15,5
+IS-H95-R2F3,"Albatross B",is,H,assault,95,2,3,"Brawler / Line",3,4,10,17,4.75,7.75,248,12.5,53,14,24,11,3
+IS-H95-R3F1,"Banshee C",is,H,assault,95,3,1,"Trooper / Generalist",4,6,10,26.5,11.5,7.75,248,12.5,36.75,0,37,18,6
+IS-H95-R3F2,"Sagittaire C",is,H,assault,95,3,2,"Trooper / Generalist",4,6,10,26.5,7.5,7.75,248,12.5,40.75,5,32,15,5
+IS-H95-R3F3,"Albatross C",is,H,assault,95,3,3,"Trooper / Generalist",4,6,10,26.5,4.75,7.75,248,12.5,43.5,14,24,11,3
+IS-H95-R4F1,"Banshee D",is,H,assault,95,4,1,"Skirmisher / Cavalry",5,7,10,38,11.5,7.75,248,12.5,25.25,0,37,18,6
+IS-H95-R4F2,"Sagittaire D",is,H,assault,95,4,2,"Skirmisher / Cavalry",5,7,10,38,7.5,7.75,248,12.5,29.25,5,32,15,5
+IS-H95-R4F3,"Albatross D",is,H,assault,95,4,3,"Skirmisher / Cavalry",5,7,10,38,4.75,7.75,248,12.5,32,14,24,11,3
+IS-H95-R5F1,"Banshee E",is,H,assault,95,5,1,"Interceptor / Scout",6,9,10,52.25,11.5,7.75,248,12.5,11,0,37,18,6
+IS-H95-R5F2,"Sagittaire E",is,H,assault,95,5,2,"Interceptor / Scout",6,9,10,52.25,7.5,7.75,248,12.5,15,5,32,15,5
+IS-H95-R5F3,"Albatross E",is,H,assault,95,5,3,"Interceptor / Scout",6,9,10,52.25,4.75,7.75,248,12.5,17.75,14,24,11,3
+IS-H100-R1F1,"Atlas A",is,H,assault,100,1,1,"Siege / Defense",2,3,10,10,12,8,260,13,57,0,37,18,6
+IS-H100-R1F2,"Devastator A",is,H,assault,100,1,2,"Siege / Defense",2,3,10,10,8,8,260,13,61,5,32,15,5
+IS-H100-R1F3,"Pillager A",is,H,assault,100,1,3,"Siege / Defense",2,3,10,10,5,8,260,13,64,14,24,11,3
+IS-H100-R2F1,"Atlas B",is,H,assault,100,2,1,"Brawler / Line",3,4,10,18,12,8,260,13,49,0,37,18,6
+IS-H100-R2F2,"Devastator B",is,H,assault,100,2,2,"Brawler / Line",3,4,10,18,8,8,260,13,53,5,32,15,5
+IS-H100-R2F3,"Pillager B",is,H,assault,100,2,3,"Brawler / Line",3,4,10,18,5,8,260,13,56,14,24,11,3
+IS-H100-R3F1,"Atlas C",is,H,assault,100,3,1,"Trooper / Generalist",4,6,10,28,12,8,260,13,39,0,37,18,6
+IS-H100-R3F2,"Devastator C",is,H,assault,100,3,2,"Trooper / Generalist",4,6,10,28,8,8,260,13,43,5,32,15,5
+IS-H100-R3F3,"Pillager C",is,H,assault,100,3,3,"Trooper / Generalist",4,6,10,28,5,8,260,13,46,14,24,11,3
+IS-H100-R4F1,"Atlas D",is,H,assault,100,4,1,"Skirmisher / Cavalry",5,7,10,40,12,8,260,13,27,0,37,18,6
+IS-H100-R4F2,"Devastator D",is,H,assault,100,4,2,"Skirmisher / Cavalry",5,7,10,40,8,8,260,13,31,5,32,15,5
+IS-H100-R4F3,"Pillager D",is,H,assault,100,4,3,"Skirmisher / Cavalry",5,7,10,40,5,8,260,13,34,14,24,11,3
+IS-H100-R5F1,"Atlas E",is,H,assault,100,5,1,"Interceptor / Scout",6,9,10,55,12,8,260,13,12,0,37,18,6
+IS-H100-R5F2,"Devastator E",is,H,assault,100,5,2,"Interceptor / Scout",6,9,10,55,8,8,260,13,16,5,32,15,5
+IS-H100-R5F3,"Pillager E",is,H,assault,100,5,3,"Interceptor / Scout",6,9,10,55,5,8,260,13,19,14,24,11,3
+IS-N20-R1F2,"Locust A",is,N,light,20,1,2,"Siege / Defense",5,7,10,2,1.5,4,52,2.5,10,5,32,15,5
+IS-N20-R1F3,"Flea A",is,N,light,20,1,3,"Siege / Defense",5,7,10,2,1,4,52,2.5,10.5,14,24,11,3
+IS-N20-R2F2,"Locust B",is,N,light,20,2,2,"Brawler / Line",6,9,10,3.5,1.5,4,52,2.5,8.5,5,32,15,5
+IS-N20-R2F3,"Flea B",is,N,light,20,2,3,"Brawler / Line",6,9,10,3.5,1,4,52,2.5,9,14,24,11,3
+IS-N20-R3F2,"Locust C",is,N,light,20,3,2,"Trooper / Generalist",7,10,10,5.5,1.5,4,52,2.5,6.5,5,32,15,5
+IS-N20-R3F3,"Flea C",is,N,light,20,3,3,"Trooper / Generalist",7,10,10,5.5,1,4,52,2.5,7,14,24,11,3
+IS-N20-R4F2,"Locust D",is,N,light,20,4,2,"Skirmisher / Cavalry",8,12,10,8,1.5,4,52,2.5,4,5,32,15,5
+IS-N20-R4F3,"Flea D",is,N,light,20,4,3,"Skirmisher / Cavalry",8,12,10,8,1,4,52,2.5,4.5,14,24,11,3
+IS-N20-R5F2,"Locust E",is,N,light,20,5,2,"Interceptor / Scout",9,13,10,11,1.5,4,52,2.5,1,5,32,15,5
+IS-N20-R5F3,"Flea E",is,N,light,20,5,3,"Interceptor / Scout",9,13,10,11,1,4,52,2.5,1.5,14,24,11,3
+IS-N25-R1F2,"Raptor A",is,N,light,25,1,2,"Siege / Defense",5,7,10,2.5,2,4.25,66,3.5,12.75,5,32,15,5
+IS-N25-R1F3,"Tarantula A",is,N,light,25,1,3,"Siege / Defense",5,7,10,2.5,1.25,4.25,66,3.5,13.5,14,24,11,3
+IS-N25-R2F2,"Raptor B",is,N,light,25,2,2,"Brawler / Line",6,9,10,4.5,2,4.25,66,3.5,10.75,5,32,15,5
+IS-N25-R2F3,"Tarantula B",is,N,light,25,2,3,"Brawler / Line",6,9,10,4.5,1.25,4.25,66,3.5,11.5,14,24,11,3
+IS-N25-R3F2,"Raptor C",is,N,light,25,3,2,"Trooper / Generalist",7,10,10,7,2,4.25,66,3.5,8.25,5,32,15,5
+IS-N25-R3F3,"Tarantula C",is,N,light,25,3,3,"Trooper / Generalist",7,10,10,7,1.25,4.25,66,3.5,9,14,24,11,3
+IS-N25-R4F2,"Raptor D",is,N,light,25,4,2,"Skirmisher / Cavalry",8,12,10,10,2,4.25,66,3.5,5.25,5,32,15,5
+IS-N25-R4F3,"Tarantula D",is,N,light,25,4,3,"Skirmisher / Cavalry",8,12,10,10,1.25,4.25,66,3.5,6,14,24,11,3
+IS-N25-R5F2,"Raptor E",is,N,light,25,5,2,"Interceptor / Scout",9,13,10,13.75,2,4.25,66,3.5,1.5,5,32,15,5
+IS-N25-R5F3,"Tarantula E",is,N,light,25,5,3,"Interceptor / Scout",9,13,10,13.75,1.25,4.25,66,3.5,2.25,14,24,11,3
+IS-N30-R1F2,"Hussar A",is,N,light,30,1,2,"Siege / Defense",5,7,10,3,2.5,4.5,78,4,16,5,32,15,5
+IS-N30-R1F3,"Osiris A",is,N,light,30,1,3,"Siege / Defense",5,7,10,3,1.5,4.5,78,4,17,14,24,11,3
+IS-N30-R2F2,"Hussar B",is,N,light,30,2,2,"Brawler / Line",6,9,10,5.5,2.5,4.5,78,4,13.5,5,32,15,5
+IS-N30-R2F3,"Osiris B",is,N,light,30,2,3,"Brawler / Line",6,9,10,5.5,1.5,4.5,78,4,14.5,14,24,11,3
+IS-N30-R3F2,"Hussar C",is,N,light,30,3,2,"Trooper / Generalist",7,10,10,8.5,2.5,4.5,78,4,10.5,5,32,15,5
+IS-N30-R3F3,"Osiris C",is,N,light,30,3,3,"Trooper / Generalist",7,10,10,8.5,1.5,4.5,78,4,11.5,14,24,11,3
+IS-N30-R4F2,"Hussar D",is,N,light,30,4,2,"Skirmisher / Cavalry",8,12,10,12,2.5,4.5,78,4,7,5,32,15,5
+IS-N30-R4F3,"Osiris D",is,N,light,30,4,3,"Skirmisher / Cavalry",8,12,10,12,1.5,4.5,78,4,8,14,24,11,3
+IS-N30-R5F2,"Hussar E",is,N,light,30,5,2,"Interceptor / Scout",9,13,10,16.5,2.5,4.5,78,4,2.5,5,32,15,5
+IS-N30-R5F3,"Osiris E",is,N,light,30,5,3,"Interceptor / Scout",9,13,10,16.5,1.5,4.5,78,4,3.5,14,24,11,3
+IS-N35-R1F2,"Jenner A",is,N,light,35,1,2,"Siege / Defense",5,7,10,3.5,2.75,4.75,92,4.5,19.5,5,32,15,5
+IS-N35-R1F3,"Raven A",is,N,light,35,1,3,"Siege / Defense",5,7,10,3.5,1.75,4.75,92,4.5,20.5,14,24,11,3
+IS-N35-R2F2,"Jenner B",is,N,light,35,2,2,"Brawler / Line",6,9,10,6.25,2.75,4.75,92,4.5,16.75,5,32,15,5
+IS-N35-R2F3,"Raven B",is,N,light,35,2,3,"Brawler / Line",6,9,10,6.25,1.75,4.75,92,4.5,17.75,14,24,11,3
+IS-N35-R3F2,"Jenner C",is,N,light,35,3,2,"Trooper / Generalist",7,10,10,9.75,2.75,4.75,92,4.5,13.25,5,32,15,5
+IS-N35-R3F3,"Raven C",is,N,light,35,3,3,"Trooper / Generalist",7,10,10,9.75,1.75,4.75,92,4.5,14.25,14,24,11,3
+IS-N35-R4F2,"Jenner D",is,N,light,35,4,2,"Skirmisher / Cavalry",8,12,10,14,2.75,4.75,92,4.5,9,5,32,15,5
+IS-N35-R4F3,"Raven D",is,N,light,35,4,3,"Skirmisher / Cavalry",8,12,10,14,1.75,4.75,92,4.5,10,14,24,11,3
+IS-N35-R5F2,"Jenner E",is,N,light,35,5,2,"Interceptor / Scout",9,13,10,19.25,2.75,4.75,92,4.5,3.75,5,32,15,5
+IS-N35-R5F3,"Raven E",is,N,light,35,5,3,"Interceptor / Scout",9,13,10,19.25,1.75,4.75,92,4.5,4.75,14,24,11,3
+IS-N40-R1F2,"Cicada A",is,N,medium,40,1,2,"Siege / Defense",4,6,10,4,3.25,5,104,5,22.75,5,32,15,5
+IS-N40-R1F3,"Chimera A",is,N,medium,40,1,3,"Siege / Defense",4,6,10,4,2,5,104,5,24,14,24,11,3
+IS-N40-R2F2,"Cicada B",is,N,medium,40,2,2,"Brawler / Line",5,7,10,7.25,3.25,5,104,5,19.5,5,32,15,5
+IS-N40-R2F3,"Chimera B",is,N,medium,40,2,3,"Brawler / Line",5,7,10,7.25,2,5,104,5,20.75,14,24,11,3
+IS-N40-R3F2,"Cicada C",is,N,medium,40,3,2,"Trooper / Generalist",6,9,10,11.25,3.25,5,104,5,15.5,5,32,15,5
+IS-N40-R3F3,"Chimera C",is,N,medium,40,3,3,"Trooper / Generalist",6,9,10,11.25,2,5,104,5,16.75,14,24,11,3
+IS-N40-R4F2,"Cicada D",is,N,medium,40,4,2,"Skirmisher / Cavalry",7,10,10,16,3.25,5,104,5,10.75,5,32,15,5
+IS-N40-R4F3,"Chimera D",is,N,medium,40,4,3,"Skirmisher / Cavalry",7,10,10,16,2,5,104,5,12,14,24,11,3
+IS-N40-R5F2,"Cicada E",is,N,medium,40,5,2,"Interceptor / Scout",8,12,10,22,3.25,5,104,5,4.75,5,32,15,5
+IS-N40-R5F3,"Chimera E",is,N,medium,40,5,3,"Interceptor / Scout",8,12,10,22,2,5,104,5,6,14,24,11,3
+IS-N45-R1F2,"Hollander II A",is,N,medium,45,1,2,"Siege / Defense",4,6,10,4.5,3.5,5.25,118,6,25.75,5,32,15,5
+IS-N45-R1F3,"Scarab A",is,N,medium,45,1,3,"Siege / Defense",4,6,10,4.5,2.25,5.25,118,6,27,14,24,11,3
+IS-N45-R2F2,"Hollander II B",is,N,medium,45,2,2,"Brawler / Line",5,7,10,8,3.5,5.25,118,6,22.25,5,32,15,5
+IS-N45-R2F3,"Scarab B",is,N,medium,45,2,3,"Brawler / Line",5,7,10,8,2.25,5.25,118,6,23.5,14,24,11,3
+IS-N45-R3F2,"Hollander II C",is,N,medium,45,3,2,"Trooper / Generalist",6,9,10,12.5,3.5,5.25,118,6,17.75,5,32,15,5
+IS-N45-R3F3,"Scarab C",is,N,medium,45,3,3,"Trooper / Generalist",6,9,10,12.5,2.25,5.25,118,6,19,14,24,11,3
+IS-N45-R4F2,"Hollander II D",is,N,medium,45,4,2,"Skirmisher / Cavalry",7,10,10,18,3.5,5.25,118,6,12.25,5,32,15,5
+IS-N45-R4F3,"Scarab D",is,N,medium,45,4,3,"Skirmisher / Cavalry",7,10,10,18,2.25,5.25,118,6,13.5,14,24,11,3
+IS-N45-R5F2,"Hollander II E",is,N,medium,45,5,2,"Interceptor / Scout",8,12,10,24.75,3.5,5.25,118,6,5.5,5,32,15,5
+IS-N45-R5F3,"Scarab E",is,N,medium,45,5,3,"Interceptor / Scout",8,12,10,24.75,2.25,5.25,118,6,6.75,14,24,11,3
+IS-N50-R1F2,"Uziel A",is,N,medium,50,1,2,"Siege / Defense",4,6,10,5,4,5.5,130,6.5,29,5,32,15,5
+IS-N50-R1F3,"Legionnaire A",is,N,medium,50,1,3,"Siege / Defense",4,6,10,5,2.5,5.5,130,6.5,30.5,14,24,11,3
+IS-N50-R2F2,"Uziel B",is,N,medium,50,2,2,"Brawler / Line",5,7,10,9,4,5.5,130,6.5,25,5,32,15,5
+IS-N50-R2F3,"Legionnaire B",is,N,medium,50,2,3,"Brawler / Line",5,7,10,9,2.5,5.5,130,6.5,26.5,14,24,11,3
+IS-N50-R3F2,"Uziel C",is,N,medium,50,3,2,"Trooper / Generalist",6,9,10,14,4,5.5,130,6.5,20,5,32,15,5
+IS-N50-R3F3,"Legionnaire C",is,N,medium,50,3,3,"Trooper / Generalist",6,9,10,14,2.5,5.5,130,6.5,21.5,14,24,11,3
+IS-N50-R4F2,"Uziel D",is,N,medium,50,4,2,"Skirmisher / Cavalry",7,10,10,20,4,5.5,130,6.5,14,5,32,15,5
+IS-N50-R4F3,"Legionnaire D",is,N,medium,50,4,3,"Skirmisher / Cavalry",7,10,10,20,2.5,5.5,130,6.5,15.5,14,24,11,3
+IS-N50-R5F2,"Uziel E",is,N,medium,50,5,2,"Interceptor / Scout",8,12,10,27.5,4,5.5,130,6.5,6.5,5,32,15,5
+IS-N50-R5F3,"Legionnaire E",is,N,medium,50,5,3,"Interceptor / Scout",8,12,10,27.5,2.5,5.5,130,6.5,8,14,24,11,3
+IS-N55-R1F2,"Bushwacker A",is,N,medium,55,1,2,"Siege / Defense",4,6,10,5.5,4.5,5.75,144,7,32.25,5,32,15,5
+IS-N55-R1F3,"Scorpion A",is,N,medium,55,1,3,"Siege / Defense",4,6,10,5.5,2.75,5.75,144,7,34,14,24,11,3
+IS-N55-R2F2,"Bushwacker B",is,N,medium,55,2,2,"Brawler / Line",5,7,10,10,4.5,5.75,144,7,27.75,5,32,15,5
+IS-N55-R2F3,"Scorpion B",is,N,medium,55,2,3,"Brawler / Line",5,7,10,10,2.75,5.75,144,7,29.5,14,24,11,3
+IS-N55-R3F2,"Bushwacker C",is,N,medium,55,3,2,"Trooper / Generalist",6,9,10,15.5,4.5,5.75,144,7,22.25,5,32,15,5
+IS-N55-R3F3,"Scorpion C",is,N,medium,55,3,3,"Trooper / Generalist",6,9,10,15.5,2.75,5.75,144,7,24,14,24,11,3
+IS-N55-R4F2,"Bushwacker D",is,N,medium,55,4,2,"Skirmisher / Cavalry",7,10,10,22,4.5,5.75,144,7,15.75,5,32,15,5
+IS-N55-R4F3,"Scorpion D",is,N,medium,55,4,3,"Skirmisher / Cavalry",7,10,10,22,2.75,5.75,144,7,17.5,14,24,11,3
+IS-N55-R5F2,"Bushwacker E",is,N,medium,55,5,2,"Interceptor / Scout",8,12,10,30.25,4.5,5.75,144,7,7.5,5,32,15,5
+IS-N55-R5F3,"Scorpion E",is,N,medium,55,5,3,"Interceptor / Scout",8,12,10,30.25,2.75,5.75,144,7,9.25,14,24,11,3
+IS-N60-R1F2,"Champion A",is,N,heavy,60,1,2,"Siege / Defense",3,4,10,6,4.75,6,156,8,35.25,5,32,15,5
+IS-N60-R1F3,"Yeoman A",is,N,heavy,60,1,3,"Siege / Defense",3,4,10,6,3,6,156,8,37,14,24,11,3
+IS-N60-R2F2,"Champion B",is,N,heavy,60,2,2,"Brawler / Line",4,6,10,10.75,4.75,6,156,8,30.5,5,32,15,5
+IS-N60-R2F3,"Yeoman B",is,N,heavy,60,2,3,"Brawler / Line",4,6,10,10.75,3,6,156,8,32.25,14,24,11,3
+IS-N60-R3F2,"Champion C",is,N,heavy,60,3,2,"Trooper / Generalist",5,7,10,16.75,4.75,6,156,8,24.5,5,32,15,5
+IS-N60-R3F3,"Yeoman C",is,N,heavy,60,3,3,"Trooper / Generalist",5,7,10,16.75,3,6,156,8,26.25,14,24,11,3
+IS-N60-R4F2,"Champion D",is,N,heavy,60,4,2,"Skirmisher / Cavalry",6,9,10,24,4.75,6,156,8,17.25,5,32,15,5
+IS-N60-R4F3,"Yeoman D",is,N,heavy,60,4,3,"Skirmisher / Cavalry",6,9,10,24,3,6,156,8,19,14,24,11,3
+IS-N60-R5F2,"Champion E",is,N,heavy,60,5,2,"Interceptor / Scout",7,10,10,33,4.75,6,156,8,8.25,5,32,15,5
+IS-N60-R5F3,"Yeoman E",is,N,heavy,60,5,3,"Interceptor / Scout",7,10,10,33,3,6,156,8,10,14,24,11,3
+IS-N65-R1F2,"Catapult A",is,N,heavy,65,1,2,"Siege / Defense",3,4,10,6.5,5.25,6.25,170,8.5,38.5,5,32,15,5
+IS-N65-R1F3,"Bombardier A",is,N,heavy,65,1,3,"Siege / Defense",3,4,10,6.5,3.25,6.25,170,8.5,40.5,14,24,11,3
+IS-N65-R2F2,"Catapult B",is,N,heavy,65,2,2,"Brawler / Line",4,6,10,11.75,5.25,6.25,170,8.5,33.25,5,32,15,5
+IS-N65-R2F3,"Bombardier B",is,N,heavy,65,2,3,"Brawler / Line",4,6,10,11.75,3.25,6.25,170,8.5,35.25,14,24,11,3
+IS-N65-R3F2,"Catapult C",is,N,heavy,65,3,2,"Trooper / Generalist",5,7,10,18.25,5.25,6.25,170,8.5,26.75,5,32,15,5
+IS-N65-R3F3,"Bombardier C",is,N,heavy,65,3,3,"Trooper / Generalist",5,7,10,18.25,3.25,6.25,170,8.5,28.75,14,24,11,3
+IS-N65-R4F2,"Catapult D",is,N,heavy,65,4,2,"Skirmisher / Cavalry",6,9,10,26,5.25,6.25,170,8.5,19,5,32,15,5
+IS-N65-R4F3,"Bombardier D",is,N,heavy,65,4,3,"Skirmisher / Cavalry",6,9,10,26,3.25,6.25,170,8.5,21,14,24,11,3
+IS-N65-R5F2,"Catapult E",is,N,heavy,65,5,2,"Interceptor / Scout",7,10,10,35.75,5.25,6.25,170,8.5,9.25,5,32,15,5
+IS-N65-R5F3,"Bombardier E",is,N,heavy,65,5,3,"Interceptor / Scout",7,10,10,35.75,3.25,6.25,170,8.5,11.25,14,24,11,3
+IS-N70-R1F2,"Avatar A",is,N,heavy,70,1,2,"Siege / Defense",3,4,10,7,5.5,6.5,182,9,42,5,32,15,5
+IS-N70-R1F3,"Barghest A",is,N,heavy,70,1,3,"Siege / Defense",3,4,10,7,3.5,6.5,182,9,44,14,24,11,3
+IS-N70-R2F2,"Avatar B",is,N,heavy,70,2,2,"Brawler / Line",4,6,10,12.5,5.5,6.5,182,9,36.5,5,32,15,5
+IS-N70-R2F3,"Barghest B",is,N,heavy,70,2,3,"Brawler / Line",4,6,10,12.5,3.5,6.5,182,9,38.5,14,24,11,3
+IS-N70-R3F2,"Avatar C",is,N,heavy,70,3,2,"Trooper / Generalist",5,7,10,19.5,5.5,6.5,182,9,29.5,5,32,15,5
+IS-N70-R3F3,"Barghest C",is,N,heavy,70,3,3,"Trooper / Generalist",5,7,10,19.5,3.5,6.5,182,9,31.5,14,24,11,3
+IS-N70-R4F2,"Avatar D",is,N,heavy,70,4,2,"Skirmisher / Cavalry",6,9,10,28,5.5,6.5,182,9,21,5,32,15,5
+IS-N70-R4F3,"Barghest D",is,N,heavy,70,4,3,"Skirmisher / Cavalry",6,9,10,28,3.5,6.5,182,9,23,14,24,11,3
+IS-N70-R5F2,"Avatar E",is,N,heavy,70,5,2,"Interceptor / Scout",7,10,10,38.5,5.5,6.5,182,9,10.5,5,32,15,5
+IS-N70-R5F3,"Barghest E",is,N,heavy,70,5,3,"Interceptor / Scout",7,10,10,38.5,3.5,6.5,182,9,12.5,14,24,11,3
+IS-N75-R1F2,"Marauder A",is,N,heavy,75,1,2,"Siege / Defense",3,4,10,7.5,6,6.75,196,10,44.75,5,32,15,5
+IS-N75-R1F3,"Rakshasa A",is,N,heavy,75,1,3,"Siege / Defense",3,4,10,7.5,3.75,6.75,196,10,47,14,24,11,3
+IS-N75-R2F2,"Marauder B",is,N,heavy,75,2,2,"Brawler / Line",4,6,10,13.5,6,6.75,196,10,38.75,5,32,15,5
+IS-N75-R2F3,"Rakshasa B",is,N,heavy,75,2,3,"Brawler / Line",4,6,10,13.5,3.75,6.75,196,10,41,14,24,11,3
+IS-N75-R3F2,"Marauder C",is,N,heavy,75,3,2,"Trooper / Generalist",5,7,10,21,6,6.75,196,10,31.25,5,32,15,5
+IS-N75-R3F3,"Rakshasa C",is,N,heavy,75,3,3,"Trooper / Generalist",5,7,10,21,3.75,6.75,196,10,33.5,14,24,11,3
+IS-N75-R4F2,"Marauder D",is,N,heavy,75,4,2,"Skirmisher / Cavalry",6,9,10,30,6,6.75,196,10,22.25,5,32,15,5
+IS-N75-R4F3,"Rakshasa D",is,N,heavy,75,4,3,"Skirmisher / Cavalry",6,9,10,30,3.75,6.75,196,10,24.5,14,24,11,3
+IS-N75-R5F2,"Marauder E",is,N,heavy,75,5,2,"Interceptor / Scout",7,10,10,41.25,6,6.75,196,10,11,5,32,15,5
+IS-N75-R5F3,"Rakshasa E",is,N,heavy,75,5,3,"Interceptor / Scout",7,10,10,41.25,3.75,6.75,196,10,13.25,14,24,11,3
+IS-N80-R1F2,"Goliath A",is,N,assault,80,1,2,"Siege / Defense",2,3,10,8,6.5,7,208,10.5,48,5,32,15,5
+IS-N80-R1F3,"O-Bakemono A",is,N,assault,80,1,3,"Siege / Defense",2,3,10,8,4,7,208,10.5,50.5,14,24,11,3
+IS-N80-R2F2,"Goliath B",is,N,assault,80,2,2,"Brawler / Line",3,4,10,14.5,6.5,7,208,10.5,41.5,5,32,15,5
+IS-N80-R2F3,"O-Bakemono B",is,N,assault,80,2,3,"Brawler / Line",3,4,10,14.5,4,7,208,10.5,44,14,24,11,3
+IS-N80-R3F2,"Goliath C",is,N,assault,80,3,2,"Trooper / Generalist",4,6,10,22.5,6.5,7,208,10.5,33.5,5,32,15,5
+IS-N80-R3F3,"O-Bakemono C",is,N,assault,80,3,3,"Trooper / Generalist",4,6,10,22.5,4,7,208,10.5,36,14,24,11,3
+IS-N80-R4F2,"Goliath D",is,N,assault,80,4,2,"Skirmisher / Cavalry",5,7,10,32,6.5,7,208,10.5,24,5,32,15,5
+IS-N80-R4F3,"O-Bakemono D",is,N,assault,80,4,3,"Skirmisher / Cavalry",5,7,10,32,4,7,208,10.5,26.5,14,24,11,3
+IS-N80-R5F2,"Goliath E",is,N,assault,80,5,2,"Interceptor / Scout",6,9,10,44,6.5,7,208,10.5,12,5,32,15,5
+IS-N80-R5F3,"O-Bakemono E",is,N,assault,80,5,3,"Interceptor / Scout",6,9,10,44,4,7,208,10.5,14.5,14,24,11,3
+IS-N85-R1F2,"Stalker A",is,N,assault,85,1,2,"Siege / Defense",2,3,10,8.5,6.75,7.25,222,11,51.5,5,32,15,5
+IS-N85-R1F3,"Longbow A",is,N,assault,85,1,3,"Siege / Defense",2,3,10,8.5,4.25,7.25,222,11,54,14,24,11,3
+IS-N85-R2F2,"Stalker B",is,N,assault,85,2,2,"Brawler / Line",3,4,10,15.25,6.75,7.25,222,11,44.75,5,32,15,5
+IS-N85-R2F3,"Longbow B",is,N,assault,85,2,3,"Brawler / Line",3,4,10,15.25,4.25,7.25,222,11,47.25,14,24,11,3
+IS-N85-R3F2,"Stalker C",is,N,assault,85,3,2,"Trooper / Generalist",4,6,10,23.75,6.75,7.25,222,11,36.25,5,32,15,5
+IS-N85-R3F3,"Longbow C",is,N,assault,85,3,3,"Trooper / Generalist",4,6,10,23.75,4.25,7.25,222,11,38.75,14,24,11,3
+IS-N85-R4F2,"Stalker D",is,N,assault,85,4,2,"Skirmisher / Cavalry",5,7,10,34,6.75,7.25,222,11,26,5,32,15,5
+IS-N85-R4F3,"Longbow D",is,N,assault,85,4,3,"Skirmisher / Cavalry",5,7,10,34,4.25,7.25,222,11,28.5,14,24,11,3
+IS-N85-R5F2,"Stalker E",is,N,assault,85,5,2,"Interceptor / Scout",6,9,10,46.75,6.75,7.25,222,11,13.25,5,32,15,5
+IS-N85-R5F3,"Longbow E",is,N,assault,85,5,3,"Interceptor / Scout",6,9,10,46.75,4.25,7.25,222,11,15.75,14,24,11,3
+IS-N90-R1F2,"Gorgon A",is,N,assault,90,1,2,"Siege / Defense",2,3,10,9,7.25,7.5,234,11.5,54.75,5,32,15,5
+IS-N90-R1F3,"Mastodon A",is,N,assault,90,1,3,"Siege / Defense",2,3,10,9,4.5,7.5,234,11.5,57.5,14,24,11,3
+IS-N90-R2F2,"Gorgon B",is,N,assault,90,2,2,"Brawler / Line",3,4,10,16.25,7.25,7.5,234,11.5,47.5,5,32,15,5
+IS-N90-R2F3,"Mastodon B",is,N,assault,90,2,3,"Brawler / Line",3,4,10,16.25,4.5,7.5,234,11.5,50.25,14,24,11,3
+IS-N90-R3F2,"Gorgon C",is,N,assault,90,3,2,"Trooper / Generalist",4,6,10,25.25,7.25,7.5,234,11.5,38.5,5,32,15,5
+IS-N90-R3F3,"Mastodon C",is,N,assault,90,3,3,"Trooper / Generalist",4,6,10,25.25,4.5,7.5,234,11.5,41.25,14,24,11,3
+IS-N90-R4F2,"Gorgon D",is,N,assault,90,4,2,"Skirmisher / Cavalry",5,7,10,36,7.25,7.5,234,11.5,27.75,5,32,15,5
+IS-N90-R4F3,"Mastodon D",is,N,assault,90,4,3,"Skirmisher / Cavalry",5,7,10,36,4.5,7.5,234,11.5,30.5,14,24,11,3
+IS-N90-R5F2,"Gorgon E",is,N,assault,90,5,2,"Interceptor / Scout",6,9,10,49.5,7.25,7.5,234,11.5,14.25,5,32,15,5
+IS-N90-R5F3,"Mastodon E",is,N,assault,90,5,3,"Interceptor / Scout",6,9,10,49.5,4.5,7.5,234,11.5,17,14,24,11,3
+IS-N95-R1F2,"Sirocco A",is,N,assault,95,1,2,"Siege / Defense",2,3,10,9.5,7.5,7.75,248,12.5,57.75,5,32,15,5
+IS-N95-R1F3,"Tarrasque A",is,N,assault,95,1,3,"Siege / Defense",2,3,10,9.5,4.75,7.75,248,12.5,60.5,14,24,11,3
+IS-N95-R2F2,"Sirocco B",is,N,assault,95,2,2,"Brawler / Line",3,4,10,17,7.5,7.75,248,12.5,50.25,5,32,15,5
+IS-N95-R2F3,"Tarrasque B",is,N,assault,95,2,3,"Brawler / Line",3,4,10,17,4.75,7.75,248,12.5,53,14,24,11,3
+IS-N95-R3F2,"Sirocco C",is,N,assault,95,3,2,"Trooper / Generalist",4,6,10,26.5,7.5,7.75,248,12.5,40.75,5,32,15,5
+IS-N95-R3F3,"Tarrasque C",is,N,assault,95,3,3,"Trooper / Generalist",4,6,10,26.5,4.75,7.75,248,12.5,43.5,14,24,11,3
+IS-N95-R4F2,"Sirocco D",is,N,assault,95,4,2,"Skirmisher / Cavalry",5,7,10,38,7.5,7.75,248,12.5,29.25,5,32,15,5
+IS-N95-R4F3,"Tarrasque D",is,N,assault,95,4,3,"Skirmisher / Cavalry",5,7,10,38,4.75,7.75,248,12.5,32,14,24,11,3
+IS-N95-R5F2,"Sirocco E",is,N,assault,95,5,2,"Interceptor / Scout",6,9,10,52.25,7.5,7.75,248,12.5,15,5,32,15,5
+IS-N95-R5F3,"Tarrasque E",is,N,assault,95,5,3,"Interceptor / Scout",6,9,10,52.25,4.75,7.75,248,12.5,17.75,14,24,11,3
+IS-N100-R1F2,"King Crab A",is,N,assault,100,1,2,"Siege / Defense",2,3,10,10,8,8,260,13,61,5,32,15,5
+IS-N100-R1F3,"Annihilator A",is,N,assault,100,1,3,"Siege / Defense",2,3,10,10,5,8,260,13,64,14,24,11,3
+IS-N100-R2F2,"King Crab B",is,N,assault,100,2,2,"Brawler / Line",3,4,10,18,8,8,260,13,53,5,32,15,5
+IS-N100-R2F3,"Annihilator B",is,N,assault,100,2,3,"Brawler / Line",3,4,10,18,5,8,260,13,56,14,24,11,3
+IS-N100-R3F2,"King Crab C",is,N,assault,100,3,2,"Trooper / Generalist",4,6,10,28,8,8,260,13,43,5,32,15,5
+IS-N100-R3F3,"Annihilator C",is,N,assault,100,3,3,"Trooper / Generalist",4,6,10,28,5,8,260,13,46,14,24,11,3
+IS-N100-R4F2,"King Crab D",is,N,assault,100,4,2,"Skirmisher / Cavalry",5,7,10,40,8,8,260,13,31,5,32,15,5
+IS-N100-R4F3,"Annihilator D",is,N,assault,100,4,3,"Skirmisher / Cavalry",5,7,10,40,5,8,260,13,34,14,24,11,3
+IS-N100-R5F2,"King Crab E",is,N,assault,100,5,2,"Interceptor / Scout",6,9,10,55,8,8,260,13,16,5,32,15,5
+IS-N100-R5F3,"Annihilator E",is,N,assault,100,5,3,"Interceptor / Scout",6,9,10,55,5,8,260,13,19,14,24,11,3
+CL-H20-R1F1,"Piranha A",clan,H,light,20,1,1,"Siege / Defense",5,7,20,1.5,2.5,4,52,2,10,0,37,18,6
+CL-H20-R1F2,"Baboon (Howler) A",clan,H,light,20,1,2,"Siege / Defense",5,7,20,1.5,1.5,4,52,2,11,3,35,16,6
+CL-H20-R1F3,"Fire Moth (Dasher) A",clan,H,light,20,1,3,"Siege / Defense",5,7,20,1.5,1,4,52,2,11.5,7,31,14,5
+CL-H20-R2F1,"Piranha B",clan,H,light,20,2,1,"Brawler / Line",6,9,20,2.5,2.5,4,52,2,9,0,37,18,6
+CL-H20-R2F2,"Baboon (Howler) B",clan,H,light,20,2,2,"Brawler / Line",6,9,20,2.5,1.5,4,52,2,10,3,35,16,6
+CL-H20-R2F3,"Fire Moth (Dasher) B",clan,H,light,20,2,3,"Brawler / Line",6,9,20,2.5,1,4,52,2,10.5,7,31,14,5
+CL-H20-R3F1,"Piranha C",clan,H,light,20,3,1,"Trooper / Generalist",7,10,20,4,2.5,4,52,2,7.5,0,37,18,6
+CL-H20-R3F2,"Baboon (Howler) C",clan,H,light,20,3,2,"Trooper / Generalist",7,10,20,4,1.5,4,52,2,8.5,3,35,16,6
+CL-H20-R3F3,"Fire Moth (Dasher) C",clan,H,light,20,3,3,"Trooper / Generalist",7,10,20,4,1,4,52,2,9,7,31,14,5
+CL-H20-R4F1,"Piranha D",clan,H,light,20,4,1,"Skirmisher / Cavalry",8,12,20,5.5,2.5,4,52,2,6,0,37,18,6
+CL-H20-R4F2,"Baboon (Howler) D",clan,H,light,20,4,2,"Skirmisher / Cavalry",8,12,20,5.5,1.5,4,52,2,7,3,35,16,6
+CL-H20-R4F3,"Fire Moth (Dasher) D",clan,H,light,20,4,3,"Skirmisher / Cavalry",8,12,20,5.5,1,4,52,2,7.5,7,31,14,5
+CL-H20-R5F1,"Piranha E",clan,H,light,20,5,1,"Interceptor / Scout",9,13,20,7.5,2.5,4,52,2,4,0,37,18,6
+CL-H20-R5F2,"Baboon (Howler) E",clan,H,light,20,5,2,"Interceptor / Scout",9,13,20,7.5,1.5,4,52,2,5,3,35,16,6
+CL-H20-R5F3,"Fire Moth (Dasher) E",clan,H,light,20,5,3,"Interceptor / Scout",9,13,20,7.5,1,4,52,2,5.5,7,31,14,5
+CL-H25-R1F1,"Commando IIC A",clan,H,light,25,1,1,"Siege / Defense",5,7,20,1.75,3,4.25,66,2.5,13.5,0,37,18,6
+CL-H25-R1F2,"Mongoose IIC A",clan,H,light,25,1,2,"Siege / Defense",5,7,20,1.75,2,4.25,66,2.5,14.5,3,35,16,6
+CL-H25-R1F3,"Icestorm A",clan,H,light,25,1,3,"Siege / Defense",5,7,20,1.75,1.25,4.25,66,2.5,15.25,7,31,14,5
+CL-H25-R2F1,"Commando IIC B",clan,H,light,25,2,1,"Brawler / Line",6,9,20,3.25,3,4.25,66,2.5,12,0,37,18,6
+CL-H25-R2F2,"Mongoose IIC B",clan,H,light,25,2,2,"Brawler / Line",6,9,20,3.25,2,4.25,66,2.5,13,3,35,16,6
+CL-H25-R2F3,"Icestorm B",clan,H,light,25,2,3,"Brawler / Line",6,9,20,3.25,1.25,4.25,66,2.5,13.75,7,31,14,5
+CL-H25-R3F1,"Commando IIC C",clan,H,light,25,3,1,"Trooper / Generalist",7,10,20,5,3,4.25,66,2.5,10.25,0,37,18,6
+CL-H25-R3F2,"Mongoose IIC C",clan,H,light,25,3,2,"Trooper / Generalist",7,10,20,5,2,4.25,66,2.5,11.25,3,35,16,6
+CL-H25-R3F3,"Icestorm C",clan,H,light,25,3,3,"Trooper / Generalist",7,10,20,5,1.25,4.25,66,2.5,12,7,31,14,5
+CL-H25-R4F1,"Commando IIC D",clan,H,light,25,4,1,"Skirmisher / Cavalry",8,12,20,7,3,4.25,66,2.5,8.25,0,37,18,6
+CL-H25-R4F2,"Mongoose IIC D",clan,H,light,25,4,2,"Skirmisher / Cavalry",8,12,20,7,2,4.25,66,2.5,9.25,3,35,16,6
+CL-H25-R4F3,"Icestorm D",clan,H,light,25,4,3,"Skirmisher / Cavalry",8,12,20,7,1.25,4.25,66,2.5,10,7,31,14,5
+CL-H25-R5F1,"Commando IIC E",clan,H,light,25,5,1,"Interceptor / Scout",9,13,20,9.5,3,4.25,66,2.5,5.75,0,37,18,6
+CL-H25-R5F2,"Mongoose IIC E",clan,H,light,25,5,2,"Interceptor / Scout",9,13,20,9.5,2,4.25,66,2.5,6.75,3,35,16,6
+CL-H25-R5F3,"Icestorm E",clan,H,light,25,5,3,"Interceptor / Scout",9,13,20,9.5,1.25,4.25,66,2.5,7.5,7,31,14,5
+CL-H30-R1F1,"UrbanMech IIC A",clan,H,light,30,1,1,"Siege / Defense",5,7,20,2,3.5,4.5,78,3,17,0,37,18,6
+CL-H30-R1F2,"Incubus (Vixen) A",clan,H,light,30,1,2,"Siege / Defense",5,7,20,2,2.5,4.5,78,3,18,3,35,16,6
+CL-H30-R1F3,"Spider IIC A",clan,H,light,30,1,3,"Siege / Defense",5,7,20,2,1.5,4.5,78,3,19,7,31,14,5
+CL-H30-R2F1,"UrbanMech IIC B",clan,H,light,30,2,1,"Brawler / Line",6,9,20,4,3.5,4.5,78,3,15,0,37,18,6
+CL-H30-R2F2,"Incubus (Vixen) B",clan,H,light,30,2,2,"Brawler / Line",6,9,20,4,2.5,4.5,78,3,16,3,35,16,6
+CL-H30-R2F3,"Spider IIC B",clan,H,light,30,2,3,"Brawler / Line",6,9,20,4,1.5,4.5,78,3,17,7,31,14,5
+CL-H30-R3F1,"UrbanMech IIC C",clan,H,light,30,3,1,"Trooper / Generalist",7,10,20,6,3.5,4.5,78,3,13,0,37,18,6
+CL-H30-R3F2,"Incubus (Vixen) C",clan,H,light,30,3,2,"Trooper / Generalist",7,10,20,6,2.5,4.5,78,3,14,3,35,16,6
+CL-H30-R3F3,"Spider IIC C",clan,H,light,30,3,3,"Trooper / Generalist",7,10,20,6,1.5,4.5,78,3,15,7,31,14,5
+CL-H30-R4F1,"UrbanMech IIC D",clan,H,light,30,4,1,"Skirmisher / Cavalry",8,12,20,8.5,3.5,4.5,78,3,10.5,0,37,18,6
+CL-H30-R4F2,"Incubus (Vixen) D",clan,H,light,30,4,2,"Skirmisher / Cavalry",8,12,20,8.5,2.5,4.5,78,3,11.5,3,35,16,6
+CL-H30-R4F3,"Spider IIC D",clan,H,light,30,4,3,"Skirmisher / Cavalry",8,12,20,8.5,1.5,4.5,78,3,12.5,7,31,14,5
+CL-H30-R5F1,"UrbanMech IIC E",clan,H,light,30,5,1,"Interceptor / Scout",9,13,20,11.5,3.5,4.5,78,3,7.5,0,37,18,6
+CL-H30-R5F2,"Incubus (Vixen) E",clan,H,light,30,5,2,"Interceptor / Scout",9,13,20,11.5,2.5,4.5,78,3,8.5,3,35,16,6
+CL-H30-R5F3,"Spider IIC E",clan,H,light,30,5,3,"Interceptor / Scout",9,13,20,11.5,1.5,4.5,78,3,9.5,7,31,14,5
+CL-H35-R1F1,"Horned Owl (Peregrine) A",clan,H,light,35,1,1,"Siege / Defense",5,7,20,2.5,4.25,4.75,92,3.5,20,0,37,18,6
+CL-H35-R1F2,"Ocelot A",clan,H,light,35,1,2,"Siege / Defense",5,7,20,2.5,2.75,4.75,92,3.5,21.5,3,35,16,6
+CL-H35-R1F3,"Wolfhound IIC (Grinner) A",clan,H,light,35,1,3,"Siege / Defense",5,7,20,2.5,1.75,4.75,92,3.5,22.5,7,31,14,5
+CL-H35-R2F1,"Horned Owl (Peregrine) B",clan,H,light,35,2,1,"Brawler / Line",6,9,20,4.5,4.25,4.75,92,3.5,18,0,37,18,6
+CL-H35-R2F2,"Ocelot B",clan,H,light,35,2,2,"Brawler / Line",6,9,20,4.5,2.75,4.75,92,3.5,19.5,3,35,16,6
+CL-H35-R2F3,"Wolfhound IIC (Grinner) B",clan,H,light,35,2,3,"Brawler / Line",6,9,20,4.5,1.75,4.75,92,3.5,20.5,7,31,14,5
+CL-H35-R3F1,"Horned Owl (Peregrine) C",clan,H,light,35,3,1,"Trooper / Generalist",7,10,20,7,4.25,4.75,92,3.5,15.5,0,37,18,6
+CL-H35-R3F2,"Ocelot C",clan,H,light,35,3,2,"Trooper / Generalist",7,10,20,7,2.75,4.75,92,3.5,17,3,35,16,6
+CL-H35-R3F3,"Wolfhound IIC (Grinner) C",clan,H,light,35,3,3,"Trooper / Generalist",7,10,20,7,1.75,4.75,92,3.5,18,7,31,14,5
+CL-H35-R4F1,"Horned Owl (Peregrine) D",clan,H,light,35,4,1,"Skirmisher / Cavalry",8,12,20,9.75,4.25,4.75,92,3.5,12.75,0,37,18,6
+CL-H35-R4F2,"Ocelot D",clan,H,light,35,4,2,"Skirmisher / Cavalry",8,12,20,9.75,2.75,4.75,92,3.5,14.25,3,35,16,6
+CL-H35-R4F3,"Wolfhound IIC (Grinner) D",clan,H,light,35,4,3,"Skirmisher / Cavalry",8,12,20,9.75,1.75,4.75,92,3.5,15.25,7,31,14,5
+CL-H35-R5F1,"Horned Owl (Peregrine) E",clan,H,light,35,5,1,"Interceptor / Scout",9,13,20,13.25,4.25,4.75,92,3.5,9.25,0,37,18,6
+CL-H35-R5F2,"Ocelot E",clan,H,light,35,5,2,"Interceptor / Scout",9,13,20,13.25,2.75,4.75,92,3.5,10.75,3,35,16,6
+CL-H35-R5F3,"Wolfhound IIC (Grinner) E",clan,H,light,35,5,3,"Interceptor / Scout",9,13,20,13.25,1.75,4.75,92,3.5,11.75,7,31,14,5
+CL-H40-R1F1,"Clint IIC A",clan,H,medium,40,1,1,"Siege / Defense",4,6,20,2.75,4.75,5,104,4,23.5,0,37,18,6
+CL-H40-R1F2,"Phantom A",clan,H,medium,40,1,2,"Siege / Defense",4,6,20,2.75,3.25,5,104,4,25,3,35,16,6
+CL-H40-R1F3,"Viper (Dragonfly) A",clan,H,medium,40,1,3,"Siege / Defense",4,6,20,2.75,2,5,104,4,26.25,7,31,14,5
+CL-H40-R2F1,"Clint IIC B",clan,H,medium,40,2,1,"Brawler / Line",5,7,20,5.25,4.75,5,104,4,21,0,37,18,6
+CL-H40-R2F2,"Phantom B",clan,H,medium,40,2,2,"Brawler / Line",5,7,20,5.25,3.25,5,104,4,22.5,3,35,16,6
+CL-H40-R2F3,"Viper (Dragonfly) B",clan,H,medium,40,2,3,"Brawler / Line",5,7,20,5.25,2,5,104,4,23.75,7,31,14,5
+CL-H40-R3F1,"Clint IIC C",clan,H,medium,40,3,1,"Trooper / Generalist",6,9,20,8,4.75,5,104,4,18.25,0,37,18,6
+CL-H40-R3F2,"Phantom C",clan,H,medium,40,3,2,"Trooper / Generalist",6,9,20,8,3.25,5,104,4,19.75,3,35,16,6
+CL-H40-R3F3,"Viper (Dragonfly) C",clan,H,medium,40,3,3,"Trooper / Generalist",6,9,20,8,2,5,104,4,21,7,31,14,5
+CL-H40-R4F1,"Clint IIC D",clan,H,medium,40,4,1,"Skirmisher / Cavalry",7,10,20,11.25,4.75,5,104,4,15,0,37,18,6
+CL-H40-R4F2,"Phantom D",clan,H,medium,40,4,2,"Skirmisher / Cavalry",7,10,20,11.25,3.25,5,104,4,16.5,3,35,16,6
+CL-H40-R4F3,"Viper (Dragonfly) D",clan,H,medium,40,4,3,"Skirmisher / Cavalry",7,10,20,11.25,2,5,104,4,17.75,7,31,14,5
+CL-H40-R5F1,"Clint IIC E",clan,H,medium,40,5,1,"Interceptor / Scout",8,12,20,15.25,4.75,5,104,4,11,0,37,18,6
+CL-H40-R5F2,"Phantom E",clan,H,medium,40,5,2,"Interceptor / Scout",8,12,20,15.25,3.25,5,104,4,12.5,3,35,16,6
+CL-H40-R5F3,"Viper (Dragonfly) E",clan,H,medium,40,5,3,"Interceptor / Scout",8,12,20,15.25,2,5,104,4,13.75,7,31,14,5
+CL-H45-R1F1,"Wyvern IIC A",clan,H,medium,45,1,1,"Siege / Defense",4,6,20,3.25,5.5,5.25,118,4.5,26.5,0,37,18,6
+CL-H45-R1F2,"Shadow Hawk IIC A",clan,H,medium,45,1,2,"Siege / Defense",4,6,20,3.25,3.5,5.25,118,4.5,28.5,3,35,16,6
+CL-H45-R1F3,"Ice Ferret (Fenris) A",clan,H,medium,45,1,3,"Siege / Defense",4,6,20,3.25,2.25,5.25,118,4.5,29.75,7,31,14,5
+CL-H45-R2F1,"Wyvern IIC B",clan,H,medium,45,2,1,"Brawler / Line",5,7,20,5.75,5.5,5.25,118,4.5,24,0,37,18,6
+CL-H45-R2F2,"Shadow Hawk IIC B",clan,H,medium,45,2,2,"Brawler / Line",5,7,20,5.75,3.5,5.25,118,4.5,26,3,35,16,6
+CL-H45-R2F3,"Ice Ferret (Fenris) B",clan,H,medium,45,2,3,"Brawler / Line",5,7,20,5.75,2.25,5.25,118,4.5,27.25,7,31,14,5
+CL-H45-R3F1,"Wyvern IIC C",clan,H,medium,45,3,1,"Trooper / Generalist",6,9,20,9,5.5,5.25,118,4.5,20.75,0,37,18,6
+CL-H45-R3F2,"Shadow Hawk IIC C",clan,H,medium,45,3,2,"Trooper / Generalist",6,9,20,9,3.5,5.25,118,4.5,22.75,3,35,16,6
+CL-H45-R3F3,"Ice Ferret (Fenris) C",clan,H,medium,45,3,3,"Trooper / Generalist",6,9,20,9,2.25,5.25,118,4.5,24,7,31,14,5
+CL-H45-R4F1,"Wyvern IIC D",clan,H,medium,45,4,1,"Skirmisher / Cavalry",7,10,20,12.5,5.5,5.25,118,4.5,17.25,0,37,18,6
+CL-H45-R4F2,"Shadow Hawk IIC D",clan,H,medium,45,4,2,"Skirmisher / Cavalry",7,10,20,12.5,3.5,5.25,118,4.5,19.25,3,35,16,6
+CL-H45-R4F3,"Ice Ferret (Fenris) D",clan,H,medium,45,4,3,"Skirmisher / Cavalry",7,10,20,12.5,2.25,5.25,118,4.5,20.5,7,31,14,5
+CL-H45-R5F1,"Wyvern IIC E",clan,H,medium,45,5,1,"Interceptor / Scout",8,12,20,17,5.5,5.25,118,4.5,12.75,0,37,18,6
+CL-H45-R5F2,"Shadow Hawk IIC E",clan,H,medium,45,5,2,"Interceptor / Scout",8,12,20,17,3.5,5.25,118,4.5,14.75,3,35,16,6
+CL-H45-R5F3,"Ice Ferret (Fenris) E",clan,H,medium,45,5,3,"Interceptor / Scout",8,12,20,17,2.25,5.25,118,4.5,16,7,31,14,5
+CL-H50-R1F1,"Hunchback IIC A",clan,H,medium,50,1,1,"Siege / Defense",4,6,20,3.5,6,5.5,130,5,30,0,37,18,6
+CL-H50-R1F2,"Huntsman (Nobori-nin) A",clan,H,medium,50,1,2,"Siege / Defense",4,6,20,3.5,4,5.5,130,5,32,3,35,16,6
+CL-H50-R1F3,"Ursus A",clan,H,medium,50,1,3,"Siege / Defense",4,6,20,3.5,2.5,5.5,130,5,33.5,7,31,14,5
+CL-H50-R2F1,"Hunchback IIC B",clan,H,medium,50,2,1,"Brawler / Line",5,7,20,6.5,6,5.5,130,5,27,0,37,18,6
+CL-H50-R2F2,"Huntsman (Nobori-nin) B",clan,H,medium,50,2,2,"Brawler / Line",5,7,20,6.5,4,5.5,130,5,29,3,35,16,6
+CL-H50-R2F3,"Ursus B",clan,H,medium,50,2,3,"Brawler / Line",5,7,20,6.5,2.5,5.5,130,5,30.5,7,31,14,5
+CL-H50-R3F1,"Hunchback IIC C",clan,H,medium,50,3,1,"Trooper / Generalist",6,9,20,10,6,5.5,130,5,23.5,0,37,18,6
+CL-H50-R3F2,"Huntsman (Nobori-nin) C",clan,H,medium,50,3,2,"Trooper / Generalist",6,9,20,10,4,5.5,130,5,25.5,3,35,16,6
+CL-H50-R3F3,"Ursus C",clan,H,medium,50,3,3,"Trooper / Generalist",6,9,20,10,2.5,5.5,130,5,27,7,31,14,5
+CL-H50-R4F1,"Hunchback IIC D",clan,H,medium,50,4,1,"Skirmisher / Cavalry",7,10,20,14,6,5.5,130,5,19.5,0,37,18,6
+CL-H50-R4F2,"Huntsman (Nobori-nin) D",clan,H,medium,50,4,2,"Skirmisher / Cavalry",7,10,20,14,4,5.5,130,5,21.5,3,35,16,6
+CL-H50-R4F3,"Ursus D",clan,H,medium,50,4,3,"Skirmisher / Cavalry",7,10,20,14,2.5,5.5,130,5,23,7,31,14,5
+CL-H50-R5F1,"Hunchback IIC E",clan,H,medium,50,5,1,"Interceptor / Scout",8,12,20,19,6,5.5,130,5,14.5,0,37,18,6
+CL-H50-R5F2,"Huntsman (Nobori-nin) E",clan,H,medium,50,5,2,"Interceptor / Scout",8,12,20,19,4,5.5,130,5,16.5,3,35,16,6
+CL-H50-R5F3,"Ursus E",clan,H,medium,50,5,3,"Interceptor / Scout",8,12,20,19,2.5,5.5,130,5,18,7,31,14,5
+CL-H55-R1F1,"Vapor Eagle (Goshawk) A",clan,H,medium,55,1,1,"Siege / Defense",4,6,20,3.75,6.5,5.75,144,6,33,0,37,18,6
+CL-H55-R1F2,"Stooping Hawk A",clan,H,medium,55,1,2,"Siege / Defense",4,6,20,3.75,4.5,5.75,144,6,35,3,35,16,6
+CL-H55-R1F3,"Septicemia (Pariah) A",clan,H,medium,55,1,3,"Siege / Defense",4,6,20,3.75,2.75,5.75,144,6,36.75,7,31,14,5
+CL-H55-R2F1,"Vapor Eagle (Goshawk) B",clan,H,medium,55,2,1,"Brawler / Line",5,7,20,7.25,6.5,5.75,144,6,29.5,0,37,18,6
+CL-H55-R2F2,"Stooping Hawk B",clan,H,medium,55,2,2,"Brawler / Line",5,7,20,7.25,4.5,5.75,144,6,31.5,3,35,16,6
+CL-H55-R2F3,"Septicemia (Pariah) B",clan,H,medium,55,2,3,"Brawler / Line",5,7,20,7.25,2.75,5.75,144,6,33.25,7,31,14,5
+CL-H55-R3F1,"Vapor Eagle (Goshawk) C",clan,H,medium,55,3,1,"Trooper / Generalist",6,9,20,11,6.5,5.75,144,6,25.75,0,37,18,6
+CL-H55-R3F2,"Stooping Hawk C",clan,H,medium,55,3,2,"Trooper / Generalist",6,9,20,11,4.5,5.75,144,6,27.75,3,35,16,6
+CL-H55-R3F3,"Septicemia (Pariah) C",clan,H,medium,55,3,3,"Trooper / Generalist",6,9,20,11,2.75,5.75,144,6,29.5,7,31,14,5
+CL-H55-R4F1,"Vapor Eagle (Goshawk) D",clan,H,medium,55,4,1,"Skirmisher / Cavalry",7,10,20,15.5,6.5,5.75,144,6,21.25,0,37,18,6
+CL-H55-R4F2,"Stooping Hawk D",clan,H,medium,55,4,2,"Skirmisher / Cavalry",7,10,20,15.5,4.5,5.75,144,6,23.25,3,35,16,6
+CL-H55-R4F3,"Septicemia (Pariah) D",clan,H,medium,55,4,3,"Skirmisher / Cavalry",7,10,20,15.5,2.75,5.75,144,6,25,7,31,14,5
+CL-H55-R5F1,"Vapor Eagle (Goshawk) E",clan,H,medium,55,5,1,"Interceptor / Scout",8,12,20,21,6.5,5.75,144,6,15.75,0,37,18,6
+CL-H55-R5F2,"Stooping Hawk E",clan,H,medium,55,5,2,"Interceptor / Scout",8,12,20,21,4.5,5.75,144,6,17.75,3,35,16,6
+CL-H55-R5F3,"Septicemia (Pariah) E",clan,H,medium,55,5,3,"Interceptor / Scout",8,12,20,21,2.75,5.75,144,6,19.5,7,31,14,5
+CL-H60-R1F1,"Glass Spider (Galahad) A",clan,H,heavy,60,1,1,"Siege / Defense",3,4,20,4.25,7.25,6,156,6,36.5,0,37,18,6
+CL-H60-R1F2,"Crossbow A",clan,H,heavy,60,1,2,"Siege / Defense",3,4,20,4.25,4.75,6,156,6,39,3,35,16,6
+CL-H60-R1F3,"Thresher A",clan,H,heavy,60,1,3,"Siege / Defense",3,4,20,4.25,3,6,156,6,40.75,7,31,14,5
+CL-H60-R2F1,"Glass Spider (Galahad) B",clan,H,heavy,60,2,1,"Brawler / Line",4,6,20,7.75,7.25,6,156,6,33,0,37,18,6
+CL-H60-R2F2,"Crossbow B",clan,H,heavy,60,2,2,"Brawler / Line",4,6,20,7.75,4.75,6,156,6,35.5,3,35,16,6
+CL-H60-R2F3,"Thresher B",clan,H,heavy,60,2,3,"Brawler / Line",4,6,20,7.75,3,6,156,6,37.25,7,31,14,5
+CL-H60-R3F1,"Glass Spider (Galahad) C",clan,H,heavy,60,3,1,"Trooper / Generalist",5,7,20,12,7.25,6,156,6,28.75,0,37,18,6
+CL-H60-R3F2,"Crossbow C",clan,H,heavy,60,3,2,"Trooper / Generalist",5,7,20,12,4.75,6,156,6,31.25,3,35,16,6
+CL-H60-R3F3,"Thresher C",clan,H,heavy,60,3,3,"Trooper / Generalist",5,7,20,12,3,6,156,6,33,7,31,14,5
+CL-H60-R4F1,"Glass Spider (Galahad) D",clan,H,heavy,60,4,1,"Skirmisher / Cavalry",6,9,20,16.75,7.25,6,156,6,24,0,37,18,6
+CL-H60-R4F2,"Crossbow D",clan,H,heavy,60,4,2,"Skirmisher / Cavalry",6,9,20,16.75,4.75,6,156,6,26.5,3,35,16,6
+CL-H60-R4F3,"Thresher D",clan,H,heavy,60,4,3,"Skirmisher / Cavalry",6,9,20,16.75,3,6,156,6,28.25,7,31,14,5
+CL-H60-R5F1,"Glass Spider (Galahad) E",clan,H,heavy,60,5,1,"Interceptor / Scout",7,10,20,22.75,7.25,6,156,6,18,0,37,18,6
+CL-H60-R5F2,"Crossbow E",clan,H,heavy,60,5,2,"Interceptor / Scout",7,10,20,22.75,4.75,6,156,6,20.5,3,35,16,6
+CL-H60-R5F3,"Thresher E",clan,H,heavy,60,5,3,"Interceptor / Scout",7,10,20,22.75,3,6,156,6,22.25,7,31,14,5
+CL-H65-R1F1,"Rifleman IIC A",clan,H,heavy,65,1,1,"Siege / Defense",3,4,20,4.5,7.75,6.25,170,7,39.5,0,37,18,6
+CL-H65-R1F2,"Ha Otoko A",clan,H,heavy,65,1,2,"Siege / Defense",3,4,20,4.5,5.25,6.25,170,7,42,3,35,16,6
+CL-H65-R1F3,"Hellbringer (Loki) A",clan,H,heavy,65,1,3,"Siege / Defense",3,4,20,4.5,3.25,6.25,170,7,44,7,31,14,5
+CL-H65-R2F1,"Rifleman IIC B",clan,H,heavy,65,2,1,"Brawler / Line",4,6,20,8.5,7.75,6.25,170,7,35.5,0,37,18,6
+CL-H65-R2F2,"Ha Otoko B",clan,H,heavy,65,2,2,"Brawler / Line",4,6,20,8.5,5.25,6.25,170,7,38,3,35,16,6
+CL-H65-R2F3,"Hellbringer (Loki) B",clan,H,heavy,65,2,3,"Brawler / Line",4,6,20,8.5,3.25,6.25,170,7,40,7,31,14,5
+CL-H65-R3F1,"Rifleman IIC C",clan,H,heavy,65,3,1,"Trooper / Generalist",5,7,20,13,7.75,6.25,170,7,31,0,37,18,6
+CL-H65-R3F2,"Ha Otoko C",clan,H,heavy,65,3,2,"Trooper / Generalist",5,7,20,13,5.25,6.25,170,7,33.5,3,35,16,6
+CL-H65-R3F3,"Hellbringer (Loki) C",clan,H,heavy,65,3,3,"Trooper / Generalist",5,7,20,13,3.25,6.25,170,7,35.5,7,31,14,5
+CL-H65-R4F1,"Rifleman IIC D",clan,H,heavy,65,4,1,"Skirmisher / Cavalry",6,9,20,18.25,7.75,6.25,170,7,25.75,0,37,18,6
+CL-H65-R4F2,"Ha Otoko D",clan,H,heavy,65,4,2,"Skirmisher / Cavalry",6,9,20,18.25,5.25,6.25,170,7,28.25,3,35,16,6
+CL-H65-R4F3,"Hellbringer (Loki) D",clan,H,heavy,65,4,3,"Skirmisher / Cavalry",6,9,20,18.25,3.25,6.25,170,7,30.25,7,31,14,5
+CL-H65-R5F1,"Rifleman IIC E",clan,H,heavy,65,5,1,"Interceptor / Scout",7,10,20,24.75,7.75,6.25,170,7,19.25,0,37,18,6
+CL-H65-R5F2,"Ha Otoko E",clan,H,heavy,65,5,2,"Interceptor / Scout",7,10,20,24.75,5.25,6.25,170,7,21.75,3,35,16,6
+CL-H65-R5F3,"Hellbringer (Loki) E",clan,H,heavy,65,5,3,"Interceptor / Scout",7,10,20,24.75,3.25,6.25,170,7,23.75,7,31,14,5
+CL-H70-R1F1,"Guillotine IIC A",clan,H,heavy,70,1,1,"Siege / Defense",3,4,20,5,8.5,6.5,182,7.5,42.5,0,37,18,6
+CL-H70-R1F2,"Nova Cat A",clan,H,heavy,70,1,2,"Siege / Defense",3,4,20,5,5.5,6.5,182,7.5,45.5,3,35,16,6
+CL-H70-R1F3,"Summoner (Thor) A",clan,H,heavy,70,1,3,"Siege / Defense",3,4,20,5,3.5,6.5,182,7.5,47.5,7,31,14,5
+CL-H70-R2F1,"Guillotine IIC B",clan,H,heavy,70,2,1,"Brawler / Line",4,6,20,9,8.5,6.5,182,7.5,38.5,0,37,18,6
+CL-H70-R2F2,"Nova Cat B",clan,H,heavy,70,2,2,"Brawler / Line",4,6,20,9,5.5,6.5,182,7.5,41.5,3,35,16,6
+CL-H70-R2F3,"Summoner (Thor) B",clan,H,heavy,70,2,3,"Brawler / Line",4,6,20,9,3.5,6.5,182,7.5,43.5,7,31,14,5
+CL-H70-R3F1,"Guillotine IIC C",clan,H,heavy,70,3,1,"Trooper / Generalist",5,7,20,14,8.5,6.5,182,7.5,33.5,0,37,18,6
+CL-H70-R3F2,"Nova Cat C",clan,H,heavy,70,3,2,"Trooper / Generalist",5,7,20,14,5.5,6.5,182,7.5,36.5,3,35,16,6
+CL-H70-R3F3,"Summoner (Thor) C",clan,H,heavy,70,3,3,"Trooper / Generalist",5,7,20,14,3.5,6.5,182,7.5,38.5,7,31,14,5
+CL-H70-R4F1,"Guillotine IIC D",clan,H,heavy,70,4,1,"Skirmisher / Cavalry",6,9,20,19.5,8.5,6.5,182,7.5,28,0,37,18,6
+CL-H70-R4F2,"Nova Cat D",clan,H,heavy,70,4,2,"Skirmisher / Cavalry",6,9,20,19.5,5.5,6.5,182,7.5,31,3,35,16,6
+CL-H70-R4F3,"Summoner (Thor) D",clan,H,heavy,70,4,3,"Skirmisher / Cavalry",6,9,20,19.5,3.5,6.5,182,7.5,33,7,31,14,5
+CL-H70-R5F1,"Guillotine IIC E",clan,H,heavy,70,5,1,"Interceptor / Scout",7,10,20,26.5,8.5,6.5,182,7.5,21,0,37,18,6
+CL-H70-R5F2,"Nova Cat E",clan,H,heavy,70,5,2,"Interceptor / Scout",7,10,20,26.5,5.5,6.5,182,7.5,24,3,35,16,6
+CL-H70-R5F3,"Summoner (Thor) E",clan,H,heavy,70,5,3,"Interceptor / Scout",7,10,20,26.5,3.5,6.5,182,7.5,26,7,31,14,5
+CL-H75-R1F1,"Black Python (Viper) A",clan,H,heavy,75,1,1,"Siege / Defense",3,4,20,5.25,9,6.75,196,8,46,0,37,18,6
+CL-H75-R1F2,"Orion IIC A",clan,H,heavy,75,1,2,"Siege / Defense",3,4,20,5.25,6,6.75,196,8,49,3,35,16,6
+CL-H75-R1F3,"Night Gyr A",clan,H,heavy,75,1,3,"Siege / Defense",3,4,20,5.25,3.75,6.75,196,8,51.25,7,31,14,5
+CL-H75-R2F1,"Black Python (Viper) B",clan,H,heavy,75,2,1,"Brawler / Line",4,6,20,9.75,9,6.75,196,8,41.5,0,37,18,6
+CL-H75-R2F2,"Orion IIC B",clan,H,heavy,75,2,2,"Brawler / Line",4,6,20,9.75,6,6.75,196,8,44.5,3,35,16,6
+CL-H75-R2F3,"Night Gyr B",clan,H,heavy,75,2,3,"Brawler / Line",4,6,20,9.75,3.75,6.75,196,8,46.75,7,31,14,5
+CL-H75-R3F1,"Black Python (Viper) C",clan,H,heavy,75,3,1,"Trooper / Generalist",5,7,20,15,9,6.75,196,8,36.25,0,37,18,6
+CL-H75-R3F2,"Orion IIC C",clan,H,heavy,75,3,2,"Trooper / Generalist",5,7,20,15,6,6.75,196,8,39.25,3,35,16,6
+CL-H75-R3F3,"Night Gyr C",clan,H,heavy,75,3,3,"Trooper / Generalist",5,7,20,15,3.75,6.75,196,8,41.5,7,31,14,5
+CL-H75-R4F1,"Black Python (Viper) D",clan,H,heavy,75,4,1,"Skirmisher / Cavalry",6,9,20,21,9,6.75,196,8,30.25,0,37,18,6
+CL-H75-R4F2,"Orion IIC D",clan,H,heavy,75,4,2,"Skirmisher / Cavalry",6,9,20,21,6,6.75,196,8,33.25,3,35,16,6
+CL-H75-R4F3,"Night Gyr D",clan,H,heavy,75,4,3,"Skirmisher / Cavalry",6,9,20,21,3.75,6.75,196,8,35.5,7,31,14,5
+CL-H75-R5F1,"Black Python (Viper) E",clan,H,heavy,75,5,1,"Interceptor / Scout",7,10,20,28.5,9,6.75,196,8,22.75,0,37,18,6
+CL-H75-R5F2,"Orion IIC E",clan,H,heavy,75,5,2,"Interceptor / Scout",7,10,20,28.5,6,6.75,196,8,25.75,3,35,16,6
+CL-H75-R5F3,"Night Gyr E",clan,H,heavy,75,5,3,"Interceptor / Scout",7,10,20,28.5,3.75,6.75,196,8,28,7,31,14,5
+CL-H80-R1F1,"Warhammer IIC A",clan,H,assault,80,1,1,"Siege / Defense",2,3,20,5.5,9.5,7,208,8.5,49.5,0,37,18,6
+CL-H80-R1F2,"Victor IIC A",clan,H,assault,80,1,2,"Siege / Defense",2,3,20,5.5,6.5,7,208,8.5,52.5,3,35,16,6
+CL-H80-R1F3,"Iron Wolf A",clan,H,assault,80,1,3,"Siege / Defense",2,3,20,5.5,4,7,208,8.5,55,7,31,14,5
+CL-H80-R2F1,"Warhammer IIC B",clan,H,assault,80,2,1,"Brawler / Line",3,4,20,10.5,9.5,7,208,8.5,44.5,0,37,18,6
+CL-H80-R2F2,"Victor IIC B",clan,H,assault,80,2,2,"Brawler / Line",3,4,20,10.5,6.5,7,208,8.5,47.5,3,35,16,6
+CL-H80-R2F3,"Iron Wolf B",clan,H,assault,80,2,3,"Brawler / Line",3,4,20,10.5,4,7,208,8.5,50,7,31,14,5
+CL-H80-R3F1,"Warhammer IIC C",clan,H,assault,80,3,1,"Trooper / Generalist",4,6,20,16,9.5,7,208,8.5,39,0,37,18,6
+CL-H80-R3F2,"Victor IIC C",clan,H,assault,80,3,2,"Trooper / Generalist",4,6,20,16,6.5,7,208,8.5,42,3,35,16,6
+CL-H80-R3F3,"Iron Wolf C",clan,H,assault,80,3,3,"Trooper / Generalist",4,6,20,16,4,7,208,8.5,44.5,7,31,14,5
+CL-H80-R4F1,"Warhammer IIC D",clan,H,assault,80,4,1,"Skirmisher / Cavalry",5,7,20,22.5,9.5,7,208,8.5,32.5,0,37,18,6
+CL-H80-R4F2,"Victor IIC D",clan,H,assault,80,4,2,"Skirmisher / Cavalry",5,7,20,22.5,6.5,7,208,8.5,35.5,3,35,16,6
+CL-H80-R4F3,"Iron Wolf D",clan,H,assault,80,4,3,"Skirmisher / Cavalry",5,7,20,22.5,4,7,208,8.5,38,7,31,14,5
+CL-H80-R5F1,"Warhammer IIC E",clan,H,assault,80,5,1,"Interceptor / Scout",6,9,20,30.5,9.5,7,208,8.5,24.5,0,37,18,6
+CL-H80-R5F2,"Victor IIC E",clan,H,assault,80,5,2,"Interceptor / Scout",6,9,20,30.5,6.5,7,208,8.5,27.5,3,35,16,6
+CL-H80-R5F3,"Iron Wolf E",clan,H,assault,80,5,3,"Interceptor / Scout",6,9,20,30.5,4,7,208,8.5,30,7,31,14,5
+CL-H85-R1F1,"Phoenix Hawk IIC A",clan,H,assault,85,1,1,"Siege / Defense",2,3,20,6,10.25,7.25,222,9,52.5,0,37,18,6
+CL-H85-R1F2,"Omen A",clan,H,assault,85,1,2,"Siege / Defense",2,3,20,6,6.75,7.25,222,9,56,3,35,16,6
+CL-H85-R1F3,"Blood Kite A",clan,H,assault,85,1,3,"Siege / Defense",2,3,20,6,4.25,7.25,222,9,58.5,7,31,14,5
+CL-H85-R2F1,"Phoenix Hawk IIC B",clan,H,assault,85,2,1,"Brawler / Line",3,4,20,11,10.25,7.25,222,9,47.5,0,37,18,6
+CL-H85-R2F2,"Omen B",clan,H,assault,85,2,2,"Brawler / Line",3,4,20,11,6.75,7.25,222,9,51,3,35,16,6
+CL-H85-R2F3,"Blood Kite B",clan,H,assault,85,2,3,"Brawler / Line",3,4,20,11,4.25,7.25,222,9,53.5,7,31,14,5
+CL-H85-R3F1,"Phoenix Hawk IIC C",clan,H,assault,85,3,1,"Trooper / Generalist",4,6,20,17,10.25,7.25,222,9,41.5,0,37,18,6
+CL-H85-R3F2,"Omen C",clan,H,assault,85,3,2,"Trooper / Generalist",4,6,20,17,6.75,7.25,222,9,45,3,35,16,6
+CL-H85-R3F3,"Blood Kite C",clan,H,assault,85,3,3,"Trooper / Generalist",4,6,20,17,4.25,7.25,222,9,47.5,7,31,14,5
+CL-H85-R4F1,"Phoenix Hawk IIC D",clan,H,assault,85,4,1,"Skirmisher / Cavalry",5,7,20,23.75,10.25,7.25,222,9,34.75,0,37,18,6
+CL-H85-R4F2,"Omen D",clan,H,assault,85,4,2,"Skirmisher / Cavalry",5,7,20,23.75,6.75,7.25,222,9,38.25,3,35,16,6
+CL-H85-R4F3,"Blood Kite D",clan,H,assault,85,4,3,"Skirmisher / Cavalry",5,7,20,23.75,4.25,7.25,222,9,40.75,7,31,14,5
+CL-H85-R5F1,"Phoenix Hawk IIC E",clan,H,assault,85,5,1,"Interceptor / Scout",6,9,20,32.25,10.25,7.25,222,9,26.25,0,37,18,6
+CL-H85-R5F2,"Omen E",clan,H,assault,85,5,2,"Interceptor / Scout",6,9,20,32.25,6.75,7.25,222,9,29.75,3,35,16,6
+CL-H85-R5F3,"Blood Kite E",clan,H,assault,85,5,3,"Interceptor / Scout",6,9,20,32.25,4.25,7.25,222,9,32.25,7,31,14,5
+CL-H90-R1F1,"Highlander IIC A",clan,H,assault,90,1,1,"Siege / Defense",2,3,20,6.25,10.75,7.5,234,9.5,56,0,37,18,6
+CL-H90-R1F2,"Supernova A",clan,H,assault,90,1,2,"Siege / Defense",2,3,20,6.25,7.25,7.5,234,9.5,59.5,3,35,16,6
+CL-H90-R1F3,"Kingfisher A",clan,H,assault,90,1,3,"Siege / Defense",2,3,20,6.25,4.5,7.5,234,9.5,62.25,7,31,14,5
+CL-H90-R2F1,"Highlander IIC B",clan,H,assault,90,2,1,"Brawler / Line",3,4,20,11.75,10.75,7.5,234,9.5,50.5,0,37,18,6
+CL-H90-R2F2,"Supernova B",clan,H,assault,90,2,2,"Brawler / Line",3,4,20,11.75,7.25,7.5,234,9.5,54,3,35,16,6
+CL-H90-R2F3,"Kingfisher B",clan,H,assault,90,2,3,"Brawler / Line",3,4,20,11.75,4.5,7.5,234,9.5,56.75,7,31,14,5
+CL-H90-R3F1,"Highlander IIC C",clan,H,assault,90,3,1,"Trooper / Generalist",4,6,20,18,10.75,7.5,234,9.5,44.25,0,37,18,6
+CL-H90-R3F2,"Supernova C",clan,H,assault,90,3,2,"Trooper / Generalist",4,6,20,18,7.25,7.5,234,9.5,47.75,3,35,16,6
+CL-H90-R3F3,"Kingfisher C",clan,H,assault,90,3,3,"Trooper / Generalist",4,6,20,18,4.5,7.5,234,9.5,50.5,7,31,14,5
+CL-H90-R4F1,"Highlander IIC D",clan,H,assault,90,4,1,"Skirmisher / Cavalry",5,7,20,25.25,10.75,7.5,234,9.5,37,0,37,18,6
+CL-H90-R4F2,"Supernova D",clan,H,assault,90,4,2,"Skirmisher / Cavalry",5,7,20,25.25,7.25,7.5,234,9.5,40.5,3,35,16,6
+CL-H90-R4F3,"Kingfisher D",clan,H,assault,90,4,3,"Skirmisher / Cavalry",5,7,20,25.25,4.5,7.5,234,9.5,43.25,7,31,14,5
+CL-H90-R5F1,"Highlander IIC E",clan,H,assault,90,5,1,"Interceptor / Scout",6,9,20,34.25,10.75,7.5,234,9.5,28,0,37,18,6
+CL-H90-R5F2,"Supernova E",clan,H,assault,90,5,2,"Interceptor / Scout",6,9,20,34.25,7.25,7.5,234,9.5,31.5,3,35,16,6
+CL-H90-R5F3,"Kingfisher E",clan,H,assault,90,5,3,"Interceptor / Scout",6,9,20,34.25,4.5,7.5,234,9.5,34.25,7,31,14,5
+CL-H95-R1F1,"Cygnus A",clan,H,assault,95,1,1,"Siege / Defense",2,3,20,6.75,11.5,7.75,248,10,59,0,37,18,6
+CL-H95-R1F2,"Ice Bear A",clan,H,assault,95,1,2,"Siege / Defense",2,3,20,6.75,7.5,7.75,248,10,63,3,35,16,6
+CL-H95-R1F3,"Executioner (Gladiator) A",clan,H,assault,95,1,3,"Siege / Defense",2,3,20,6.75,4.75,7.75,248,10,65.75,7,31,14,5
+CL-H95-R2F1,"Cygnus B",clan,H,assault,95,2,1,"Brawler / Line",3,4,20,12.25,11.5,7.75,248,10,53.5,0,37,18,6
+CL-H95-R2F2,"Ice Bear B",clan,H,assault,95,2,2,"Brawler / Line",3,4,20,12.25,7.5,7.75,248,10,57.5,3,35,16,6
+CL-H95-R2F3,"Executioner (Gladiator) B",clan,H,assault,95,2,3,"Brawler / Line",3,4,20,12.25,4.75,7.75,248,10,60.25,7,31,14,5
+CL-H95-R3F1,"Cygnus C",clan,H,assault,95,3,1,"Trooper / Generalist",4,6,20,19,11.5,7.75,248,10,46.75,0,37,18,6
+CL-H95-R3F2,"Ice Bear C",clan,H,assault,95,3,2,"Trooper / Generalist",4,6,20,19,7.5,7.75,248,10,50.75,3,35,16,6
+CL-H95-R3F3,"Executioner (Gladiator) C",clan,H,assault,95,3,3,"Trooper / Generalist",4,6,20,19,4.75,7.75,248,10,53.5,7,31,14,5
+CL-H95-R4F1,"Cygnus D",clan,H,assault,95,4,1,"Skirmisher / Cavalry",5,7,20,26.5,11.5,7.75,248,10,39.25,0,37,18,6
+CL-H95-R4F2,"Ice Bear D",clan,H,assault,95,4,2,"Skirmisher / Cavalry",5,7,20,26.5,7.5,7.75,248,10,43.25,3,35,16,6
+CL-H95-R4F3,"Executioner (Gladiator) D",clan,H,assault,95,4,3,"Skirmisher / Cavalry",5,7,20,26.5,4.75,7.75,248,10,46,7,31,14,5
+CL-H95-R5F1,"Cygnus E",clan,H,assault,95,5,1,"Interceptor / Scout",6,9,20,36,11.5,7.75,248,10,29.75,0,37,18,6
+CL-H95-R5F2,"Ice Bear E",clan,H,assault,95,5,2,"Interceptor / Scout",6,9,20,36,7.5,7.75,248,10,33.75,3,35,16,6
+CL-H95-R5F3,"Executioner (Gladiator) E",clan,H,assault,95,5,3,"Interceptor / Scout",6,9,20,36,4.75,7.75,248,10,36.5,7,31,14,5
+CL-H100-R1F1,"Kodiak A",clan,H,assault,100,1,1,"Siege / Defense",2,3,20,7,12,8,260,10.5,62.5,0,37,18,6
+CL-H100-R1F2,"Bane (Kraken) A",clan,H,assault,100,1,2,"Siege / Defense",2,3,20,7,8,8,260,10.5,66.5,3,35,16,6
+CL-H100-R1F3,"Stone Rhino (Behemoth) A",clan,H,assault,100,1,3,"Siege / Defense",2,3,20,7,5,8,260,10.5,69.5,7,31,14,5
+CL-H100-R2F1,"Kodiak B",clan,H,assault,100,2,1,"Brawler / Line",3,4,20,13,12,8,260,10.5,56.5,0,37,18,6
+CL-H100-R2F2,"Bane (Kraken) B",clan,H,assault,100,2,2,"Brawler / Line",3,4,20,13,8,8,260,10.5,60.5,3,35,16,6
+CL-H100-R2F3,"Stone Rhino (Behemoth) B",clan,H,assault,100,2,3,"Brawler / Line",3,4,20,13,5,8,260,10.5,63.5,7,31,14,5
+CL-H100-R3F1,"Kodiak C",clan,H,assault,100,3,1,"Trooper / Generalist",4,6,20,20,12,8,260,10.5,49.5,0,37,18,6
+CL-H100-R3F2,"Bane (Kraken) C",clan,H,assault,100,3,2,"Trooper / Generalist",4,6,20,20,8,8,260,10.5,53.5,3,35,16,6
+CL-H100-R3F3,"Stone Rhino (Behemoth) C",clan,H,assault,100,3,3,"Trooper / Generalist",4,6,20,20,5,8,260,10.5,56.5,7,31,14,5
+CL-H100-R4F1,"Kodiak D",clan,H,assault,100,4,1,"Skirmisher / Cavalry",5,7,20,28,12,8,260,10.5,41.5,0,37,18,6
+CL-H100-R4F2,"Bane (Kraken) D",clan,H,assault,100,4,2,"Skirmisher / Cavalry",5,7,20,28,8,8,260,10.5,45.5,3,35,16,6
+CL-H100-R4F3,"Stone Rhino (Behemoth) D",clan,H,assault,100,4,3,"Skirmisher / Cavalry",5,7,20,28,5,8,260,10.5,48.5,7,31,14,5
+CL-H100-R5F1,"Kodiak E",clan,H,assault,100,5,1,"Interceptor / Scout",6,9,20,38,12,8,260,10.5,31.5,0,37,18,6
+CL-H100-R5F2,"Bane (Kraken) E",clan,H,assault,100,5,2,"Interceptor / Scout",6,9,20,38,8,8,260,10.5,35.5,3,35,16,6
+CL-H100-R5F3,"Stone Rhino (Behemoth) E",clan,H,assault,100,5,3,"Interceptor / Scout",6,9,20,38,5,8,260,10.5,38.5,7,31,14,5
+CL-N20-R1F2,"Fire Mite A",clan,N,light,20,1,2,"Siege / Defense",5,7,20,1.5,1.5,4,52,2,11,3,35,16,6
+CL-N20-R1F3,"Snow Weasel A",clan,N,light,20,1,3,"Siege / Defense",5,7,20,1.5,1,4,52,2,11.5,7,31,14,5
+CL-N20-R2F2,"Fire Mite B",clan,N,light,20,2,2,"Brawler / Line",6,9,20,2.5,1.5,4,52,2,10,3,35,16,6
+CL-N20-R2F3,"Snow Weasel B",clan,N,light,20,2,3,"Brawler / Line",6,9,20,2.5,1,4,52,2,10.5,7,31,14,5
+CL-N20-R3F2,"Fire Mite C",clan,N,light,20,3,2,"Trooper / Generalist",7,10,20,4,1.5,4,52,2,8.5,3,35,16,6
+CL-N20-R3F3,"Snow Weasel C",clan,N,light,20,3,3,"Trooper / Generalist",7,10,20,4,1,4,52,2,9,7,31,14,5
+CL-N20-R4F2,"Fire Mite D",clan,N,light,20,4,2,"Skirmisher / Cavalry",8,12,20,5.5,1.5,4,52,2,7,3,35,16,6
+CL-N20-R4F3,"Snow Weasel D",clan,N,light,20,4,3,"Skirmisher / Cavalry",8,12,20,5.5,1,4,52,2,7.5,7,31,14,5
+CL-N20-R5F2,"Fire Mite E",clan,N,light,20,5,2,"Interceptor / Scout",9,13,20,7.5,1.5,4,52,2,5,3,35,16,6
+CL-N20-R5F3,"Snow Weasel E",clan,N,light,20,5,3,"Interceptor / Scout",9,13,20,7.5,1,4,52,2,5.5,7,31,14,5
+CL-N25-R1F2,"Locust IIC A",clan,N,light,25,1,2,"Siege / Defense",5,7,20,1.75,2,4.25,66,2.5,14.5,3,35,16,6
+CL-N25-R1F3,"Mist Lynx (Koshi) A",clan,N,light,25,1,3,"Siege / Defense",5,7,20,1.75,1.25,4.25,66,2.5,15.25,7,31,14,5
+CL-N25-R2F2,"Locust IIC B",clan,N,light,25,2,2,"Brawler / Line",6,9,20,3.25,2,4.25,66,2.5,13,3,35,16,6
+CL-N25-R2F3,"Mist Lynx (Koshi) B",clan,N,light,25,2,3,"Brawler / Line",6,9,20,3.25,1.25,4.25,66,2.5,13.75,7,31,14,5
+CL-N25-R3F2,"Locust IIC C",clan,N,light,25,3,2,"Trooper / Generalist",7,10,20,5,2,4.25,66,2.5,11.25,3,35,16,6
+CL-N25-R3F3,"Mist Lynx (Koshi) C",clan,N,light,25,3,3,"Trooper / Generalist",7,10,20,5,1.25,4.25,66,2.5,12,7,31,14,5
+CL-N25-R4F2,"Locust IIC D",clan,N,light,25,4,2,"Skirmisher / Cavalry",8,12,20,7,2,4.25,66,2.5,9.25,3,35,16,6
+CL-N25-R4F3,"Mist Lynx (Koshi) D",clan,N,light,25,4,3,"Skirmisher / Cavalry",8,12,20,7,1.25,4.25,66,2.5,10,7,31,14,5
+CL-N25-R5F2,"Locust IIC E",clan,N,light,25,5,2,"Interceptor / Scout",9,13,20,9.5,2,4.25,66,2.5,6.75,3,35,16,6
+CL-N25-R5F3,"Mist Lynx (Koshi) E",clan,N,light,25,5,3,"Interceptor / Scout",9,13,20,9.5,1.25,4.25,66,2.5,7.5,7,31,14,5
+CL-N30-R1F2,"Hellion A",clan,N,light,30,1,2,"Siege / Defense",5,7,20,2,2.5,4.5,78,3,18,3,35,16,6
+CL-N30-R1F3,"Kit Fox (Uller) A",clan,N,light,30,1,3,"Siege / Defense",5,7,20,2,1.5,4.5,78,3,19,7,31,14,5
+CL-N30-R2F2,"Hellion B",clan,N,light,30,2,2,"Brawler / Line",6,9,20,4,2.5,4.5,78,3,16,3,35,16,6
+CL-N30-R2F3,"Kit Fox (Uller) B",clan,N,light,30,2,3,"Brawler / Line",6,9,20,4,1.5,4.5,78,3,17,7,31,14,5
+CL-N30-R3F2,"Hellion C",clan,N,light,30,3,2,"Trooper / Generalist",7,10,20,6,2.5,4.5,78,3,14,3,35,16,6
+CL-N30-R3F3,"Kit Fox (Uller) C",clan,N,light,30,3,3,"Trooper / Generalist",7,10,20,6,1.5,4.5,78,3,15,7,31,14,5
+CL-N30-R4F2,"Hellion D",clan,N,light,30,4,2,"Skirmisher / Cavalry",8,12,20,8.5,2.5,4.5,78,3,11.5,3,35,16,6
+CL-N30-R4F3,"Kit Fox (Uller) D",clan,N,light,30,4,3,"Skirmisher / Cavalry",8,12,20,8.5,1.5,4.5,78,3,12.5,7,31,14,5
+CL-N30-R5F2,"Hellion E",clan,N,light,30,5,2,"Interceptor / Scout",9,13,20,11.5,2.5,4.5,78,3,8.5,3,35,16,6
+CL-N30-R5F3,"Kit Fox (Uller) E",clan,N,light,30,5,3,"Interceptor / Scout",9,13,20,11.5,1.5,4.5,78,3,9.5,7,31,14,5
+CL-N35-R1F2,"Cougar A",clan,N,light,35,1,2,"Siege / Defense",5,7,20,2.5,2.75,4.75,92,3.5,21.5,3,35,16,6
+CL-N35-R1F3,"Adder (Puma) A",clan,N,light,35,1,3,"Siege / Defense",5,7,20,2.5,1.75,4.75,92,3.5,22.5,7,31,14,5
+CL-N35-R2F2,"Cougar B",clan,N,light,35,2,2,"Brawler / Line",6,9,20,4.5,2.75,4.75,92,3.5,19.5,3,35,16,6
+CL-N35-R2F3,"Adder (Puma) B",clan,N,light,35,2,3,"Brawler / Line",6,9,20,4.5,1.75,4.75,92,3.5,20.5,7,31,14,5
+CL-N35-R3F2,"Cougar C",clan,N,light,35,3,2,"Trooper / Generalist",7,10,20,7,2.75,4.75,92,3.5,17,3,35,16,6
+CL-N35-R3F3,"Adder (Puma) C",clan,N,light,35,3,3,"Trooper / Generalist",7,10,20,7,1.75,4.75,92,3.5,18,7,31,14,5
+CL-N35-R4F2,"Cougar D",clan,N,light,35,4,2,"Skirmisher / Cavalry",8,12,20,9.75,2.75,4.75,92,3.5,14.25,3,35,16,6
+CL-N35-R4F3,"Adder (Puma) D",clan,N,light,35,4,3,"Skirmisher / Cavalry",8,12,20,9.75,1.75,4.75,92,3.5,15.25,7,31,14,5
+CL-N35-R5F2,"Cougar E",clan,N,light,35,5,2,"Interceptor / Scout",9,13,20,13.25,2.75,4.75,92,3.5,10.75,3,35,16,6
+CL-N35-R5F3,"Adder (Puma) E",clan,N,light,35,5,3,"Interceptor / Scout",9,13,20,13.25,1.75,4.75,92,3.5,11.75,7,31,14,5
+CL-N40-R1F2,"Coyotl A",clan,N,medium,40,1,2,"Siege / Defense",4,6,20,2.75,3.25,5,104,4,25,3,35,16,6
+CL-N40-R1F3,"Pouncer A",clan,N,medium,40,1,3,"Siege / Defense",4,6,20,2.75,2,5,104,4,26.25,7,31,14,5
+CL-N40-R2F2,"Coyotl B",clan,N,medium,40,2,2,"Brawler / Line",5,7,20,5.25,3.25,5,104,4,22.5,3,35,16,6
+CL-N40-R2F3,"Pouncer B",clan,N,medium,40,2,3,"Brawler / Line",5,7,20,5.25,2,5,104,4,23.75,7,31,14,5
+CL-N40-R3F2,"Coyotl C",clan,N,medium,40,3,2,"Trooper / Generalist",6,9,20,8,3.25,5,104,4,19.75,3,35,16,6
+CL-N40-R3F3,"Pouncer C",clan,N,medium,40,3,3,"Trooper / Generalist",6,9,20,8,2,5,104,4,21,7,31,14,5
+CL-N40-R4F2,"Coyotl D",clan,N,medium,40,4,2,"Skirmisher / Cavalry",7,10,20,11.25,3.25,5,104,4,16.5,3,35,16,6
+CL-N40-R4F3,"Pouncer D",clan,N,medium,40,4,3,"Skirmisher / Cavalry",7,10,20,11.25,2,5,104,4,17.75,7,31,14,5
+CL-N40-R5F2,"Coyotl E",clan,N,medium,40,5,2,"Interceptor / Scout",8,12,20,15.25,3.25,5,104,4,12.5,3,35,16,6
+CL-N40-R5F3,"Pouncer E",clan,N,medium,40,5,3,"Interceptor / Scout",8,12,20,15.25,2,5,104,4,13.75,7,31,14,5
+CL-N45-R1F2,"Shadow Cat A",clan,N,medium,45,1,2,"Siege / Defense",4,6,20,3.25,3.5,5.25,118,4.5,28.5,3,35,16,6
+CL-N45-R1F3,"Grendel (Mongrel) A",clan,N,medium,45,1,3,"Siege / Defense",4,6,20,3.25,2.25,5.25,118,4.5,29.75,7,31,14,5
+CL-N45-R2F2,"Shadow Cat B",clan,N,medium,45,2,2,"Brawler / Line",5,7,20,5.75,3.5,5.25,118,4.5,26,3,35,16,6
+CL-N45-R2F3,"Grendel (Mongrel) B",clan,N,medium,45,2,3,"Brawler / Line",5,7,20,5.75,2.25,5.25,118,4.5,27.25,7,31,14,5
+CL-N45-R3F2,"Shadow Cat C",clan,N,medium,45,3,2,"Trooper / Generalist",6,9,20,9,3.5,5.25,118,4.5,22.75,3,35,16,6
+CL-N45-R3F3,"Grendel (Mongrel) C",clan,N,medium,45,3,3,"Trooper / Generalist",6,9,20,9,2.25,5.25,118,4.5,24,7,31,14,5
+CL-N45-R4F2,"Shadow Cat D",clan,N,medium,45,4,2,"Skirmisher / Cavalry",7,10,20,12.5,3.5,5.25,118,4.5,19.25,3,35,16,6
+CL-N45-R4F3,"Grendel (Mongrel) D",clan,N,medium,45,4,3,"Skirmisher / Cavalry",7,10,20,12.5,2.25,5.25,118,4.5,20.5,7,31,14,5
+CL-N45-R5F2,"Shadow Cat E",clan,N,medium,45,5,2,"Interceptor / Scout",8,12,20,17,3.5,5.25,118,4.5,14.75,3,35,16,6
+CL-N45-R5F3,"Grendel (Mongrel) E",clan,N,medium,45,5,3,"Interceptor / Scout",8,12,20,17,2.25,5.25,118,4.5,16,7,31,14,5
+CL-N50-R1F2,"Lupus A",clan,N,medium,50,1,2,"Siege / Defense",4,6,20,3.5,4,5.5,130,5,32,3,35,16,6
+CL-N50-R1F3,"Nova (Black Hawk) A",clan,N,medium,50,1,3,"Siege / Defense",4,6,20,3.5,2.5,5.5,130,5,33.5,7,31,14,5
+CL-N50-R2F2,"Lupus B",clan,N,medium,50,2,2,"Brawler / Line",5,7,20,6.5,4,5.5,130,5,29,3,35,16,6
+CL-N50-R2F3,"Nova (Black Hawk) B",clan,N,medium,50,2,3,"Brawler / Line",5,7,20,6.5,2.5,5.5,130,5,30.5,7,31,14,5
+CL-N50-R3F2,"Lupus C",clan,N,medium,50,3,2,"Trooper / Generalist",6,9,20,10,4,5.5,130,5,25.5,3,35,16,6
+CL-N50-R3F3,"Nova (Black Hawk) C",clan,N,medium,50,3,3,"Trooper / Generalist",6,9,20,10,2.5,5.5,130,5,27,7,31,14,5
+CL-N50-R4F2,"Lupus D",clan,N,medium,50,4,2,"Skirmisher / Cavalry",7,10,20,14,4,5.5,130,5,21.5,3,35,16,6
+CL-N50-R4F3,"Nova (Black Hawk) D",clan,N,medium,50,4,3,"Skirmisher / Cavalry",7,10,20,14,2.5,5.5,130,5,23,7,31,14,5
+CL-N50-R5F2,"Lupus E",clan,N,medium,50,5,2,"Interceptor / Scout",8,12,20,19,4,5.5,130,5,16.5,3,35,16,6
+CL-N50-R5F3,"Nova (Black Hawk) E",clan,N,medium,50,5,3,"Interceptor / Scout",8,12,20,19,2.5,5.5,130,5,18,7,31,14,5
+CL-N55-R1F2,"Black Lanner A",clan,N,medium,55,1,2,"Siege / Defense",4,6,20,3.75,4.5,5.75,144,6,35,3,35,16,6
+CL-N55-R1F3,"Stormcrow (Ryoken) A",clan,N,medium,55,1,3,"Siege / Defense",4,6,20,3.75,2.75,5.75,144,6,36.75,7,31,14,5
+CL-N55-R2F2,"Black Lanner B",clan,N,medium,55,2,2,"Brawler / Line",5,7,20,7.25,4.5,5.75,144,6,31.5,3,35,16,6
+CL-N55-R2F3,"Stormcrow (Ryoken) B",clan,N,medium,55,2,3,"Brawler / Line",5,7,20,7.25,2.75,5.75,144,6,33.25,7,31,14,5
+CL-N55-R3F2,"Black Lanner C",clan,N,medium,55,3,2,"Trooper / Generalist",6,9,20,11,4.5,5.75,144,6,27.75,3,35,16,6
+CL-N55-R3F3,"Stormcrow (Ryoken) C",clan,N,medium,55,3,3,"Trooper / Generalist",6,9,20,11,2.75,5.75,144,6,29.5,7,31,14,5
+CL-N55-R4F2,"Black Lanner D",clan,N,medium,55,4,2,"Skirmisher / Cavalry",7,10,20,15.5,4.5,5.75,144,6,23.25,3,35,16,6
+CL-N55-R4F3,"Stormcrow (Ryoken) D",clan,N,medium,55,4,3,"Skirmisher / Cavalry",7,10,20,15.5,2.75,5.75,144,6,25,7,31,14,5
+CL-N55-R5F2,"Black Lanner E",clan,N,medium,55,5,2,"Interceptor / Scout",8,12,20,21,4.5,5.75,144,6,17.75,3,35,16,6
+CL-N55-R5F3,"Stormcrow (Ryoken) E",clan,N,medium,55,5,3,"Interceptor / Scout",8,12,20,21,2.75,5.75,144,6,19.5,7,31,14,5
+CL-N60-R1F2,"Shadow Cat II A",clan,N,heavy,60,1,2,"Siege / Defense",3,4,20,4.25,4.75,6,156,6,39,3,35,16,6
+CL-N60-R1F3,"Mad Dog (Vulture) A",clan,N,heavy,60,1,3,"Siege / Defense",3,4,20,4.25,3,6,156,6,40.75,7,31,14,5
+CL-N60-R2F2,"Shadow Cat II B",clan,N,heavy,60,2,2,"Brawler / Line",4,6,20,7.75,4.75,6,156,6,35.5,3,35,16,6
+CL-N60-R2F3,"Mad Dog (Vulture) B",clan,N,heavy,60,2,3,"Brawler / Line",4,6,20,7.75,3,6,156,6,37.25,7,31,14,5
+CL-N60-R3F2,"Shadow Cat II C",clan,N,heavy,60,3,2,"Trooper / Generalist",5,7,20,12,4.75,6,156,6,31.25,3,35,16,6
+CL-N60-R3F3,"Mad Dog (Vulture) C",clan,N,heavy,60,3,3,"Trooper / Generalist",5,7,20,12,3,6,156,6,33,7,31,14,5
+CL-N60-R4F2,"Shadow Cat II D",clan,N,heavy,60,4,2,"Skirmisher / Cavalry",6,9,20,16.75,4.75,6,156,6,26.5,3,35,16,6
+CL-N60-R4F3,"Mad Dog (Vulture) D",clan,N,heavy,60,4,3,"Skirmisher / Cavalry",6,9,20,16.75,3,6,156,6,28.25,7,31,14,5
+CL-N60-R5F2,"Shadow Cat II E",clan,N,heavy,60,5,2,"Interceptor / Scout",7,10,20,22.75,4.75,6,156,6,20.5,3,35,16,6
+CL-N60-R5F3,"Mad Dog (Vulture) E",clan,N,heavy,60,5,3,"Interceptor / Scout",7,10,20,22.75,3,6,156,6,22.25,7,31,14,5
+CL-N65-R1F2,"Ebon Jaguar (Cauldron-Born) A",clan,N,heavy,65,1,2,"Siege / Defense",3,4,20,4.5,5.25,6.25,170,7,42,3,35,16,6
+CL-N65-R1F3,"Linebacker A",clan,N,heavy,65,1,3,"Siege / Defense",3,4,20,4.5,3.25,6.25,170,7,44,7,31,14,5
+CL-N65-R2F2,"Ebon Jaguar (Cauldron-Born) B",clan,N,heavy,65,2,2,"Brawler / Line",4,6,20,8.5,5.25,6.25,170,7,38,3,35,16,6
+CL-N65-R2F3,"Linebacker B",clan,N,heavy,65,2,3,"Brawler / Line",4,6,20,8.5,3.25,6.25,170,7,40,7,31,14,5
+CL-N65-R3F2,"Ebon Jaguar (Cauldron-Born) C",clan,N,heavy,65,3,2,"Trooper / Generalist",5,7,20,13,5.25,6.25,170,7,33.5,3,35,16,6
+CL-N65-R3F3,"Linebacker C",clan,N,heavy,65,3,3,"Trooper / Generalist",5,7,20,13,3.25,6.25,170,7,35.5,7,31,14,5
+CL-N65-R4F2,"Ebon Jaguar (Cauldron-Born) D",clan,N,heavy,65,4,2,"Skirmisher / Cavalry",6,9,20,18.25,5.25,6.25,170,7,28.25,3,35,16,6
+CL-N65-R4F3,"Linebacker D",clan,N,heavy,65,4,3,"Skirmisher / Cavalry",6,9,20,18.25,3.25,6.25,170,7,30.25,7,31,14,5
+CL-N65-R5F2,"Ebon Jaguar (Cauldron-Born) E",clan,N,heavy,65,5,2,"Interceptor / Scout",7,10,20,24.75,5.25,6.25,170,7,21.75,3,35,16,6
+CL-N65-R5F3,"Linebacker E",clan,N,heavy,65,5,3,"Interceptor / Scout",7,10,20,24.75,3.25,6.25,170,7,23.75,7,31,14,5
+CL-N70-R1F2,"Flamberge A",clan,N,heavy,70,1,2,"Siege / Defense",3,4,20,5,5.5,6.5,182,7.5,45.5,3,35,16,6
+CL-N70-R1F3,"Sun Spider A",clan,N,heavy,70,1,3,"Siege / Defense",3,4,20,5,3.5,6.5,182,7.5,47.5,7,31,14,5
+CL-N70-R2F2,"Flamberge B",clan,N,heavy,70,2,2,"Brawler / Line",4,6,20,9,5.5,6.5,182,7.5,41.5,3,35,16,6
+CL-N70-R2F3,"Sun Spider B",clan,N,heavy,70,2,3,"Brawler / Line",4,6,20,9,3.5,6.5,182,7.5,43.5,7,31,14,5
+CL-N70-R3F2,"Flamberge C",clan,N,heavy,70,3,2,"Trooper / Generalist",5,7,20,14,5.5,6.5,182,7.5,36.5,3,35,16,6
+CL-N70-R3F3,"Sun Spider C",clan,N,heavy,70,3,3,"Trooper / Generalist",5,7,20,14,3.5,6.5,182,7.5,38.5,7,31,14,5
+CL-N70-R4F2,"Flamberge D",clan,N,heavy,70,4,2,"Skirmisher / Cavalry",6,9,20,19.5,5.5,6.5,182,7.5,31,3,35,16,6
+CL-N70-R4F3,"Sun Spider D",clan,N,heavy,70,4,3,"Skirmisher / Cavalry",6,9,20,19.5,3.5,6.5,182,7.5,33,7,31,14,5
+CL-N70-R5F2,"Flamberge E",clan,N,heavy,70,5,2,"Interceptor / Scout",7,10,20,26.5,5.5,6.5,182,7.5,24,3,35,16,6
+CL-N70-R5F3,"Sun Spider E",clan,N,heavy,70,5,3,"Interceptor / Scout",7,10,20,26.5,3.5,6.5,182,7.5,26,7,31,14,5
+CL-N75-R1F2,"Woodsman A",clan,N,heavy,75,1,2,"Siege / Defense",3,4,20,5.25,6,6.75,196,8,49,3,35,16,6
+CL-N75-R1F3,"Timber Wolf (Mad Cat) A",clan,N,heavy,75,1,3,"Siege / Defense",3,4,20,5.25,3.75,6.75,196,8,51.25,7,31,14,5
+CL-N75-R2F2,"Woodsman B",clan,N,heavy,75,2,2,"Brawler / Line",4,6,20,9.75,6,6.75,196,8,44.5,3,35,16,6
+CL-N75-R2F3,"Timber Wolf (Mad Cat) B",clan,N,heavy,75,2,3,"Brawler / Line",4,6,20,9.75,3.75,6.75,196,8,46.75,7,31,14,5
+CL-N75-R3F2,"Woodsman C",clan,N,heavy,75,3,2,"Trooper / Generalist",5,7,20,15,6,6.75,196,8,39.25,3,35,16,6
+CL-N75-R3F3,"Timber Wolf (Mad Cat) C",clan,N,heavy,75,3,3,"Trooper / Generalist",5,7,20,15,3.75,6.75,196,8,41.5,7,31,14,5
+CL-N75-R4F2,"Woodsman D",clan,N,heavy,75,4,2,"Skirmisher / Cavalry",6,9,20,21,6,6.75,196,8,33.25,3,35,16,6
+CL-N75-R4F3,"Timber Wolf (Mad Cat) D",clan,N,heavy,75,4,3,"Skirmisher / Cavalry",6,9,20,21,3.75,6.75,196,8,35.5,7,31,14,5
+CL-N75-R5F2,"Woodsman E",clan,N,heavy,75,5,2,"Interceptor / Scout",7,10,20,28.5,6,6.75,196,8,25.75,3,35,16,6
+CL-N75-R5F3,"Timber Wolf (Mad Cat) E",clan,N,heavy,75,5,3,"Interceptor / Scout",7,10,20,28.5,3.75,6.75,196,8,28,7,31,14,5
+CL-N80-R1F2,"Naga A",clan,N,assault,80,1,2,"Siege / Defense",2,3,20,5.5,6.5,7,208,8.5,52.5,3,35,16,6
+CL-N80-R1F3,"Gargoyle (Man O' War) A",clan,N,assault,80,1,3,"Siege / Defense",2,3,20,5.5,4,7,208,8.5,55,7,31,14,5
+CL-N80-R2F2,"Naga B",clan,N,assault,80,2,2,"Brawler / Line",3,4,20,10.5,6.5,7,208,8.5,47.5,3,35,16,6
+CL-N80-R2F3,"Gargoyle (Man O' War) B",clan,N,assault,80,2,3,"Brawler / Line",3,4,20,10.5,4,7,208,8.5,50,7,31,14,5
+CL-N80-R3F2,"Naga C",clan,N,assault,80,3,2,"Trooper / Generalist",4,6,20,16,6.5,7,208,8.5,42,3,35,16,6
+CL-N80-R3F3,"Gargoyle (Man O' War) C",clan,N,assault,80,3,3,"Trooper / Generalist",4,6,20,16,4,7,208,8.5,44.5,7,31,14,5
+CL-N80-R4F2,"Naga D",clan,N,assault,80,4,2,"Skirmisher / Cavalry",5,7,20,22.5,6.5,7,208,8.5,35.5,3,35,16,6
+CL-N80-R4F3,"Gargoyle (Man O' War) D",clan,N,assault,80,4,3,"Skirmisher / Cavalry",5,7,20,22.5,4,7,208,8.5,38,7,31,14,5
+CL-N80-R5F2,"Naga E",clan,N,assault,80,5,2,"Interceptor / Scout",6,9,20,30.5,6.5,7,208,8.5,27.5,3,35,16,6
+CL-N80-R5F3,"Gargoyle (Man O' War) E",clan,N,assault,80,5,3,"Interceptor / Scout",6,9,20,30.5,4,7,208,8.5,30,7,31,14,5
+CL-N85-R1F2,"Marauder IIC A",clan,N,assault,85,1,2,"Siege / Defense",2,3,20,6,6.75,7.25,222,9,56,3,35,16,6
+CL-N85-R1F3,"Warhawk (Masakari) A",clan,N,assault,85,1,3,"Siege / Defense",2,3,20,6,4.25,7.25,222,9,58.5,7,31,14,5
+CL-N85-R2F2,"Marauder IIC B",clan,N,assault,85,2,2,"Brawler / Line",3,4,20,11,6.75,7.25,222,9,51,3,35,16,6
+CL-N85-R2F3,"Warhawk (Masakari) B",clan,N,assault,85,2,3,"Brawler / Line",3,4,20,11,4.25,7.25,222,9,53.5,7,31,14,5
+CL-N85-R3F2,"Marauder IIC C",clan,N,assault,85,3,2,"Trooper / Generalist",4,6,20,17,6.75,7.25,222,9,45,3,35,16,6
+CL-N85-R3F3,"Warhawk (Masakari) C",clan,N,assault,85,3,3,"Trooper / Generalist",4,6,20,17,4.25,7.25,222,9,47.5,7,31,14,5
+CL-N85-R4F2,"Marauder IIC D",clan,N,assault,85,4,2,"Skirmisher / Cavalry",5,7,20,23.75,6.75,7.25,222,9,38.25,3,35,16,6
+CL-N85-R4F3,"Warhawk (Masakari) D",clan,N,assault,85,4,3,"Skirmisher / Cavalry",5,7,20,23.75,4.25,7.25,222,9,40.75,7,31,14,5
+CL-N85-R5F2,"Marauder IIC E",clan,N,assault,85,5,2,"Interceptor / Scout",6,9,20,32.25,6.75,7.25,222,9,29.75,3,35,16,6
+CL-N85-R5F3,"Warhawk (Masakari) E",clan,N,assault,85,5,3,"Interceptor / Scout",6,9,20,32.25,4.25,7.25,222,9,32.25,7,31,14,5
+CL-N90-R1F2,"Blood Asp A",clan,N,assault,90,1,2,"Siege / Defense",2,3,20,6.25,7.25,7.5,234,9.5,59.5,3,35,16,6
+CL-N90-R1F3,"Savage Coyote A",clan,N,assault,90,1,3,"Siege / Defense",2,3,20,6.25,4.5,7.5,234,9.5,62.25,7,31,14,5
+CL-N90-R2F2,"Blood Asp B",clan,N,assault,90,2,2,"Brawler / Line",3,4,20,11.75,7.25,7.5,234,9.5,54,3,35,16,6
+CL-N90-R2F3,"Savage Coyote B",clan,N,assault,90,2,3,"Brawler / Line",3,4,20,11.75,4.5,7.5,234,9.5,56.75,7,31,14,5
+CL-N90-R3F2,"Blood Asp C",clan,N,assault,90,3,2,"Trooper / Generalist",4,6,20,18,7.25,7.5,234,9.5,47.75,3,35,16,6
+CL-N90-R3F3,"Savage Coyote C",clan,N,assault,90,3,3,"Trooper / Generalist",4,6,20,18,4.5,7.5,234,9.5,50.5,7,31,14,5
+CL-N90-R4F2,"Blood Asp D",clan,N,assault,90,4,2,"Skirmisher / Cavalry",5,7,20,25.25,7.25,7.5,234,9.5,40.5,3,35,16,6
+CL-N90-R4F3,"Savage Coyote D",clan,N,assault,90,4,3,"Skirmisher / Cavalry",5,7,20,25.25,4.5,7.5,234,9.5,43.25,7,31,14,5
+CL-N90-R5F2,"Blood Asp E",clan,N,assault,90,5,2,"Interceptor / Scout",6,9,20,34.25,7.25,7.5,234,9.5,31.5,3,35,16,6
+CL-N90-R5F3,"Savage Coyote E",clan,N,assault,90,5,3,"Interceptor / Scout",6,9,20,34.25,4.5,7.5,234,9.5,34.25,7,31,14,5
+CL-N95-R1F2,"Turkina A",clan,N,assault,95,1,2,"Siege / Defense",2,3,20,6.75,7.5,7.75,248,10,63,3,35,16,6
+CL-N95-R1F3,"Shadow Wolf A",clan,N,assault,95,1,3,"Siege / Defense",2,3,20,6.75,4.75,7.75,248,10,65.75,7,31,14,5
+CL-N95-R2F2,"Turkina B",clan,N,assault,95,2,2,"Brawler / Line",3,4,20,12.25,7.5,7.75,248,10,57.5,3,35,16,6
+CL-N95-R2F3,"Shadow Wolf B",clan,N,assault,95,2,3,"Brawler / Line",3,4,20,12.25,4.75,7.75,248,10,60.25,7,31,14,5
+CL-N95-R3F2,"Turkina C",clan,N,assault,95,3,2,"Trooper / Generalist",4,6,20,19,7.5,7.75,248,10,50.75,3,35,16,6
+CL-N95-R3F3,"Shadow Wolf C",clan,N,assault,95,3,3,"Trooper / Generalist",4,6,20,19,4.75,7.75,248,10,53.5,7,31,14,5
+CL-N95-R4F2,"Turkina D",clan,N,assault,95,4,2,"Skirmisher / Cavalry",5,7,20,26.5,7.5,7.75,248,10,43.25,3,35,16,6
+CL-N95-R4F3,"Shadow Wolf D",clan,N,assault,95,4,3,"Skirmisher / Cavalry",5,7,20,26.5,4.75,7.75,248,10,46,7,31,14,5
+CL-N95-R5F2,"Turkina E",clan,N,assault,95,5,2,"Interceptor / Scout",6,9,20,36,7.5,7.75,248,10,33.75,3,35,16,6
+CL-N95-R5F3,"Shadow Wolf E",clan,N,assault,95,5,3,"Interceptor / Scout",6,9,20,36,4.75,7.75,248,10,36.5,7,31,14,5
+CL-N100-R1F2,"Tomahawk A",clan,N,assault,100,1,2,"Siege / Defense",2,3,20,7,8,8,260,10.5,66.5,3,35,16,6
+CL-N100-R1F3,"Dire Wolf (Daishi) A",clan,N,assault,100,1,3,"Siege / Defense",2,3,20,7,5,8,260,10.5,69.5,7,31,14,5
+CL-N100-R2F2,"Tomahawk B",clan,N,assault,100,2,2,"Brawler / Line",3,4,20,13,8,8,260,10.5,60.5,3,35,16,6
+CL-N100-R2F3,"Dire Wolf (Daishi) B",clan,N,assault,100,2,3,"Brawler / Line",3,4,20,13,5,8,260,10.5,63.5,7,31,14,5
+CL-N100-R3F2,"Tomahawk C",clan,N,assault,100,3,2,"Trooper / Generalist",4,6,20,20,8,8,260,10.5,53.5,3,35,16,6
+CL-N100-R3F3,"Dire Wolf (Daishi) C",clan,N,assault,100,3,3,"Trooper / Generalist",4,6,20,20,5,8,260,10.5,56.5,7,31,14,5
+CL-N100-R4F2,"Tomahawk D",clan,N,assault,100,4,2,"Skirmisher / Cavalry",5,7,20,28,8,8,260,10.5,45.5,3,35,16,6
+CL-N100-R4F3,"Dire Wolf (Daishi) D",clan,N,assault,100,4,3,"Skirmisher / Cavalry",5,7,20,28,5,8,260,10.5,48.5,7,31,14,5
+CL-N100-R5F2,"Tomahawk E",clan,N,assault,100,5,2,"Interceptor / Scout",6,9,20,38,8,8,260,10.5,35.5,3,35,16,6
+CL-N100-R5F3,"Dire Wolf (Daishi) E",clan,N,assault,100,5,3,"Interceptor / Scout",6,9,20,38,5,8,260,10.5,38.5,7,31,14,5

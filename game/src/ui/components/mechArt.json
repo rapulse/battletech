@@ -1,0 +1,823 @@
+{
+  "$comment": "Портреты мехов с раскрасками (шаг 50). Пишется tools/pack_mech_art.py, читается ui/components/mechArt.ts. Руками не править.",
+  "$comment2": "groups — группа (техбаза_локомоция) → класс → рисунки. ПОРЯДОК ЗНАЧИМ: показ выбирает рисунок хэшем кода шасси по списку, новые рисунки дописываются в конец класса.",
+  "$comment3": "bases — какие раскраски у рисунка реально есть и во что откатывается default. Файлы: <dir>/<base>/<paint>-s.webp (квадрат) и -l.webp (крупный).",
+  "bands": {
+    "light": 35,
+    "medium": 55,
+    "heavy": 75
+  },
+  "dir": "/ui/mech",
+  "groups": {
+    "clan_h": {
+      "light": [
+        "mechs_clan_h-0",
+        "mechs_clan_h-1",
+        "mechs_clan_h-2",
+        "mechs_clan_h-3"
+      ],
+      "medium": [
+        "mechs_clan_h-4",
+        "mechs_clan_h-5",
+        "mechs_clan_h-6"
+      ],
+      "heavy": [
+        "mechs_clan_h-7",
+        "mechs_clan_h-8",
+        "mechs_clan_h-9"
+      ],
+      "assault": [
+        "mechs_clan_h-10",
+        "mechs_clan_h-11",
+        "mechs_clan_h-12",
+        "mechs_clan_h-13"
+      ]
+    },
+    "clan_n": {
+      "light": [
+        "mechs_clan_n-0",
+        "mechs_clan_n-1",
+        "mechs_clan_n-2",
+        "mechs_clan_n-3",
+        "mechs_clan_n-4",
+        "mechs_clan_n-5"
+      ],
+      "medium": [
+        "mechs_clan_n-6",
+        "mechs_clan_n-7",
+        "mechs_clan_n-8",
+        "mechs_clan_n-9"
+      ],
+      "heavy": [
+        "mechs_clan_n-10",
+        "mechs_clan_n-11",
+        "mechs_clan_n-12",
+        "mechs_clan_n-13"
+      ],
+      "assault": [
+        "mechs_clan_n-14",
+        "mechs_clan_n-15"
+      ]
+    },
+    "is_h": {
+      "light": [
+        "mechs_is_h-0",
+        "mechs_is_h-1",
+        "mechs_is_h-2",
+        "mechs_is_h-3",
+        "mechs_is_h-4"
+      ],
+      "medium": [
+        "mechs_is_h-5",
+        "mechs_is_h-6",
+        "mechs_is_h-7",
+        "mechs_is_h-8"
+      ],
+      "heavy": [
+        "mechs_is_h-9",
+        "mechs_is_h-10",
+        "mechs_is_h-11",
+        "mechs_is_h-12"
+      ],
+      "assault": [
+        "mechs_is_h-13",
+        "mechs_is_h-14",
+        "mechs_is_h-15",
+        "mechs_is_h-16",
+        "mechs_is_h-17"
+      ]
+    },
+    "is_n": {
+      "light": [
+        "mechs_is_n-0",
+        "mechs_is_n-1",
+        "mechs_is_n-2",
+        "mechs_is_n-3",
+        "mechs_is_n-4",
+        "mechs_is_n-5",
+        "mechs_is_n-6"
+      ],
+      "medium": [
+        "mechs_is_n-7",
+        "mechs_is_n-8",
+        "mechs_is_n-9",
+        "mechs_is_n-10"
+      ],
+      "heavy": [
+        "mechs_is_n-11",
+        "mechs_is_n-12"
+      ],
+      "assault": [
+        "mechs_is_n-13",
+        "mechs_is_n-14",
+        "mechs_is_n-15"
+      ]
+    }
+  },
+  "bases": {
+    "mechs_is_h-0": {
+      "paints": [
+        "davion",
+        "default",
+        "kurita",
+        "merc",
+        "pirate",
+        "steiner"
+      ],
+      "fallback": "default"
+    },
+    "mechs_is_h-1": {
+      "paints": [
+        "davion",
+        "default",
+        "kurita",
+        "merc",
+        "pirate",
+        "steiner"
+      ],
+      "fallback": "default"
+    },
+    "mechs_is_h-2": {
+      "paints": [
+        "davion",
+        "default",
+        "kurita",
+        "merc",
+        "pirate",
+        "steiner"
+      ],
+      "fallback": "default"
+    },
+    "mechs_is_h-3": {
+      "paints": [
+        "davion",
+        "default",
+        "kurita",
+        "merc",
+        "pirate",
+        "steiner"
+      ],
+      "fallback": "default"
+    },
+    "mechs_is_h-4": {
+      "paints": [
+        "davion",
+        "default",
+        "kurita",
+        "merc",
+        "pirate",
+        "steiner"
+      ],
+      "fallback": "default"
+    },
+    "mechs_is_h-5": {
+      "paints": [
+        "davion",
+        "default",
+        "kurita",
+        "merc",
+        "pirate",
+        "steiner"
+      ],
+      "fallback": "default"
+    },
+    "mechs_is_h-6": {
+      "paints": [
+        "davion",
+        "default",
+        "kurita",
+        "merc",
+        "pirate",
+        "steiner"
+      ],
+      "fallback": "default"
+    },
+    "mechs_is_h-7": {
+      "paints": [
+        "davion",
+        "default",
+        "kurita",
+        "merc",
+        "pirate",
+        "steiner"
+      ],
+      "fallback": "default"
+    },
+    "mechs_is_h-8": {
+      "paints": [
+        "davion",
+        "default",
+        "kurita",
+        "merc",
+        "pirate",
+        "steiner"
+      ],
+      "fallback": "default"
+    },
+    "mechs_is_h-9": {
+      "paints": [
+        "davion",
+        "default",
+        "kurita",
+        "merc",
+        "pirate",
+        "steiner"
+      ],
+      "fallback": "default"
+    },
+    "mechs_is_h-10": {
+      "paints": [
+        "davion",
+        "default",
+        "kurita",
+        "merc",
+        "pirate",
+        "steiner"
+      ],
+      "fallback": "default"
+    },
+    "mechs_is_h-11": {
+      "paints": [
+        "davion",
+        "default",
+        "kurita",
+        "merc",
+        "pirate",
+        "steiner"
+      ],
+      "fallback": "default"
+    },
+    "mechs_is_h-12": {
+      "paints": [
+        "davion",
+        "default",
+        "kurita",
+        "merc",
+        "pirate",
+        "steiner"
+      ],
+      "fallback": "default"
+    },
+    "mechs_is_h-13": {
+      "paints": [
+        "davion",
+        "default",
+        "kurita",
+        "merc",
+        "pirate",
+        "steiner"
+      ],
+      "fallback": "default"
+    },
+    "mechs_is_h-14": {
+      "paints": [
+        "davion",
+        "default",
+        "kurita",
+        "merc",
+        "pirate",
+        "steiner"
+      ],
+      "fallback": "default"
+    },
+    "mechs_is_h-15": {
+      "paints": [
+        "davion",
+        "default",
+        "kurita",
+        "merc",
+        "pirate",
+        "steiner"
+      ],
+      "fallback": "default"
+    },
+    "mechs_is_h-16": {
+      "paints": [
+        "davion",
+        "default",
+        "kurita",
+        "merc",
+        "pirate",
+        "steiner"
+      ],
+      "fallback": "default"
+    },
+    "mechs_is_n-0": {
+      "paints": [
+        "davion",
+        "default",
+        "kurita",
+        "merc",
+        "pirate",
+        "steiner"
+      ],
+      "fallback": "default"
+    },
+    "mechs_is_n-1": {
+      "paints": [
+        "davion",
+        "default",
+        "kurita",
+        "merc",
+        "pirate",
+        "steiner"
+      ],
+      "fallback": "default"
+    },
+    "mechs_is_n-2": {
+      "paints": [
+        "davion",
+        "default",
+        "kurita",
+        "merc",
+        "pirate",
+        "steiner"
+      ],
+      "fallback": "default"
+    },
+    "mechs_is_n-3": {
+      "paints": [
+        "davion",
+        "default",
+        "kurita",
+        "merc",
+        "pirate",
+        "steiner"
+      ],
+      "fallback": "default"
+    },
+    "mechs_is_n-4": {
+      "paints": [
+        "davion",
+        "default",
+        "kurita",
+        "merc",
+        "pirate",
+        "steiner"
+      ],
+      "fallback": "default"
+    },
+    "mechs_is_n-5": {
+      "paints": [
+        "davion",
+        "default",
+        "kurita",
+        "merc",
+        "pirate",
+        "steiner"
+      ],
+      "fallback": "default"
+    },
+    "mechs_is_n-6": {
+      "paints": [
+        "davion",
+        "default",
+        "kurita",
+        "merc",
+        "pirate",
+        "steiner"
+      ],
+      "fallback": "default"
+    },
+    "mechs_is_n-7": {
+      "paints": [
+        "davion",
+        "default",
+        "kurita",
+        "merc",
+        "pirate",
+        "steiner"
+      ],
+      "fallback": "default"
+    },
+    "mechs_is_n-8": {
+      "paints": [
+        "davion",
+        "default",
+        "kurita",
+        "merc",
+        "pirate",
+        "steiner"
+      ],
+      "fallback": "default"
+    },
+    "mechs_is_n-9": {
+      "paints": [
+        "davion",
+        "default",
+        "kurita",
+        "merc",
+        "pirate",
+        "steiner"
+      ],
+      "fallback": "default"
+    },
+    "mechs_is_n-10": {
+      "paints": [
+        "davion",
+        "default",
+        "kurita",
+        "merc",
+        "pirate",
+        "steiner"
+      ],
+      "fallback": "default"
+    },
+    "mechs_is_n-11": {
+      "paints": [
+        "davion",
+        "default",
+        "kurita",
+        "merc",
+        "pirate",
+        "steiner"
+      ],
+      "fallback": "default"
+    },
+    "mechs_is_n-12": {
+      "paints": [
+        "davion",
+        "default",
+        "kurita",
+        "merc",
+        "pirate",
+        "steiner"
+      ],
+      "fallback": "default"
+    },
+    "mechs_is_n-13": {
+      "paints": [
+        "davion",
+        "default",
+        "kurita",
+        "merc",
+        "pirate",
+        "steiner"
+      ],
+      "fallback": "default"
+    },
+    "mechs_is_n-14": {
+      "paints": [
+        "davion",
+        "default",
+        "kurita",
+        "merc",
+        "pirate",
+        "steiner"
+      ],
+      "fallback": "default"
+    },
+    "mechs_is_n-15": {
+      "paints": [
+        "davion",
+        "default",
+        "kurita",
+        "merc",
+        "pirate",
+        "steiner"
+      ],
+      "fallback": "default"
+    },
+    "mechs_clan_n-0": {
+      "paints": [
+        "bear",
+        "default",
+        "falcon",
+        "jaguar",
+        "viper",
+        "wolf"
+      ],
+      "fallback": "default"
+    },
+    "mechs_clan_n-1": {
+      "paints": [
+        "bear",
+        "default",
+        "falcon",
+        "jaguar",
+        "viper",
+        "wolf"
+      ],
+      "fallback": "default"
+    },
+    "mechs_clan_n-2": {
+      "paints": [
+        "bear",
+        "default",
+        "falcon",
+        "jaguar",
+        "viper",
+        "wolf"
+      ],
+      "fallback": "default"
+    },
+    "mechs_clan_n-3": {
+      "paints": [
+        "bear",
+        "default",
+        "falcon",
+        "jaguar",
+        "viper",
+        "wolf"
+      ],
+      "fallback": "default"
+    },
+    "mechs_clan_n-4": {
+      "paints": [
+        "bear",
+        "default",
+        "falcon",
+        "jaguar",
+        "viper",
+        "wolf"
+      ],
+      "fallback": "default"
+    },
+    "mechs_clan_n-5": {
+      "paints": [
+        "bear",
+        "default",
+        "falcon",
+        "jaguar",
+        "viper",
+        "wolf"
+      ],
+      "fallback": "default"
+    },
+    "mechs_clan_n-6": {
+      "paints": [
+        "bear",
+        "default",
+        "falcon",
+        "jaguar",
+        "viper",
+        "wolf"
+      ],
+      "fallback": "default"
+    },
+    "mechs_clan_n-7": {
+      "paints": [
+        "bear",
+        "default",
+        "falcon",
+        "jaguar",
+        "viper",
+        "wolf"
+      ],
+      "fallback": "default"
+    },
+    "mechs_clan_n-8": {
+      "paints": [
+        "bear",
+        "default",
+        "falcon",
+        "jaguar",
+        "viper",
+        "wolf"
+      ],
+      "fallback": "default"
+    },
+    "mechs_clan_n-9": {
+      "paints": [
+        "bear",
+        "default",
+        "falcon",
+        "jaguar",
+        "viper",
+        "wolf"
+      ],
+      "fallback": "default"
+    },
+    "mechs_clan_n-10": {
+      "paints": [
+        "bear",
+        "default",
+        "falcon",
+        "jaguar",
+        "viper",
+        "wolf"
+      ],
+      "fallback": "default"
+    },
+    "mechs_clan_n-11": {
+      "paints": [
+        "bear",
+        "default",
+        "falcon",
+        "jaguar",
+        "viper",
+        "wolf"
+      ],
+      "fallback": "default"
+    },
+    "mechs_clan_n-12": {
+      "paints": [
+        "bear",
+        "default",
+        "falcon",
+        "jaguar",
+        "viper",
+        "wolf"
+      ],
+      "fallback": "default"
+    },
+    "mechs_clan_n-13": {
+      "paints": [
+        "bear",
+        "default",
+        "falcon",
+        "jaguar",
+        "viper",
+        "wolf"
+      ],
+      "fallback": "default"
+    },
+    "mechs_clan_n-14": {
+      "paints": [
+        "bear",
+        "default",
+        "falcon",
+        "jaguar",
+        "viper",
+        "wolf"
+      ],
+      "fallback": "default"
+    },
+    "mechs_clan_n-15": {
+      "paints": [
+        "bear",
+        "default",
+        "falcon",
+        "jaguar",
+        "viper",
+        "wolf"
+      ],
+      "fallback": "default"
+    },
+    "mechs_clan_h-0": {
+      "paints": [
+        "bear",
+        "default",
+        "falcon",
+        "jaguar",
+        "viper",
+        "wolf"
+      ],
+      "fallback": "default"
+    },
+    "mechs_clan_h-1": {
+      "paints": [
+        "bear",
+        "default",
+        "falcon",
+        "jaguar",
+        "viper",
+        "wolf"
+      ],
+      "fallback": "default"
+    },
+    "mechs_clan_h-2": {
+      "paints": [
+        "bear",
+        "default",
+        "falcon",
+        "jaguar",
+        "viper",
+        "wolf"
+      ],
+      "fallback": "default"
+    },
+    "mechs_clan_h-3": {
+      "paints": [
+        "bear",
+        "default",
+        "falcon",
+        "jaguar",
+        "viper",
+        "wolf"
+      ],
+      "fallback": "default"
+    },
+    "mechs_clan_h-4": {
+      "paints": [
+        "bear",
+        "default",
+        "falcon",
+        "jaguar",
+        "viper",
+        "wolf"
+      ],
+      "fallback": "default"
+    },
+    "mechs_clan_h-5": {
+      "paints": [
+        "bear",
+        "default",
+        "falcon",
+        "jaguar",
+        "viper",
+        "wolf"
+      ],
+      "fallback": "default"
+    },
+    "mechs_clan_h-6": {
+      "paints": [
+        "bear",
+        "default",
+        "falcon",
+        "jaguar",
+        "viper",
+        "wolf"
+      ],
+      "fallback": "default"
+    },
+    "mechs_clan_h-7": {
+      "paints": [
+        "bear",
+        "default",
+        "falcon",
+        "jaguar",
+        "viper",
+        "wolf"
+      ],
+      "fallback": "default"
+    },
+    "mechs_clan_h-8": {
+      "paints": [
+        "bear",
+        "default",
+        "falcon",
+        "jaguar",
+        "viper",
+        "wolf"
+      ],
+      "fallback": "default"
+    },
+    "mechs_clan_h-9": {
+      "paints": [
+        "bear",
+        "default",
+        "falcon",
+        "jaguar",
+        "viper",
+        "wolf"
+      ],
+      "fallback": "default"
+    },
+    "mechs_clan_h-10": {
+      "paints": [
+        "bear",
+        "default",
+        "falcon",
+        "jaguar",
+        "viper",
+        "wolf"
+      ],
+      "fallback": "default"
+    },
+    "mechs_clan_h-11": {
+      "paints": [
+        "bear",
+        "default",
+        "falcon",
+        "jaguar",
+        "viper",
+        "wolf"
+      ],
+      "fallback": "default"
+    },
+    "mechs_clan_h-12": {
+      "paints": [
+        "bear",
+        "default",
+        "falcon",
+        "jaguar",
+        "viper",
+        "wolf"
+      ],
+      "fallback": "default"
+    },
+    "mechs_clan_h-13": {
+      "paints": [
+        "bear",
+        "default",
+        "falcon",
+        "jaguar",
+        "viper",
+        "wolf"
+      ],
+      "fallback": "default"
+    },
+    "mechs_is_h-17": {
+      "paints": [
+        "davion",
+        "default",
+        "kurita",
+        "merc",
+        "pirate",
+        "steiner"
+      ],
+      "fallback": "default"
+    }
+  }
+}

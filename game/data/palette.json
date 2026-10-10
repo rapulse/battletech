@@ -1,0 +1,217 @@
+{
+  "$comment": "Палитра проекта. Жёсткий набор цветов — то, что делает согласованность автоматической (game_core.md §11). ЗАМЕНЕНА в шаге 9a: прежний набор писался под пиксель-арт с 32 цветами, а утверждённый вид проекта — векторный тактический макет. Ни один цвет здесь не придуман: все перенесены из макета как есть.",
+  "$comment2": "ui — цвета интерфейса. Разметка на Svelte несёт те же значения в своих блоках style: так они были написаны в макете, и переписывать их в переменные значило бы менять вид, а не место хранения. Здесь они лежат как источник истины для канваса и как справка для разметки.",
+  "ui": {
+    "bg": "#0d1117",
+    "panel": "#161b22",
+    "panelSub": "#21262d",
+    "border": "#30363d",
+    "borderActive": "#58a6ff",
+    "text": "#e6edf3",
+    "textDim": "#8b949e",
+    "accent": "#39c5bb",
+    "gold": "#e3b341",
+    "danger": "#f85149",
+    "ok": "#3fb950",
+    "ally": "#f85149",
+    "enemy": "#388bfd"
+  },
+  "$comment3": "Цвета карты по биомам и схемам показа. Перенесено из тактического макета проекта без изменения ни одного цвета: именно этот вид и утверждался. Лежит в данных, а не в коде рендерера, по тому же правилу, что и весь остальной контент (game_core.md §8): цвет — такой же материал, как таблица оружия, и правится без пересборки кода. Ключ clear — четыре оттенка земли по уровням 0..3; отрицательные уровни (вода глубиной) берут нулевой и затемняются.",
+  "biomes": {
+    "temperate": {
+      "bg": "#0c1017",
+      "clear": [
+        "#6c9e47",
+        "#5f8e3c",
+        "#537f32",
+        "#49702a"
+      ],
+      "rock": "#6b665c",
+      "snow": "#dce8ee",
+      "water": "#2574a9",
+      "waterDeep": "#18527a",
+      "sandBank": "#b89f6d",
+      "road": "#948067",
+      "bridge": "#5a6268",
+      "forestBase": "rgba(28, 69, 29, 0.85)",
+      "treePine": "#1d4825",
+      "treePineLight": "#2c6b37",
+      "treeDeciduous": "#2d6a2e",
+      "treeDeciduousLight": "#439445",
+      "gridLine": "rgba(0, 0, 0, 0.35)",
+      "gridText": "rgba(0, 0, 0, 0.65)"
+    },
+    "desert": {
+      "bg": "#140f0c",
+      "clear": [
+        "#d4a362",
+        "#c2904e",
+        "#ad7c3b",
+        "#99692c"
+      ],
+      "rock": "#784a28",
+      "snow": "#edd5b8",
+      "water": "#227093",
+      "waterDeep": "#164e66",
+      "sandBank": "#e0bc88",
+      "road": "#8f7754",
+      "bridge": "#6e5f52",
+      "forestBase": "rgba(110, 95, 55, 0.75)",
+      "treePine": "#4a5431",
+      "treePineLight": "#657343",
+      "treeDeciduous": "#5a6136",
+      "treeDeciduousLight": "#788249",
+      "gridLine": "rgba(0, 0, 0, 0.32)",
+      "gridText": "rgba(0, 0, 0, 0.6)"
+    },
+    "tundra": {
+      "bg": "#0a0e14",
+      "clear": [
+        "#7a8f82",
+        "#6b7f73",
+        "#5d6f64",
+        "#4f5f55"
+      ],
+      "rock": "#4c575f",
+      "snow": "#eef4f8",
+      "water": "#4a7c99",
+      "waterDeep": "#2c5369",
+      "sandBank": "#95a5a6",
+      "road": "#5d6d7e",
+      "bridge": "#34495e",
+      "forestBase": "rgba(25, 45, 38, 0.85)",
+      "treePine": "#1a3b2f",
+      "treePineLight": "#295745",
+      "treeDeciduous": "#1a422f",
+      "treeDeciduousLight": "#2a694b",
+      "gridLine": "rgba(0, 0, 0, 0.35)",
+      "gridText": "rgba(0, 0, 0, 0.65)"
+    },
+    "jungle": {
+      "bg": "#061009",
+      "clear": [
+        "#3b7032",
+        "#32602a",
+        "#285022",
+        "#1f401b"
+      ],
+      "rock": "#42493b",
+      "snow": "#a9dfbf",
+      "water": "#1b5e50",
+      "waterDeep": "#0e3d34",
+      "sandBank": "#6e7f45",
+      "road": "#556338",
+      "bridge": "#384424",
+      "forestBase": "rgba(15, 50, 20, 0.94)",
+      "treePine": "#0d3a17",
+      "treePineLight": "#165825",
+      "treeDeciduous": "#12481e",
+      "treeDeciduousLight": "#1f6d2f",
+      "gridLine": "rgba(0, 0, 0, 0.38)",
+      "gridText": "rgba(0, 0, 0, 0.7)"
+    },
+    "volcanic": {
+      "bg": "#120a0a",
+      "clear": [
+        "#2e2727",
+        "#251f1f",
+        "#1d1717",
+        "#151010"
+      ],
+      "rock": "#4a3838",
+      "snow": "#8c7b75",
+      "water": "#e65100",
+      "waterDeep": "#bf360c",
+      "sandBank": "#3e2723",
+      "road": "#4a3b32",
+      "bridge": "#5d4037",
+      "forestBase": "rgba(45, 25, 20, 0.85)",
+      "treePine": "#2a1a15",
+      "treePineLight": "#3d251f",
+      "treeDeciduous": "#2a1a15",
+      "treeDeciduousLight": "#3d251f",
+      "gridLine": "rgba(255, 110, 64, 0.35)",
+      "gridText": "rgba(255, 171, 145, 0.75)"
+    },
+    "lunar": {
+      "bg": "#080a0c",
+      "clear": [
+        "#7f8c8d",
+        "#6c7a7b",
+        "#596768",
+        "#475455"
+      ],
+      "rock": "#34495e",
+      "snow": "#bdc3c7",
+      "water": "#2c3e50",
+      "waterDeep": "#1a252f",
+      "sandBank": "#566573",
+      "road": "#515a5a",
+      "bridge": "#2e4053",
+      "forestBase": "rgba(50, 55, 60, 0.8)",
+      "treePine": "#34495e",
+      "treePineLight": "#415b76",
+      "treeDeciduous": "#34495e",
+      "treeDeciduousLight": "#415b76",
+      "gridLine": "rgba(255, 255, 255, 0.28)",
+      "gridText": "rgba(255, 255, 255, 0.7)"
+    }
+  },
+  "$comment4": "Схемы (themes) накладываются ПОВЕРХ биома и заменяют палитру целиком: ночная оптика и спутниковый камуфляж — это другой способ смотреть на ту же карту, а не другой биом.",
+  "themes": {
+    "nightops": {
+      "bg": "#05070c",
+      "clear": [
+        "#0d1424",
+        "#131e36",
+        "#1a2947",
+        "#223458"
+      ],
+      "rock": "#2d3b55",
+      "snow": "#4d698e",
+      "water": "#005f87",
+      "waterDeep": "#003350",
+      "sandBank": "#20304a",
+      "road": "#253550",
+      "bridge": "#384d70",
+      "forestBase": "rgba(5, 30, 35, 0.9)",
+      "treePine": "#0a3238",
+      "treePineLight": "#0e4952",
+      "treeDeciduous": "#0d3d45",
+      "treeDeciduousLight": "#145c68",
+      "gridLine": "rgba(0, 229, 255, 0.25)",
+      "gridText": "rgba(0, 229, 255, 0.75)"
+    },
+    "satellite": {
+      "bg": "#080a0c",
+      "clear": [
+        "#4d5d3b",
+        "#445334",
+        "#3c4a2d",
+        "#333f26"
+      ],
+      "rock": "#4a4843",
+      "snow": "#cbd5db",
+      "water": "#1c4d6f",
+      "waterDeep": "#13354d",
+      "sandBank": "#85785a",
+      "road": "#696052",
+      "bridge": "#43474b",
+      "forestBase": "rgba(20, 42, 22, 0.88)",
+      "treePine": "#15331c",
+      "treePineLight": "#204a29",
+      "treeDeciduous": "#1d4223",
+      "treeDeciduousLight": "#2b5f34",
+      "gridLine": "rgba(255, 255, 255, 0.25)",
+      "gridText": "rgba(255, 255, 255, 0.7)"
+    }
+  },
+  "$comment5": "realm — карта державы (шаг 93). sectors — цвета областей секторов по порядку назначения, по кругу; подобраны так, чтобы не спорить с красным фронта, янтарём вражды и золотом державы. war — дуга фронта с войной, hostile — вражда без войны.",
+  "realm": {
+    "sectors": ["#58a6ff", "#3fb950", "#bc8cff", "#39c5bb", "#f778ba", "#79c0ff", "#a5d6a7", "#d2a8ff"],
+    "war": "#f85149",
+    "hostile": "#d29922",
+    "own": "#e3b341",
+    "lane": "rgba(139, 148, 158, 0.28)"
+  }
+}

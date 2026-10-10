@@ -1,0 +1,167 @@
+{
+  "$comment": "Боевые шасси эталонного сценария. Все три на тире реактора R3: одинаковый тир при разном тоннаже даёт разный ход (7/5/4) — эталон обязан различать машины по подвижности, иначе им нечего мерить в правилах движения и разведки. До шага 7 тиры были R2/R3/R4 и давали всем ход 5. Броня и структура НЕ подбираются руками: они выводятся уравнением массы из (техбаза, тоннаж, тир реактора, тир каркаса) — см. data/construction.json и core/rules/construction.ts. Тула, который собирает этот файл, в проекте НЕТ (шаг 51, 2026-09-15: комментарий «собирается тулом» оказался устаревшим). Зоны выводятся вручную теми же функциями ядра — makePlatform, allocateByZone, armorPointsPerTon, — и тест «боевые шасси пересобираются уравнением» ловит любое расхождение. При правке structure.perTon или долей зон пересобирать здесь; armorTons шаг 51 поднял ×4/3 (2.875/4.5/6.125 -> 3.875/6/8.125), сохранив заполненность потолка около 88 %. Правило раскладки (пересмотрено шагом 9e, 2026-08-28): торс не трогается ни при какой перебалансировке — в него уходит сквозной урон из разрушенных конечностей; руки самые тонкие и отказывают первыми; голова гуще рук, но заметно тоньше торса — при старой раскладке голова разрушалась в 60-85 раз реже остальных зон (замер на 3000 боёв), освободившиеся 35% её доли ушли в ноги, которые получают на практике непропорционально много попаданий из-за таблиц Above/Below.",
+  "chassis": [
+    {
+      "id": "IS-H35-R3F1",
+      "key": "chassis.h35",
+      "weightClass": "light",
+      "techBase": "is",
+      "tons": 35,
+      "heatSinks": 10,
+      "reactorTier": 3,
+      "frameTier": 1,
+      "armorTons": 5,
+      "zones": {
+        "head": {
+          "armor": 12,
+          "structure": 7
+        },
+        "torso": {
+          "armor": 22,
+          "structure": 13
+        },
+        "leftArm": {
+          "armor": 9,
+          "structure": 5
+        },
+        "rightArm": {
+          "armor": 9,
+          "structure": 5
+        },
+        "leftLeg": {
+          "armor": 14,
+          "structure": 8
+        },
+        "rightLeg": {
+          "armor": 14,
+          "structure": 8
+        }
+      },
+      "mounts": [
+        {
+          "weapon": "is_ml",
+          "zone": "leftArm",
+          "ammo": null
+        },
+        {
+          "weapon": "is_ml",
+          "zone": "rightArm",
+          "ammo": null
+        },
+        {
+          "weapon": "is_srm2",
+          "zone": "torso",
+          "ammo": 50
+        }
+      ]
+    },
+    {
+      "id": "IS-H55-R3F2",
+      "key": "chassis.h55",
+      "weightClass": "medium",
+      "techBase": "is",
+      "tons": 55,
+      "heatSinks": 12,
+      "reactorTier": 3,
+      "frameTier": 2,
+      "armorTons": 7.875,
+      "zones": {
+        "head": {
+          "armor": 19,
+          "structure": 11
+        },
+        "torso": {
+          "armor": 33,
+          "structure": 19
+        },
+        "leftArm": {
+          "armor": 14,
+          "structure": 8
+        },
+        "rightArm": {
+          "armor": 14,
+          "structure": 8
+        },
+        "leftLeg": {
+          "armor": 23,
+          "structure": 13
+        },
+        "rightLeg": {
+          "armor": 23,
+          "structure": 13
+        }
+      },
+      "mounts": [
+        {
+          "weapon": "is_ac10",
+          "zone": "rightArm",
+          "ammo": 10
+        },
+        {
+          "weapon": "is_ml",
+          "zone": "leftArm",
+          "ammo": null
+        },
+        {
+          "weapon": "is_ml",
+          "zone": "torso",
+          "ammo": null
+        }
+      ]
+    },
+    {
+      "id": "IS-H75-R3F3",
+      "key": "chassis.h75",
+      "weightClass": "heavy",
+      "techBase": "is",
+      "tons": 75,
+      "heatSinks": 15,
+      "reactorTier": 3,
+      "frameTier": 3,
+      "armorTons": 10.75,
+      "zones": {
+        "head": {
+          "armor": 26,
+          "structure": 15
+        },
+        "torso": {
+          "armor": 44,
+          "structure": 25
+        },
+        "leftArm": {
+          "armor": 20,
+          "structure": 11
+        },
+        "rightArm": {
+          "armor": 20,
+          "structure": 11
+        },
+        "leftLeg": {
+          "armor": 31,
+          "structure": 18
+        },
+        "rightLeg": {
+          "armor": 31,
+          "structure": 18
+        }
+      },
+      "mounts": [
+        {
+          "weapon": "is_ppc",
+          "zone": "rightArm",
+          "ammo": null
+        },
+        {
+          "weapon": "is_ac10",
+          "zone": "leftArm",
+          "ammo": 10
+        },
+        {
+          "weapon": "is_ml",
+          "zone": "torso",
+          "ammo": null
+        }
+      ]
+    }
+  ]
+}

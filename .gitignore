@@ -1,0 +1,69 @@
+# --- OS ---
+.DS_Store
+._*
+
+# --- Редакторы ---
+.vscode/
+.idea/
+*.swp
+
+# --- Node / Vite (игровой проект в game/) ---
+node_modules/
+dist/
+.vite/
+coverage/
+*.local
+.env
+.env.*
+!.env.example
+
+# --- Tauri (появится ближе к M8) ---
+game/src-tauri/target/
+game/src-tauri/gen/
+
+# --- Питоновский тулинг (tools/) ---
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# --- Артефакты симуляций баланса ---
+tools/out/
+
+# CSV — рабочий формат офлайн-тулинга, в репозиторий не идёт.
+# Исключение: исходные каталоги в game/data и wiki_dev — они источник данных,
+# а не результат прогона. Негативный шаблон обязан быть привязан к корню:
+# «!data/**/*.csv» без префикса ищет каталог data/ в корне и не срабатывает.
+*.csv
+!game/data/**/*.csv
+!wiki_dev/**/*.csv
+
+# --- Other ---
+venv/
+
+# Стенограммы сессий агента — рабочий файл, не содержание проекта
+log.txt
+
+# Изображения роботов
+*.webp
+!game/public/ui/events/*.webp
+!game/public/ui/mech/**/*.webp
+
+# Demo map
+bt_map/
+_tmp/
+main_int_demo/
+main_int_demo*.zip
+
+# Скриншот сквозной проверки
+game/smoke.png
+# Второй кадр сквозной проверки: бой (акт I). Появился вместе с расширением
+# смоука на цикл кампании, шаг 17.
+game/smoke-battle.png
+# Третий кадр: экраны кампании (акт III), шаг 17b.
+game/smoke-campaign.png
+# Четвёртый кадр: предупреждение об отходе (шаг 65).
+game/smoke-withdraw.png
+
+
+# --- Проба державы: сохранения и выводы realmplay/realm (не код) ---
+game/scripts/.realmplay/

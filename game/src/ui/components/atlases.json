@@ -1,0 +1,171 @@
+{
+  "$comment": "Геометрия растровых атласов интерфейса. Пишется tools/pack_ui_atlases.py, читается ui/components/AtlasImage.svelte. Руками не править: следующий прогон скрипта перезапишет.",
+  "factions": {
+    "file": "/ui/factions.jpg",
+    "cols": 4,
+    "rows": 4,
+    "cell": [
+      128,
+      128
+    ],
+    "gutter": 4,
+    "size": [
+      524,
+      524
+    ]
+  },
+  "mercenaries": {
+    "file": "/ui/mercenaries.jpg",
+    "cols": 4,
+    "rows": 4,
+    "cell": [
+      128,
+      128
+    ],
+    "gutter": 4,
+    "size": [
+      524,
+      524
+    ]
+  },
+  "company": {
+    "file": "/ui/company.jpg",
+    "cols": 4,
+    "rows": 4,
+    "cell": [
+      128,
+      128
+    ],
+    "gutter": 4,
+    "size": [
+      524,
+      524
+    ]
+  },
+  "pilots": {
+    "file": "/ui/pilots.jpg",
+    "cols": 4,
+    "rows": 4,
+    "cell": [
+      192,
+      261
+    ],
+    "gutter": 4,
+    "size": [
+      780,
+      1056
+    ]
+  },
+  "planets": {
+    "file": "/ui/planets.jpg",
+    "cols": 4,
+    "rows": 4,
+    "cell": [
+      352,
+      166
+    ],
+    "gutter": 4,
+    "size": [
+      1420,
+      676
+    ]
+  },
+  "missions": {
+    "file": "/ui/missions.jpg",
+    "cols": 4,
+    "rows": 3,
+    "cell": [
+      416,
+      250
+    ],
+    "gutter": 4,
+    "size": [
+      1676,
+      758
+    ]
+  },
+  "pilots_clans": {
+    "file": "/ui/pilots_clans.jpg",
+    "cols": 4,
+    "rows": 4,
+    "cell": [
+      192,
+      261
+    ],
+    "gutter": 4,
+    "size": [
+      780,
+      1056
+    ]
+  },
+  "achievements": {
+    "file": "/ui/achievements.jpg",
+    "cols": 5,
+    "rows": 5,
+    "cell": [
+      128,
+      128
+    ],
+    "gutter": 4,
+    "size": [
+      656,
+      656
+    ]
+  },
+  "buildings": {
+    "file": "/ui/buildings.jpg",
+    "cols": 4,
+    "rows": 2,
+    "cell": [
+      160,
+      160
+    ],
+    "gutter": 4,
+    "size": [
+      652,
+      324
+    ]
+  },
+  "realm_icons": {
+    "file": "/ui/realm_icons.jpg",
+    "cols": 5,
+    "rows": 5,
+    "cell": [
+      56,
+      56
+    ],
+    "gutter": 4,
+    "size": [
+      296,
+      296
+    ]
+  },
+  "realm_titles": {
+    "file": "/ui/realm_titles.jpg",
+    "cols": 3,
+    "rows": 2,
+    "cell": [
+      128,
+      128
+    ],
+    "gutter": 4,
+    "size": [
+      392,
+      260
+    ]
+  },
+  "planets_round": {
+    "file": "/ui/planets_round.jpg",
+    "cols": 3,
+    "rows": 2,
+    "cell": [
+      128,
+      128
+    ],
+    "gutter": 4,
+    "size": [
+      392,
+      260
+    ]
+  }
+}

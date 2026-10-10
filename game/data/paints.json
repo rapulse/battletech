@@ -1,0 +1,35 @@
+{
+  "$comment": "Раскраски мехов (шаг 50). ЕДИНСТВЕННОЕ место, где перечислены раскраски: код знает только id `default`. Читают: tools/pack_mech_art.py (буквы исходников), core (допустимые id перекраски), ui/components/mechArt.ts (раскраска по фракции).",
+  "$comment2": "letter — суффикс имени исходника в _tmp/Meches: `<base>-<letter>.jpeg`. Буквы уникальны, `default` пишется словом.",
+  "$comment3": "Раскраска фракции: byFaction[id] → byKind[kind из galaxy/factions.json] → default. Новый клан или дом со своей раскраской — строка в paints, строка в byFaction и исходники с новой буквой; кода не трогать. Фракция без раскраски не требует ничего.",
+  "paints": {
+    "default": { "letter": "default" },
+    "merc": { "letter": "u" },
+    "davion": { "letter": "d" },
+    "kurita": { "letter": "k" },
+    "steiner": { "letter": "s" },
+    "pirate": { "letter": "p" },
+    "falcon": { "letter": "f" },
+    "jaguar": { "letter": "j" },
+    "wolf": { "letter": "w" },
+    "bear": { "letter": "b" },
+    "viper": { "letter": "v" }
+  },
+  "byFaction": {
+    "davion": "davion",
+    "kurita": "kurita",
+    "steiner": "steiner",
+    "pirates": "pirate",
+    "jade_falcon": "falcon",
+    "smoke_jaguar": "jaguar",
+    "wolf": "wolf",
+    "ghost_bear": "bear",
+    "steel_viper": "viper",
+    "dragoons": "merc"
+  },
+  "byKind": {
+    "mercenary": "merc",
+    "independent": "merc"
+  },
+  "player": "merc"
+}

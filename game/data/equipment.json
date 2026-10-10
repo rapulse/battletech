@@ -1,0 +1,35 @@
+{
+  "$comment": "Каталог оборудования и боеприпасов (wiki_dev/equipment/catalog.md).",
+  "equipment": [
+    { "id": "is_shs",    "code": "IS-SHS",    "key": "equipment.is_shs",    "techBase": "is",   "category": "heatsink",    "mass": 1.0, "slots": 1, "heatDissipation": 1 },
+    { "id": "is_dhs",    "code": "IS-DHS",    "key": "equipment.is_dhs",    "techBase": "is",   "category": "heatsink",    "mass": 1.0, "slots": 3, "heatDissipation": 2 },
+    { "id": "cl_dhs",    "code": "CL-DHS",    "key": "equipment.cl_dhs",    "techBase": "clan", "category": "heatsink",    "mass": 1.0, "slots": 2, "heatDissipation": 2 },
+
+    { "id": "jj_light",  "code": "JJ-L",      "key": "equipment.jj_light",  "techBase": "both", "category": "jump_jet",   "mass": 0.5, "slots": 1, "jumpMP": 1, "maxTonnage": 40 },
+    { "id": "jj_med",    "code": "JJ-M",      "key": "equipment.jj_med",    "techBase": "both", "category": "jump_jet",   "mass": 1.0, "slots": 1, "jumpMP": 1, "maxTonnage": 65 },
+    { "id": "jj_hvy",    "code": "JJ-H",      "key": "equipment.jj_hvy",    "techBase": "both", "category": "jump_jet",   "mass": 2.0, "slots": 1, "jumpMP": 1, "maxTonnage": 100 },
+
+    { "id": "is_case",   "code": "IS-CASE",   "key": "equipment.is_case",   "techBase": "is",   "category": "protection", "mass": 0.5, "slots": 1, "preventTransfer": true },
+    { "id": "cl_case",   "code": "CL-CASE",   "key": "equipment.cl_case",   "techBase": "clan", "category": "protection", "mass": 0.0, "slots": 0, "preventTransfer": true },
+    { "id": "case2",     "code": "CASE-II",   "key": "equipment.case2",     "techBase": "both", "category": "protection", "mass": 1.0, "slots": 1, "internalContainment": true },
+
+    { "id": "is_ecm",    "code": "IS-ECM",    "key": "equipment.is_ecm",    "techBase": "is",   "category": "electronics","mass": 1.5, "slots": 2, "ecmRange": 2 },
+    { "id": "cl_ecm",    "code": "CL-ECM",    "key": "equipment.cl_ecm",    "techBase": "clan", "category": "electronics","mass": 1.0, "slots": 1, "ecmRange": 2 },
+    { "id": "is_bap",    "code": "IS-BAP",    "key": "equipment.is_bap",    "techBase": "is",   "category": "electronics","mass": 1.5, "slots": 2, "probeRange": 4 },
+    { "id": "cl_bap",    "code": "CL-BAP",    "key": "equipment.cl_bap",    "techBase": "clan", "category": "electronics","mass": 1.0, "slots": 1, "probeRange": 5 },
+
+    { "id": "ammo_mg",   "code": "AMMO-MG",   "key": "equipment.ammo_mg",   "techBase": "both", "category": "ammo",       "mass": 1.0, "slots": 1, "shots": 200, "explosionDamage": 400 },
+    { "id": "ammo_ac2",  "code": "AMMO-AC2",  "key": "equipment.ammo_ac2",  "techBase": "is",   "category": "ammo",       "mass": 1.0, "slots": 1, "shots": 45,  "explosionDamage": 90 },
+    { "id": "ammo_ac5",  "code": "AMMO-AC5",  "key": "equipment.ammo_ac5",  "techBase": "both", "category": "ammo",       "mass": 1.0, "slots": 1, "shots": 20,  "explosionDamage": 100 },
+    { "id": "ammo_ac10", "code": "AMMO-AC10", "key": "equipment.ammo_ac10", "techBase": "both", "category": "ammo",       "mass": 1.0, "slots": 1, "shots": 10,  "explosionDamage": 100 },
+    { "id": "ammo_ac20", "code": "AMMO-AC20", "key": "equipment.ammo_ac20", "techBase": "both", "category": "ammo",       "mass": 1.0, "slots": 1, "shots": 5,   "explosionDamage": 100 },
+    { "id": "ammo_gauss","code": "AMMO-GAUSS","key": "equipment.ammo_gauss","techBase": "both", "category": "ammo",       "mass": 1.0, "slots": 1, "shots": 8,   "explosionDamage": 0 },
+    { "id": "ammo_srm2", "code": "AMMO-SRM2", "key": "equipment.ammo_srm2", "techBase": "is",   "category": "ammo",       "mass": 1.0, "slots": 1, "shots": 50,  "explosionDamage": 100 },
+    { "id": "ammo_srm4", "code": "AMMO-SRM4", "key": "equipment.ammo_srm4", "techBase": "both", "category": "ammo",       "mass": 1.0, "slots": 1, "shots": 25,  "explosionDamage": 100 },
+    { "id": "ammo_srm6", "code": "AMMO-SRM6", "key": "equipment.ammo_srm6", "techBase": "both", "category": "ammo",       "mass": 1.0, "slots": 1, "shots": 15,  "explosionDamage": 90 },
+    { "id": "ammo_lrm5", "code": "AMMO-LRM5", "key": "equipment.ammo_lrm5", "techBase": "is",   "category": "ammo",       "mass": 1.0, "slots": 1, "shots": 24,  "explosionDamage": 120 },
+    { "id": "ammo_lrm10","code": "AMMO-LRM10","key": "equipment.ammo_lrm10","techBase": "both", "category": "ammo",       "mass": 1.0, "slots": 1, "shots": 12,  "explosionDamage": 120 },
+    { "id": "ammo_lrm15","code": "AMMO-LRM15","key": "equipment.ammo_lrm15","techBase": "both", "category": "ammo",       "mass": 1.0, "slots": 1, "shots": 8,   "explosionDamage": 120 },
+    { "id": "ammo_lrm20","code": "AMMO-LRM20","key": "equipment.ammo_lrm20","techBase": "both", "category": "ammo",       "mass": 1.0, "slots": 1, "shots": 6,   "explosionDamage": 120 }
+  ]
+}

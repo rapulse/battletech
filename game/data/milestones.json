@@ -1,0 +1,54 @@
+{
+  "$comment": "Главы кампании (шаг 70): примерный план пути игрока, а не счётчик. Прогресс не хранится — выводится из состояния роты (core/campaign/progress/), поэтому может пойти назад. Глава пройдена, когда выполнены все её вехи; текущая — первая непройденная. Ничего не даёт в числах, пороги правятся без замера баланса. Названия, описания и подсказки — в словарях интерфейса по id (progress.chapter.<id>.name/.desc, progress.milestone.<id>.name/.hint). Механика — wiki/design/campaign/progress.md.",
+  "$comment2": "condition — вид проверки состояния, общий с достижениями (core/campaign/conditions.ts), плюс beyondVersion: того, чего в этой версии игры нет, — не выполняется никогда. Известность 30 — порог штурма (reputation.json → access.missions.assault), 60 — порог лена (war.json → grantFame). Место в рейтинге 8 — первое после семи великих полков реестра MRBC (rivals.json → registry): их рейтинг в сотни машин, роте игрока выше восьмого места не подняться, а обогнать все обычные наёмные роты — достижимо. Цель нынешней версии — вассал (решение пользователя 2026-09-24). Шаг 89: первая веха главы «Звёздная Лига» — высший титул державы (war.json → realm.titles, «путь к Звёздной Лиге»); контроль над Сферой и изгнание кланов остаются за версией.",
+  "campaigns": {
+    "merc": {
+      "chapters": [
+        {
+          "id": "lance",
+          "milestones": [
+            { "id": "firstContract", "condition": { "type": "contractsWon", "min": 1 } },
+            { "id": "fullLance", "condition": { "type": "fleetSize", "min": 4 } }
+          ]
+        },
+        {
+          "id": "company",
+          "milestones": [
+            { "id": "union", "condition": { "type": "dropship", "ships": ["union", "overlord"] } },
+            { "id": "fullCompany", "condition": { "type": "fleetSize", "min": 12 } },
+            { "id": "knownName", "condition": { "type": "fame", "min": 30 } }
+          ]
+        },
+        {
+          "id": "strongUnit",
+          "milestones": [
+            { "id": "overlord", "condition": { "type": "dropship", "ships": ["overlord"] } },
+            { "id": "topRating", "condition": { "type": "ratingRank", "max": 8 } },
+            { "id": "renown", "condition": { "type": "fame", "min": 60 } }
+          ]
+        },
+        {
+          "id": "planet",
+          "milestones": [
+            { "id": "firstWorld", "condition": { "type": "worlds", "min": 1 } }
+          ]
+        },
+        {
+          "id": "realm",
+          "milestones": [
+            { "id": "firstTreaty", "condition": { "type": "diplomacy", "min": 1 } },
+            { "id": "vassal", "condition": { "type": "vassals", "min": 1 } }
+          ]
+        },
+        {
+          "id": "starLeague",
+          "milestones": [
+            { "id": "claimant", "condition": { "type": "realmTitle", "id": "claimant" } },
+            { "id": "controlSphere", "condition": { "type": "beyondVersion"  } },
+            { "id": "expelClans", "condition": { "type": "beyondVersion"  } }
+          ]
+        }
+      ]
+    }
+  }
+}

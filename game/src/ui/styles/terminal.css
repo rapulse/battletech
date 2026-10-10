@@ -1,0 +1,502 @@
+/*
+ * Общий стиль экранов кампании — «командный мостик десантного корабля».
+ *
+ * Регистр утверждён решением 2026-09-01 (`wiki/decisions.md`, Трек Б):
+ * Cassette Futurism, тактический HUD, графитово-синий фон, фосфорные акценты,
+ * моношрифт, чамферы, лёгкие строки развёртки. Фона на рабочих экранах нет —
+ * раскладка из вайрфрейма не оставляет свободного места, и рисованный задник
+ * читался бы шумом за текстом.
+ *
+ * ЦВЕТА. Все значения перенесены из `game/data/palette.json` (§11 game_core.md):
+ * файл палитры — источник истины, эти переменные — его отражение для CSS.
+ * Ни одного цвета мимо палитры здесь нет и заводить нельзя: цвет, придуманный
+ * в компоненте, через месяц окажется единственным, который не сходится с
+ * остальными.
+ *
+ * Файл общий на все экраны кампании и подключается один раз в `main.ts`.
+ * Компонентные `<style>` в Svelte остаются скоупленными — сюда выносится
+ * только то, что повторяется на трёх экранах и больше.
+ */
+
+:root {
+  /* --- палитра интерфейса (palette.json → ui) --- */
+  --color-bg: #0d1117;
+  --color-panel: #161b22;
+  --color-panel-sub: #21262d;
+  --color-border: #30363d;
+  --color-border-active: #58a6ff;
+  --color-text: #e6edf3;
+  --color-text-dim: #8b949e;
+  --color-accent: #39c5bb;
+  --color-gold: #e3b341;
+  --color-danger: #f85149;
+  --color-ok: #3fb950;
+  --color-enemy: #388bfd;
+
+  /* Свечение люминофора: те же три цвета с прозрачностью, не новые. */
+  --glow-cyan: rgba(57, 197, 187, 0.4);
+  --glow-gold: rgba(227, 179, 65, 0.4);
+  --glow-red: rgba(248, 81, 73, 0.4);
+
+  --font-mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --font-display: 'Barlow Condensed', 'Arial Narrow', system-ui, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  line-height: 1.4;
+  overflow: hidden;
+  user-select: none;
+  /* Числа моноширинные всегда: в таблице ремонта и в кассе цифры обязаны
+     стоять столбиком, иначе сумма «прыгает» при каждом изменении. */
+  font-variant-numeric: tabular-nums;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent);
+}
+
+/* --- панели ---------------------------------------------------------------- */
+
+.panel {
+  background: var(--color-panel);
+  border: 1px solid var(--color-border);
+  border-radius: 2px;
+  position: relative;
+  min-height: 0;
+  min-width: 0;
+}
+
+.panel-header {
+  background: var(--color-panel-sub);
+  border-bottom: 1px solid var(--color-border);
+  padding: 7px 12px;
+  font-family: var(--font-display);
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  color: var(--color-accent);
+  flex-shrink: 0;
+}
+
+.panel-body {
+  padding: 12px;
+  min-height: 0;
+}
+
+/** Панель, внутри которой прокручивается список: заголовок закреплён. */
+.panel-scroll {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.panel-scroll > .scroll-area {
+  flex: 1;
+  overflow-y: auto;
+  min-height: 0;
+}
+
+/** Подзаголовок раздела внутри панели. */
+.sec-title {
+  font-family: var(--font-display);
+  font-size: 11.5px;
+  font-weight: 700;
+  color: var(--color-text-dim);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 4px;
+  margin-bottom: 8px;
+}
+
+/* --- кнопки ---------------------------------------------------------------- */
+
+.btn {
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+  padding: 7px 13px;
+  background: var(--color-panel-sub);
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition:
+    background 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease,
+    box-shadow 0.15s ease;
+  border-radius: 2px;
+}
+
+.btn:hover:not(:disabled) {
+  background: var(--color-border);
+  border-color: var(--color-border-active);
+  color: #fff;
+  box-shadow: 0 0 10px var(--glow-cyan);
+}
+
+.btn:active:not(:disabled) {
+  transform: translateY(1px);
+}
+
+.btn:disabled {
+  opacity: 0.38;
+  cursor: not-allowed;
+}
+
+.btn-primary {
+  background: rgba(57, 197, 187, 0.15);
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+.btn-primary:hover:not(:disabled) {
+  background: var(--color-accent);
+  color: #06120f;
+}
+
+.btn-gold {
+  background: rgba(227, 179, 65, 0.15);
+  border-color: var(--color-gold);
+  color: var(--color-gold);
+}
+.btn-gold:hover:not(:disabled) {
+  background: var(--color-gold);
+  color: #17120a;
+}
+
+.btn-danger {
+  background: rgba(248, 81, 73, 0.15);
+  border-color: var(--color-danger);
+  color: var(--color-danger);
+}
+.btn-danger:hover:not(:disabled) {
+  background: var(--color-danger);
+  color: #fff;
+  box-shadow: 0 0 10px var(--glow-red);
+}
+
+.btn-sm {
+  padding: 4px 8px;
+  font-size: 11.5px;
+  letter-spacing: 0.8px;
+}
+
+.btn-wide {
+  width: 100%;
+}
+
+/* --- значки ---------------------------------------------------------------- */
+
+/*
+ * Значок НЕ кликается и намеренно без рамки: рамка в этом интерфейсе означает
+ * «сюда можно нажать», и значок с рамкой читался бы неработающей кнопкой.
+ */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 2px 7px;
+  font-family: var(--font-display);
+  font-size: 11.5px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  border: none;
+  white-space: nowrap;
+}
+
+.badge-ok {
+  color: var(--color-ok);
+  background: rgba(63, 185, 80, 0.15);
+}
+.badge-gold {
+  color: var(--color-gold);
+  background: rgba(227, 179, 65, 0.15);
+}
+.badge-danger {
+  color: var(--color-danger);
+  background: rgba(248, 81, 73, 0.15);
+}
+.badge-cyan {
+  color: var(--color-accent);
+  background: rgba(57, 197, 187, 0.15);
+}
+.badge-dim {
+  color: var(--color-text-dim);
+  background: rgba(139, 148, 158, 0.15);
+}
+
+/* --- утилиты --------------------------------------------------------------- */
+
+.glow-cyan {
+  text-shadow: 0 0 8px var(--glow-cyan);
+}
+.glow-gold {
+  text-shadow: 0 0 8px var(--glow-gold);
+}
+.glow-red {
+  text-shadow: 0 0 8px var(--glow-red);
+}
+
+.dim {
+  color: var(--color-text-dim);
+}
+.cyan {
+  color: var(--color-accent);
+}
+.gold {
+  color: var(--color-gold);
+}
+.ok {
+  color: var(--color-ok);
+}
+.danger {
+  color: var(--color-danger);
+}
+.tiny {
+  font-size: 11px;
+}
+
+/** Пара «подпись — значение» в сетке характеристик. */
+.kv {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  padding: 5px 8px;
+  background: var(--color-panel-sub);
+  border: 1px solid var(--color-border);
+  border-radius: 2px;
+  min-width: 0;
+}
+.kv-k {
+  font-size: 9.5px;
+  color: var(--color-text-dim);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+.kv-v {
+  font-size: 12px;
+  font-weight: 700;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/** Строка «слева подпись, справа число» — условия контракта, расчёт цеха. */
+.row-kv {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 11.5px;
+}
+.row-kv > :first-child {
+  color: var(--color-text-dim);
+}
+.row-kv > :last-child {
+  font-weight: 700;
+}
+
+/** Карточка списка, которую выбирают щелчком. */
+.pick {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 9px 10px;
+  background: var(--color-panel-sub);
+  border: 1px solid var(--color-border);
+  border-radius: 2px;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  transition:
+    border-color 0.15s ease,
+    background 0.15s ease;
+}
+.pick:hover {
+  border-color: var(--color-border-active);
+  background: rgba(255, 255, 255, 0.03);
+}
+.pick.active {
+  border-color: var(--color-accent);
+  background: rgba(57, 197, 187, 0.1);
+}
+.pick:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+/** Полоса выполнения работы цеха или срока контракта. */
+.meter {
+  height: 5px;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 1px;
+  overflow: hidden;
+}
+.meter > i {
+  display: block;
+  height: 100%;
+  background: var(--color-gold);
+}
+.meter.cyan > i {
+  background: var(--color-accent);
+}
+.meter.danger > i {
+  background: var(--color-danger);
+}
+
+/** Точки износа: 0..5 квадратиков. */
+.dots {
+  display: inline-flex;
+  gap: 3px;
+}
+.dots > i {
+  width: 7px;
+  height: 7px;
+  background: var(--color-border);
+  border-radius: 1px;
+}
+.dots > i.on {
+  background: var(--color-gold);
+  box-shadow: 0 0 4px var(--glow-gold);
+}
+
+/* --- поля ввода ------------------------------------------------------------ */
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.field > label {
+  font-family: var(--font-display);
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--color-text-dim);
+}
+.field input[type='text'],
+.field input[type='number'] {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 2px;
+  color: var(--color-text);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  padding: 8px 10px;
+  user-select: text;
+}
+.field input:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 8px var(--glow-cyan);
+}
+
+/* --- модальные окна -------------------------------------------------------- */
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(3, 6, 10, 0.78);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+  padding: 24px;
+  line-height: 1.4;
+}
+
+.modal {
+  background: var(--color-panel);
+  border: 1px solid var(--color-accent);
+  border-radius: 2px;
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
+  min-width: 0;
+  line-height: 1.4;
+}
+
+/* --- строки развёртки (CRT) ------------------------------------------------- */
+
+/*
+ * Мягкий люминофор: горизонтальные строки поверх всего экрана. Отключается
+ * тумблером — эффект приятен не всем и мешает читать мелкий текст на плохих
+ * матрицах. Ставится на псевдоэлемент, а не на фон панелей: иначе пришлось бы
+ * поддерживать его в каждом компоненте отдельно.
+ */
+.crt::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 300;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0px,
+    rgba(0, 0, 0, 0) 2px,
+    rgba(0, 0, 0, 0.16) 3px,
+    rgba(0, 0, 0, 0.16) 4px
+  );
+}
+
+/* Виньетка по краям — то, что делает картинку экраном, а не страницей. */
+.crt::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 299;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 55%, rgba(0, 0, 0, 0.45) 100%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn,
+  .pick {
+    transition: none;
+  }
+}
