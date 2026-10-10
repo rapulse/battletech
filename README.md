@@ -122,8 +122,11 @@ Requires Node.js 24 and pnpm 11. The documentation is in Russian: `game_core.md`
 for the project. Publishing the game: `tools/deploy.md`. The screenshots above are made by
 `game/scripts/readme-shots.mjs`.
 
-BattleTech is a registered trademark of its respective owners. This is a non-commercial fan
-project, not affiliated with or endorsed by them.
+## License
+
+The code and documentation are released under the [MIT License](LICENSE). It covers this project's
+own work only: BattleTech is a registered trademark of its respective owners, and this
+non-commercial fan project is not affiliated with or endorsed by them.
 
 ---
 
@@ -251,5 +254,8 @@ pnpm check    # типы, Svelte, линтер и все тесты
 и правила, `wiki/overview/corridors.md` — баланс, `CLAUDE.md` — правила работы над проектом.
 Выкладка игры — `tools/deploy.md`. Снимки экранов выше делает `game/scripts/readme-shots.mjs`.
 
-BattleTech — зарегистрированный товарный знак его владельцев. Это некоммерческий фанатский проект,
-никак с ними не связанный и ими не одобренный.
+## Лицензия
+
+Код и документация распространяются по [лицензии MIT](LICENSE). Она относится только к собственной
+работе проекта: BattleTech — зарегистрированный товарный знак его владельцев, а этот некоммерческий
+фанатский проект никак с ними не связан и ими не одобрен.
