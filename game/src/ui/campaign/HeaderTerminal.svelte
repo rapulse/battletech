@@ -153,11 +153,12 @@
       </div>
       <div class="place-row">
         <span class="dim">{t('header.date')}:</span>
-        <span class="strong">{campaign.date}</span>
-        <span class="dim">({t('header.day', { day: campaign.day })})</span>
-        <span class="steps">
+        <!-- Ширина даты и номера дня закреплена: «1 мая» → «28 сентября» не сдвигает кнопки дней. -->
+        <span class="strong date">{campaign.date}</span>
+        <span class="dim day-no">({t('header.day', { day: campaign.day })})</span>
+        <span class="steps" class:running={campaign.advancing !== null}>
           {#each [1, 7, 30] as n (n)}
-            <!-- Пока считается мир, все три кнопки выключены, а нажатая крутит значок: клик прошёл, ждать. -->
+            <!-- Пока считается мир, все три кнопки выключены, а нажатая крутит значок поверх надписи: клик прошёл, ждать. -->
             <button
               class="step"
               class:busy={campaign.advancing === n}
@@ -165,8 +166,8 @@
               disabled={campaign.advancing !== null || !campaign.can({ kind: 'advance', days: n })}
               onclick={() => void campaign.advanceDays(n)}
             >
+              <span class="step-label">{t(`header.advance${n}`)}</span>
               {#if campaign.advancing === n}<span class="spinner" aria-hidden="true"></span>{/if}
-              {t(`header.advance${n}`)}
             </button>
           {/each}
         </span>
@@ -545,7 +546,16 @@
     gap: 3px;
     margin-left: 6px;
   }
+  .date {
+    display: inline-block;
+    min-width: 17ch;
+  }
+  .day-no {
+    display: inline-block;
+    min-width: 12ch;
+  }
   .step {
+    position: relative;
     padding: 2px 7px;
     background: var(--color-panel-sub);
     border: 1px solid var(--color-border);
@@ -564,19 +574,26 @@
     opacity: 0.35;
     cursor: not-allowed;
   }
+  /* Пока считается мир, курсор не меняется: расчёт короткий, смена курсора только мелькает. */
+  .steps.running .step:disabled {
+    cursor: pointer;
+  }
   /* Нажатая кнопка во время расчёта — яркая, а не погашенная, как соседние: видно, что считается она. */
   .step.busy:disabled {
     opacity: 1;
-    cursor: progress;
-    color: #fff;
     border-color: var(--color-accent);
   }
+  /* Значок встаёт поверх скрытой надписи: размер кнопки не меняется, строка не дёргается. */
+  .step.busy .step-label {
+    visibility: hidden;
+  }
   .spinner {
-    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
     width: 8px;
     height: 8px;
-    margin-right: 4px;
-    vertical-align: -1px;
+    margin: -4px 0 0 -4px;
     border: 1.5px solid var(--color-accent);
     border-right-color: transparent;
     border-radius: 50%;
