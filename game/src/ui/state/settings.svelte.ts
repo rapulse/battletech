@@ -33,6 +33,13 @@ class SettingsUi {
     this.apply();
   }
 
+  /** Быстрый выбор из главного меню: интерфейс и названия оружия разом; по отдельности — в настройках. */
+  setLanguage(id: LanguageId): void {
+    this.interfaceLanguage = id;
+    this.termsLanguage = id;
+    this.apply();
+  }
+
   private apply(): void {
     setLanguages(this.interfaceLanguage, this.termsLanguage);
     savePreferences({ interfaceLanguage: this.interfaceLanguage, termsLanguage: this.termsLanguage });

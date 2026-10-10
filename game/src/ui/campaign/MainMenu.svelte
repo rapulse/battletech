@@ -1,6 +1,8 @@
 <script lang="ts">
   import { campaign } from '../state/campaign.svelte.js';
   import { t } from '../i18n/index.js';
+  import { LANGUAGE_IDS, LANGUAGE_NAMES } from '../i18n/languages.js';
+  import { settings } from '../state/settings.svelte.js';
 
   /**
    * Главное меню — оно же место, где кампания попадает в игру и уходит из неё.
@@ -10,6 +12,9 @@
    * вместе с очисткой данных сайта. Файл — не резервная копия «на всякий
    * случай», а единственный способ унести кампанию на другую машину, и прятать
    * его в настройки нельзя.
+   *
+   * Язык — тоже здесь, в шапке, самоназваниями: игрок, не читающий по-русски, видит «English»
+   * с первого экрана и не ищет его в «Настройках».
    */
 
   let fileInput = $state<HTMLInputElement | null>(null);
@@ -27,7 +32,22 @@
   <div class="panel sheet">
     <div class="panel-header">
       <span>{t('app.menu.title')}</span>
-      <span class="badge badge-dim">3053</span>
+      <span class="head-right">
+        <span class="langs" role="radiogroup" aria-label={t('settings.interfaceLanguage')}>
+          {#each LANGUAGE_IDS as id (id)}
+            <button
+              class="lang"
+              class:active={settings.interfaceLanguage === id}
+              role="radio"
+              aria-checked={settings.interfaceLanguage === id}
+              onclick={() => settings.setLanguage(id)}
+            >
+              {LANGUAGE_NAMES[id]}
+            </button>
+          {/each}
+        </span>
+        <span class="badge badge-dim">3053</span>
+      </span>
     </div>
     <div class="panel-body body">
       <p class="dim sub">{t('app.menu.subtitle')}</p>
@@ -106,6 +126,35 @@
   .sheet {
     width: 560px;
     max-width: 100%;
+  }
+  .head-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .langs {
+    display: inline-flex;
+    gap: 3px;
+  }
+  .lang {
+    padding: 2px 8px;
+    background: var(--color-panel-sub);
+    border: 1px solid var(--color-border);
+    border-radius: 2px;
+    color: var(--color-text-dim);
+    font: inherit;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    text-transform: none;
+    cursor: pointer;
+  }
+  .lang:hover {
+    border-color: var(--color-border-active);
+    color: #fff;
+  }
+  .lang.active {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
   }
   .body {
     display: flex;
