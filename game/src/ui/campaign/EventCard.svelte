@@ -10,7 +10,7 @@
    * можно только ответом. Поэтому у подложки нет «клика мимо» и Escape: карточка — не справка,
    * а остановка, как ожидающий бой. Заголовок и текст — `worldEvent.<id>.*`, картинка — из данных;
    * у события без картинки на её месте пустая рамка. Путь в данных — от `public/`, склеивается с
-   * `BASE_URL`: игра лежит в подпапке Pages (`tools/deploy_play.md`).
+   * `BASE_URL`: игра лежит в подпапке Pages (`tools/deploy.md`).
    */
   const ev = $derived(campaign.pendingWorldEvent);
   const imageUrl = $derived(ev?.image === undefined ? null : `${import.meta.env.BASE_URL}${ev.image.replace(/^\//, '')}`);
